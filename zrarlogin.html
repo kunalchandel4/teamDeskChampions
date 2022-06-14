@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #main {
+            width: 75%;
+            margin: 70px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 240px);
+            grid-template-rows: 500px;
+            gap: 200px;
+            justify-self: center;
+            align-items: center;
+        }
+        
+        button {
+            width: 100%;
+            color: aliceblue;
+            background-color: black;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight: 550;
+            font-size: 12px;
+        }
+        
+        input {
+            width: 100%;
+            margin-top: 20px;
+            padding: 2px 0px;
+            font-size: 9px;
+        }
+        
+        p {
+            margin: 30px 0px 45px;
+        }
+        
+        #main>div:nth-child(1)>p {
+            font-size: 9px;
+        }
+        
+        #main>div:nth-child(2)>p {
+            font-size: 12px;
+            margin: 10px 0px 8px 0px;
+        }
+        
+        #main>div:nth-child(2)>p+p {
+            font-size: 12px;
+            margin: 10px 0px 80px 0px;
+        }
+        
+        h2 {
+            font-stretch: narrower;
+            font-weight: 550;
+            font-size: 18px;
+            font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        #main>div:nth-child(2) {
+            width: 380px;
+        }
+        
+        #main>div:nth-child(2)>button {
+            width: 250px;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight: 550;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <h2>LOG IN</h2>
+            <input type="text" placeholder="E-MAIL"><br>
+            <input type="text" placeholder="PASSWORD">
+            <p>
+                HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <button id="login">LOG IN</button>
+        </div>
+        <div>
+            <h2>REGISTER</h2>
+            <p>
+                IF YOU STILL DON'T HAVE A
+                <strong>ZARA.COM</strong> ACCOUNT, USE THIS OPTION TO ACCESS THE REGISTRATION FORM. </p>
+            <p>BY GIVING US YOUR DETAILS, PURCHASING IN <strong>ZARA.COM</strong> WILL BE FASTER AND AN ENJOYABLE EXPERIENCE.</p>
+            <button id=" signup ">CREATE ACCOUNT</button>
+        </div>
+    </div>
+</body>
+
+</html>
