@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #create {
+            width: 60%;
+            margin-left: 7%;
+        }
+        #inside {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 100%;
+            gap: 7%;
+            align-items: center;
+            
+        }
+        #top {
+            display: flex;
+            width: 35%;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        p > input {
+            cursor: pointer;
+        }
+        #form {
+            display: grid;
+            gap: 20px;
+        }
+        h2 {
+            margin-bottom: 5%;
+        }
+        .details input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid grey;
+            margin-top: 15px;
+            font-size: 12px;
+            padding: 15px 0px 0px 0px;
+            padding-bottom: 5px;
+        }
+        #right {
+            margin-top: -14%;
+        }
+        #submit {
+            width: 46.5%;
+            color: white;
+            background-color: black;
+            padding: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+        #submit:hover {
+            width: 45.5%;
+            margin-left: 4px;
+            font-weight: none;
+            font-size: 14px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .privacy {
+            font-size: 10px;
+            color: grey;
+        }
+        .privacy > a {
+            color: grey;
+        }
+        #state {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid grey;
+            margin-top: 15px;
+            font-size: 12px;
+            padding: 15px 0px 0px 0px;
+            padding-bottom: 5px;
+            color: grey;
+        }
+        #option {
+            width: 75%;
+            margin: 100px 0px 0px 7%;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            
+        }
+                
+        #second {
+            width: 75%;
+            margin: -100px 0px 0px 7%;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            color: grey;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin-left: 7%;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            color: grey;
+        }
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        li {
+            color: grey;
+        }
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="create">
+        <h2>PERSONAL DETAILS</h2>
+        <form id="form">
+            <div id="top">
+                <div><p><input type="radio" name="choice" class="select" value="PERSONAL" required> PERSONAL</p></div>
+                <div><p><input type="radio" name="choice" class="select" value="COMPANY" required> COMPANY</p></div>
+            </div>
+            <div id="inside" >
+                <div id="left">
+                    <div class="details">
+                        <input id="email" type="email" placeholder="E-MAIL" required><br>
+                        <input id="password" type="password" placeholder="PASSWORD" required><br>
+                        <input id="name" type="text" placeholder="NAME" required><br>
+                        <input id="address" type="text" placeholder="ADDRESS" required><br>
+                        <input id="locality" type="text" placeholder="LOCALITY" required><br>
+                        <select name="STATE" id="state" required>
+                            <option value="">STATE</option>
+                            <option value="andaman and nicobar island">ANDAMAN AND NICOBAR ISLAND</option>
+                            <option value="Andhra Pradesh">ANDHRA PRADESH</option>
+                            <option value="Arunachal Pradesh">ARUNACHAL PRADESH</option>
+                            <option value="Assam">ASSSAM</option>
+                            <option value="Bihar">BIHAR</option>
+                            <option value="Chhattisgarh">CHHATTISGARH</option>
+                            <option value="Goa">GOA</option>
+                            <option value="Gujarat">GUJARAT</option>
+                            <option value="Haryana">HARYANA</option>
+                            <option value="Himachal Pradesh">HIMACHAL PRADESH</option>
+                            <option value="Jharkhand">JHARKHAND</option>
+                            <option value="Karnataka">KARNATAKA</option>
+                            <option value="Kerala">KERALA</option>
+                            <option value="Madhya Pradesh">MADHYA PRADESH</option>
+                            <option value="Maharashtra">MAHARASHTRA</option>
+                            <option value="Manipur">MANIPUR</option>
+                            <option value="Meghalaya">MEGHALAYA</option>
+                            <option value="Mizoram">MIZORAM</option>
+                            <option value="Nagaland">NAGALAND</option>
+                            <option value="Odisha">ODISHA</option>
+                            <option value="Punjab">PUNJAB</option>
+                            <option value="Rajasthan">RAJASTHAN</option>
+                            <option value="Sikkim">SIKKIM</option>
+                            <option value="Tamil Nadu">TAMIL NADU</option>
+                            <option value="Telangana">TELANGANA</option>
+                            <option value="Tripura">TRIPURA</option>
+                            <option value="Uttar Pradesh">UTTAR PRADESH</option>
+                            <option value="Uttarakhand">UTTARAKHAND</option>
+                            <option value="West Bengal">WEST BENGAL</option>
+                        </select>
+                        <input id="phone" type="number" placeholder="TELEPHONE" required><br>
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="details">
+                        <input id="re-password" type="password" placeholder="REPEAT PASSWORD" required>
+                        <input id="pincode" type="number" placeholder="PINCODE" required>
+                        <input id="info" type="text" placeholder="MORE INFO (Optional)">
+                        <input id="city" type="text" placeholder="CITY" required>
+                    </div>
+                </div>
+            </div>
+            <p class="privacy"><input type="radio" name="reciv" required>I WISH TO RECIEVE ZARA NEWS ON MY E-MAIL</p>
+            <P class="privacy"><input type="radio" name="accept" required>I ACCEPT THE <a href="https://static.zara.net/static//pdfs/IN/privacy-policy/privacy-policy-en_IN-20210924.pdf" target="blank">PRIVACY STATEMENT</a></P>
+            <input id="submit" type="submit" value="CREATE ACCOUNT">
+        </form>
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", submitfunction)
+    let userInfo=JSON.parse(localStorage.getItem("Userdata")) || [];
+    function submitfunction(event) {
+        event.preventDefault()
+        let data={
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#password").value,
+            name: document.querySelector("#name").value,
+            address: document.querySelector("#address").value,
+            pincode: document.querySelector("#pincode").value,
+            locality: document.querySelector("#locality").value,
+            city: document.querySelector("#city").value,
+            state: document.querySelector("#state").value,
+            phone: document.querySelector("#phone").value,
+            moreInfo: document.querySelector("#info").value,
+
+        }
+        if(checkExistAcc(data.email)===true){
+            if(document.querySelector("#password").value !== document.querySelector("#re-password").value){
+            alert("Confirmed Password does not match")
+            }else{
+                userInfo.push(data)
+            localStorage.setItem("Userdata", JSON.stringify(userInfo))
+            // window.location.href="login.html"
+            alert("Succesfully signed up")
+            }
+
+        }else{
+            alert("Account already exist")
+        }
+
+    }
+    function checkExistAcc(email){
+        let filtered=userInfo.filter(function(elem){
+            return email===elem.email
+        })
+        if(filtered.length>0){
+            return false;
+        }else{
+            return true;
+        }
+    }
+</script>
