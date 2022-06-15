@@ -31,9 +31,9 @@
     #image>img{
 width:100%;
 height:67%;
-border-color:none;
+border:none;
     }
-    button{ display: flex;
+    button{ display:flex;
         width: 60px;
         height: 60px;
         font-size: 15px;
@@ -41,14 +41,16 @@ border-color:none;
         justify-content: center;
         align-content: center;
         margin-left: 1300px;
+        margin-top: 0px;
         position: absolute;
 padding-top: 15px;
         border-radius: 50%;
-        top:300px;
+        top:250px;
         background-color: transparent;
         border-color: transparent;
     } 
    
+    
     
     
     
@@ -131,8 +133,9 @@ let button= document.querySelector("button");
 button.style.cursor="pointer";
   document.querySelector("button").addEventListener("click", clickme)
   function clickme(){
-   
-    window.locaton.href="men.html";
+    console.log("sonie");
+   window.location.href="signUpCW.html";
+ 
   } 
     
 </script>
