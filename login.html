@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #main {
+            width: 75%;
+            margin: 70px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 240px);
+            grid-template-rows: 500px;
+            gap: 200px;
+            justify-self: center;
+            align-items: center;
+        }
+        
+        button {
+            width: 100%;
+            color: aliceblue;
+            background-color: black;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight: 550;
+            font-size: 12px;
+        }
+        
+        button:hover {
+            background-color: rgba(79, 79, 79, 0.9);
+        }
+        
+        input {
+            width: 100%;
+            margin-top: 20px;
+            padding: 2px 0px;
+            font-size: 10px;
+            text-transform: none !important;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        
+        p {
+            margin: 30px 0px 45px;
+        }
+        
+        #main>div:nth-child(1)>p {
+            font-size: 9px;
+        }
+        
+        #main>div:nth-child(2)>p {
+            font-size: 12px;
+            margin: 10px 0px 8px 0px;
+        }
+        
+        #main>div:nth-child(2)>p+p {
+            font-size: 12px;
+            margin: 10px 0px 80px 0px;
+        }
+        
+        h2 {
+            font-stretch: narrower;
+            font-weight: 550;
+            font-size: 18px;
+            font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        #main>div:nth-child(2) {
+            width: 380px;
+        }
+        
+        #main>div:nth-child(2)>button {
+            width: 250px;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight: 550;
+            font-size: 12px;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <h2>LOG IN</h2>
+            <input type="text" placeholder="E-MAIL"><br>
+            <input type="text" placeholder="PASSWORD">
+            <p>
+                HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <button id="login">LOG IN</button>
+        </div>
+        <div>
+            <h2>REGISTER</h2>
+            <p>
+                IF YOU STILL DON'T HAVE A
+                <strong>ZARA.COM</strong> ACCOUNT, USE THIS OPTION TO ACCESS THE REGISTRATION FORM. </p>
+            <p>BY GIVING US YOUR DETAILS, PURCHASING IN <strong>ZARA.COM</strong> WILL BE FASTER AND AN ENJOYABLE EXPERIENCE.</p>
+            <button id=" signup ">CREATE ACCOUNT</button>
+        </div>
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
