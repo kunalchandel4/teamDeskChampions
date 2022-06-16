@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick products</title>
+</head>
+<style>
+    #main {
+        display: flex;
+        width: 600px;
+        justify-content: space-around;
+        margin: auto;
+    }
+    
+    P {
+        font-size: 12px;
+        font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        font-stretch: extra-condensed;
+        color: gray;
+    }
+    
+    #image {
+        width: 50%;
+        height: 650px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #image>img {
+        width: auto;
+        height: 60%;
+        border-color: none;
+    }
+    
+    #image>img {
+        width: auto;
+        height: 60%;
+        border-color: none;
+    }
+    
+    button {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        font-size: 15px;
+        font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        font-stretch: extra-condensed;
+        justify-content: center;
+        align-content: center;
+        margin-left: 1000px;
+        position: absolute;
+        padding-top: 21px;
+        border: none;
+        top: 350px;
+        background-color: transparent;
+    }
+    
+    span {
+        width: 60px;
+        height: 60px;
+        font-size: 75px;
+        font-weight: 900;
+        font-stretch: extra-condensed;
+        justify-content: center;
+        align-content: center;
+        margin-left: 1060px;
+        position: absolute;
+        padding-top: 15px;
+        border: none;
+        top: 320px;
+        background-color: transparent;
+    }
+    
+    span:hover {
+        color: rgba(79, 79, 79, 0.9);
+        cursor: pointer;
+    }
+    
+    button:hover {
+        color: rgba(79, 79, 79, 0.9);
+        cursor: pointer;
+    }
+    /* a {
+        color: black;
+    } */
+</style>
+
+<div id="image">
+    <button>KIDS</button><span>></span>
+
+
+    <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644">
+
+</div>
+
+
+<div id="main">
+    <div class="d1">
+        <p>NEW</p>
+    </div>
+    <div class="d2">
+        <p>SUITS</p>
+    </div>
+    <div class="d3">
+        <p>JOIN LIFE</p>
+    </div>
+    <div class="d4">
+        <p>ZARA ATHLETICZ</p>
+    </div>
+
+
+</div>
+</body>
+
+</html>
+<script>
+    let data = document.querySelector("#main>.d1>p");
+    data.style.cursor = "pointer";
+
+    data.addEventListener("click", getimage1);
+
+    function getimage1() {
+        data.style.color = "black";
+        let image1 = document.querySelector("#image>img");
+
+        image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644";
+
+        image1.style.border = "none";
+    }
+    let data1 = document.querySelector("#main>.d2>p");
+    data1.style.cursor = "pointer";
+
+    data1.addEventListener("click", getimage);
+
+    function getimage() {
+        data1.style.color = "black";
+        let image = document.querySelector("#image>img");
+        image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-trajes/subhome-xmedia-23//w/1028/IMAGE-landscape-86a47cfa-3fa1-451e-824a-0fc88b6f2fdd-default_0.jpg?ts=1654695356696";
+    }
+
+    let data2 = document.querySelector("#main>.d3>p");
+    data2.style.cursor = "pointer";
+
+    data2.addEventListener("click", getimage2);
+
+    function getimage2() {
+        data2.style.color = "black";
+        let image3 = document.querySelector("#image>img");
+        image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-joinlife/subhome-xmedia-23//w/1028/IMAGE-landscape-4f6213e5-cf88-4d5b-9295-4a18c7450972-default_0.jpg?ts=1654696832147";
+
+
+    }
+    let data3 = document.querySelector("#main>.d4>p");
+    data3.style.cursor = "pointer";
+
+    data3.addEventListener("click", getimage3);
+
+    function getimage3() {
+        data3.style.color = "black";
+        let image4 = document.querySelector("#image>img");
+        image4.src = "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096";
+    };
+    let button = document.querySelector("button");
+    button.style.cursor = "pointer";
+    document.querySelector("button").addEventListener("click", clickme)
+
+    function clickme() {
+        console.log("sonie");
+        window.location.href = "kids.html";
+
+    }
+</script>
