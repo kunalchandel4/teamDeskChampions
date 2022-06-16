@@ -44,17 +44,19 @@
     }
     
     button {
-        display: flex;
+        display: block;
+        margin: auto;
         width: 60px;
         height: 60px;
-        font-size: 15px;
+        font-size: 11px;
         font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-right: 1250px;
+        margin-left: -1245px;
+        
         position: absolute;
-        padding-top: 21px;
+        
         border: none;
         top: 350px;
         background-color: transparent;
@@ -64,7 +66,7 @@
         width: 60px;
         height: 60px;
         font-size: 65px;
-        font-weight: 900;
+        font-weight: 100px;
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
@@ -183,13 +185,13 @@
 
         let image6 = document.querySelector("#image>img");
         image6.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-join-life/subhome-xmedia-23//w/1028/IMAGE-landscape-f17663c1-258d-4ca0-8c87-a8d2c6c78a28-default_0.jpg?ts=1654785431708";
-    };
-    let buttn = document.querySelector("button");
+    }
+    let button = document.querySelector("button");
     button.style.cursor = "pointer";
-    document.querySelector("button").addEventListener("click", clickme)
+    button.addEventListener("click", clickhere)
 
-    function clickme() {
-        console.log("sonie");
+    function clickhere() {
+        
         window.location.href = "men.html";
 
     }
