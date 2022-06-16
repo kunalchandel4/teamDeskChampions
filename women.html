@@ -33,37 +33,35 @@ width:100%;
 height:67%;
 border:none;
     }
-    button{ display:flex;
+    button{  display: flex;
         width: 60px;
         height: 60px;
-        color:gray;
         font-size: 11px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1150px;
-        margin-top: 0px;
+        margin-left: 1220px;
         position: absolute;
-padding-top: 15px;
-        border-radius: 50%;
-        top:315px;
+        padding-top: 21px;
+        border: none;
+        top: 352px;
         background-color: transparent;
-        border-color: transparent;
     } 
    
     span {
         width: 60px;
         height: 60px;
         font-size: 75px;
-        font-weight: 80px;
+        font-weight: 100;
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1200px;
+        margin-left: 1270px;
         position: absolute;
         padding-top: 15px;
         border: none;
-        top: 280px;
+        top: 320px;
         background-color: transparent;
     }
     
@@ -77,7 +75,7 @@ padding-top: 15px;
 </style>
     
      
-       <div id="image"><button>MAN</button><span >></span><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907"></div>
+       <div id="image"><button>MEN</button><span >></span><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907"></div>
  <div id="main">
     <div class="d1"><p>NEW</p></div>
     <div class="d2"><p>BEST SELLERS</p></div>
@@ -149,12 +147,12 @@ let data5= document.querySelector("#main>.d6>p");
 let image6=document.querySelector("#image>img");
 image6.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-shoes-bags/subhome-xmedia-23-4//w/766/IMAGE-landscape-7d1e4562-f417-4c8d-862c-90ee2a5d2515-default_0.jpg?ts=1655111234059";
 }
-let button= document.querySelector("button");
+let button= document.querySelector("#image>button");
 button.style.cursor="pointer";
   document.querySelector("button").addEventListener("click", clickme)
   function clickme(){
     
-   window.location.href="login.html";
+   window.location.href="men.html";
  
   } 
     

@@ -43,32 +43,32 @@
         border-color: none;
     }
     
-    button {
+    #button1{
         display: flex;
         width: 60px;
         height: 60px;
-        font-size: 15px;
+        font-size: 11px;
         font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1000px;
+        margin-left: 1220px;
         position: absolute;
         padding-top: 21px;
         border: none;
-        top: 350px;
+        top: 352px;
         background-color: transparent;
     }
     
-    span {
+    #span1 {
         width: 60px;
         height: 60px;
         font-size: 75px;
-        font-weight: 900;
+        font-weight: 100;
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1060px;
+        margin-left: 1270px;
         position: absolute;
         padding-top: 15px;
         border: none;
@@ -88,10 +88,43 @@
     /* a {
         color: black;
     } */
+    #button2{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        font-size: 11px;
+        font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        font-stretch: extra-condensed;
+        justify-content: center;
+        align-content: center;
+        margin-left: 10px;
+        position: absolute;
+        padding-top: 21px;
+        border: none;
+        top: 352px;
+        background-color: transparent;
+    }
+    #span2{
+        width: 60px;
+        height: 60px;
+        font-size: 65px;
+        font-weight: 100px;
+        font-stretch: extra-condensed;
+        justify-content: center;
+        align-content: center;
+        margin-right: 1270px;
+        position: absolute;
+        padding-top: 22px;
+        border: none;
+        top: 320px;
+        background-color: transparent;
+    }
+    
 </style>
-
+<div id="image1"><span id="span2"><</span> <button id="button2">WOMEN</button></div>
 <div id="image">
-    <button>KIDS</button><span>></span>
+    <button id="button1">KIDS</button><span id="span1">></span>
+  
 
 
     <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644">
@@ -165,13 +198,22 @@
         let image4 = document.querySelector("#image>img");
         image4.src = "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096";
     };
-    let button = document.querySelector("button");
+    let button = document.querySelector("#button1");
     button.style.cursor = "pointer";
-    document.querySelector("button").addEventListener("click", clickme)
+    document.querySelector("#button1").addEventListener("click", clickme)
 
     function clickme() {
-        console.log("sonie");
+        
         window.location.href = "kids.html";
+
+    }
+    let button1 = document.querySelector("#button2");
+    button1.style.cursor = "pointer";
+    document.querySelector("#button2").addEventListener("click", clickhere)
+
+    function clickhere() {
+        
+        window.location.href = "women.html";
 
     }
 </script>
