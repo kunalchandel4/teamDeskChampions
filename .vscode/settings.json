@@ -1,0 +1,17 @@
+{
+    "javascript.format.insertSpaceAfterCommaDelimiter": false,
+    "editor.comments.insertSpace": false,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "typescript.format.insertSpaceAfterCommaDelimiter": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "none",
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+    "editor.trimAutoWhitespace": false,
+    "explorer.expandSingleFolderWorkspaces": false,
+    "liveServer.settings.port": 5501
+}

@@ -16,25 +16,31 @@
     }
     
     P {
-        font-size: 11px;
-        font-family: inherit;
+        font-size: 12px;
+        font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        font-stretch: extra-condensed;
         color: gray;
     }
     
     #image {
         width: 50%;
-        height: 550px;
+        height: 650px;
         margin: auto;
         display: flex;
-        /* position:relative; */
         justify-content: center;
         align-items: center;
     }
     
     #image>img {
-        width: 100%;
-        height: 67%;
-        border: none;
+        width: auto;
+        height: 60%;
+        border-color: none;
+    }
+    
+    #image>img {
+        width: auto;
+        height: 60%;
+        border-color: none;
     }
     
     button {
@@ -46,29 +52,27 @@
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1300px;
-        margin-top: 0px;
+        margin-left: 1000px;
         position: absolute;
-        padding-top: 15px;
-        border-radius: 50%;
-        top: 280px;
+        padding-top: 21px;
+        border: none;
+        top: 350px;
         background-color: transparent;
-        border-color: transparent;
     }
     
     span {
         width: 60px;
-        height: 100px;
-        font-size: 90px;
-        font-weight: 100;
+        height: 60px;
+        font-size: 75px;
+        font-weight: 900;
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 50px;
+        margin-left: 1060px;
         position: absolute;
         padding-top: 15px;
         border: none;
-        top: -44px;
+        top: 320px;
         background-color: transparent;
     }
     
@@ -81,29 +85,35 @@
         color: rgba(79, 79, 79, 0.9);
         cursor: pointer;
     }
+    /* a {
+        color: black;
+    } */
 </style>
 
+<div id="image">
+    <button>KIDS</button><span>></span>
 
-<div id="image"><button>MAN<span >></span></button><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907"></div>
+
+    <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644">
+
+</div>
+
+
 <div id="main">
     <div class="d1">
         <p>NEW</p>
     </div>
     <div class="d2">
-        <p>BEST SELLERS</p>
+        <p>SUITS</p>
     </div>
     <div class="d3">
-        <p>DRESSES</p>
+        <p>JOIN LIFE</p>
     </div>
     <div class="d4">
-        <p>SWIMWEAR</p>
+        <p>ZARA ATHLETICZ</p>
     </div>
-    <div class="d5">
-        <p>BASCIS</p>
-    </div>
-    <div class="d6">
-        <p>SHOES</p>
-    </div>
+
+
 </div>
 </body>
 
@@ -118,9 +128,9 @@
         data.style.color = "black";
         let image1 = document.querySelector("#image>img");
 
-        image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907";
+        image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644";
 
-        image1.style.borderColor = "transparent";
+        image1.style.border = "none";
     }
     let data1 = document.querySelector("#main>.d2>p");
     data1.style.cursor = "pointer";
@@ -130,7 +140,7 @@
     function getimage() {
         data1.style.color = "black";
         let image = document.querySelector("#image>img");
-        image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-13-2-in//w/766/IMAGE-landscape-116bff2f-9a68-4dbc-9db4-88f1bb7a74e1-default_0.jpg?ts=1648724342119";
+        image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-trajes/subhome-xmedia-23//w/1028/IMAGE-landscape-86a47cfa-3fa1-451e-824a-0fc88b6f2fdd-default_0.jpg?ts=1654695356696";
     }
 
     let data2 = document.querySelector("#main>.d3>p");
@@ -141,7 +151,7 @@
     function getimage2() {
         data2.style.color = "black";
         let image3 = document.querySelector("#image>img");
-        image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-24//w/766/IMAGE-landscape-690a85fc-b349-4c01-98c5-e6286b8a7a06-default_0.jpg?ts=1655110465083";
+        image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-joinlife/subhome-xmedia-23//w/1028/IMAGE-landscape-4f6213e5-cf88-4d5b-9295-4a18c7450972-default_0.jpg?ts=1654696832147";
 
 
     }
@@ -153,36 +163,15 @@
     function getimage3() {
         data3.style.color = "black";
         let image4 = document.querySelector("#image>img");
-        image4.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-swimwear/subhome-xmedia-24//w/766/IMAGE-landscape-4e0caa4e-083f-4389-b81d-522c3d05e217-default_0.jpg?ts=1655113253828";
-    }
-    let data4 = document.querySelector("#main>.d5>p");
-    data4.style.cursor = "pointer";
-
-    data4.addEventListener("click", getimage4);
-
-    function getimage4() {
-        data4.style.color = "black";
-        let image5 = document.querySelector("#image>img");
-        image5.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-basics/subhome-xmedia-24//w/766/IMAGE-landscape-af85f045-6b94-43ef-b20d-8b0e1d65f176-default_0.jpg?ts=1655196296355";
-    }
-    let data5 = document.querySelector("#main>.d6>p");
-    data5.style.cursor = "pointer";
-
-    data5.addEventListener("click", getimage5);
-
-    function getimage5() {
-        data5.style.color = "black";
-
-        let image6 = document.querySelector("#image>img");
-        image6.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-shoes-bags/subhome-xmedia-23-4//w/766/IMAGE-landscape-7d1e4562-f417-4c8d-862c-90ee2a5d2515-default_0.jpg?ts=1655111234059";
-    }
+        image4.src = "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096";
+    };
     let button = document.querySelector("button");
     button.style.cursor = "pointer";
     document.querySelector("button").addEventListener("click", clickme)
 
     function clickme() {
         console.log("sonie");
-        window.location.href = "men.html";
+        window.location.href = "kids.html";
 
     }
 </script>

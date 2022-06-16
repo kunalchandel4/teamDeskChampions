@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #product {
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #product>div>div>img {
+            width: 100%;
+        }
+        
+        #product>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 40%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="viewall.html">
+                <li>VIEW ALL</li>
+            </a>
+            <a href="FORMAL.html">
+                <li>FORMAL</li>
+            </a>
+            <a href="">
+                <li>TREND</li>
+            </a>
+        </ul>
+    </div>
+    <div id="product">
+
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    let formalData = [{
+            image_url: "https://static.zara.net/photos///2022/V/0/1/p/4376/466/251/2/w/444/4376466251_2_1_1.jpg?ts=1649776138506",
+            name: "LINEN BLEND SUIT BLAZER",
+            price: 9990,
+            productId: "BLAZER",
+            color: "WHITE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/1/p/4377/466/251/2/w/444/4377466251_1_1_1.jpg?ts=1649776174134",
+            name: "LINEN BLEND SUIT TROUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "WHITE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4373/705/052/102/w/444/4373705052_2_1_1.jpg?ts=1649776336240",
+            name: "LINEN BLEND SUIT BLAZER",
+            price: 9990,
+            productId: "BLAZER",
+            color: "ECRU",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4374/705/052/102/w/444/4374705052_1_1_1.jpg?ts=1649776335742",
+            name: "LINEN BLEND SUIT TROUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "ECRU",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4022/530/800/102/w/444/4022530800_2_1_1.jpg?ts=1649767270563",
+            name: "TEXTURED SUIT BLAZER",
+            price: 6990,
+            productId: "BLAZER",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4023/530/800/102/w/444/4023530800_1_1_1.jpg?ts=1649767271601",
+            name: "TEXTURED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4022/530/401/102/w/444/4022530401_2_1_1.jpg?ts=1649864540809",
+            name: "TEXTURED SUIT BLAZER",
+            price: 6990,
+            productId: "BLAZER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4023/530/401/102/w/444/4023530401_1_1_1.jpg?ts=1649864538696",
+            name: "TEXTURED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4259/585/407/102/w/439/4259585407_2_1_1.jpg?ts=1649774135514",
+            name: "CHECK SUIT BLAZER",
+            price: 8990,
+            productId: "BLAZER",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4260/585/407/102/w/439/4260585407_2_3_1.jpg?ts=1649774132824",
+            name: "CHECK SUIT TROUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/1564/651/708/102/w/439/1564651708_2_3_1.jpg?ts=1649761638715",
+            name: "SLIM FIT TAILORED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "BEIGE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/1/p/1564/610/737/2/w/444/1564610737_2_1_1.jpg?ts=1649876167908",
+            name: "SLIM FIT SUIT BLAZER",
+            price: 5990,
+            productId: "BLAZER",
+            color: "BROWN",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4166/121/737/102/w/444/4166121737_1_1_1.jpg?ts=1649764489930",
+            name: "SLIM FIT TAILORED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "BROWN",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/1564/651/708/103/w/439/1564651708_1_1_1.jpg?ts=1649761637693",
+            name: "SLIM FIT TAILORED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROSUERS",
+            color: "BEIGE",
+        }, //{
+        //    image_url: "https: //static.zara.net/photos///2022/V/0/1/p/4499/120/800/102/w/439/4499120800_2_1_1.jpg?ts=1649767264740",
+        //    name: "SLIM FIT DOUBLE-BREASTED BLAZER",
+        //    price: 7990,
+        //    productId: "BLAZER",
+        //    color: "BLACK",
+        //}, 
+        {
+            image_url: "https://static.zara.net/photos///2022/I/0/1/p/5952/720/800/103/w/439/5952720800_1_1_1.jpg?ts=1654181809776",
+            name: "SLIM FIT TAILORED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSERS",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4165/800/420/102/w/439/4165800420_2_1_1.jpg?ts=1649763772348",
+            name: "SLIM FIT SUIT BLAZER",
+            price: 5990,
+            productId: "BLAZER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4166/800/420/102/w/439/4166800420_1_1_1.jpg?ts=1649763773153",
+            name: "SLIM FIT TAILORED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/I/0/1/p/5951/720/800/102/w/439/5951720800_1_1_1.jpg?ts=1654181530986",
+            name: "SLIM FIT SUIT BLAZER",
+            price: 5990,
+            productId: "BLAZER",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/I/0/1/p/5952/720/800/102/w/439/5952720800_1_1_1.jpg?ts=1654181602267",
+            name: "SLIM FIT TAILORED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "BLACK",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4464/741/054/102/w/439/4464741054_2_1_1.jpg?ts=1649773519522",
+            name: "CHECK SUIT BLAZER",
+            price: 9990,
+            productId: "BLAZER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4465/741/054/102/w/439/4465741054_1_1_1.jpg?ts=1649773519782",
+            name: "CHECK SUIT TROUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/I/0/2/p/4545/973/066/2/w/439/4545973066_2_1_1.jpg?ts=1652443325042",
+            name: "CHECK SUIT BLAZER",
+            price: 8990,
+            productId: "BLAZER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/I/0/2/p/4534/973/066/2/w/439/4534973066_1_1_1.jpg?ts=1652443305515",
+            name: "CHECK SUIT TROUSERS",
+            price: 4990,
+            productId: "",
+            color: "",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/6861/442/803/2/w/439/6861442803_2_1_1.jpg?ts=1650623523070",
+            name: "SUIT BLAZER",
+            price: 8990,
+            productId: "BLAZER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/6861/443/803/2/w/439/6861443803_1_1_1.jpg?ts=1650623526014",
+            name: "PLEATED SUIT TRFOUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/6861/442/401/2/w/439/6861442401_2_1_1.jpg?ts=1650612188214",
+            name: "SUIT BLAZER",
+            price: 8990,
+            productId: "BLAZER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/6861/443/401/2/w/439/6861443401_2_3_1.jpg?ts=1650612184416",
+            name: "PLEATED SUIT TROUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/1564/420/060/102/w/439/1564420060_2_1_1.jpg?ts=1649757472540",
+            name: "BIRD'S-EYE SUIT BLAZER",
+            price: 8990,
+            productId: "BLAZER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/1/p/4023/540/704/102/w/439/4023540704_1_1_1.jpg?ts=1649772491043",
+            name: "TEXTURED SUIT TROUSERS",
+            price: 2990,
+            productId: "TROUSER",
+            color: "TAN",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4022/530/736/102/w/439/4022530736_2_1_1.jpg?ts=1649864541783",
+            name: "TEXTURED SUIT BLZAER",
+            price: 6990,
+            productId: "BLAZER",
+            color: "TAN",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4023/530/736/102/w/439/4023530736_1_1_1.jpg?ts=1649864568517",
+            name: "TEXTURED SUIT TROUSER",
+            price: 2990,
+            productId: "TROUSER",
+            color: "TAN",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4545/890/400/2/w/439/4545890400_2_1_1.jpg?ts=1651487655304",
+            name: "HOUNDSTOOTH BALZER",
+            price: 8990,
+            productId: "BLAZER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4534/890/400/2/w/439/4534890400_1_1_1.jpg?ts=1651487655755",
+            name: "HOUNDSTOOTH TROUSERS",
+            price: 4990,
+            productId: "TROUSER",
+            color: "GREY",
+        }, , {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4608/723/401/2/w/439/4608723401_2_1_1.jpg?ts=1649834726145",
+            name: "100% WOOL SUIT BLAZER",
+            price: 10990,
+            productId: "BLAZER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4609/723/401/2/w/439/4609723401_2_3_1.jpg?ts=1649834725306",
+            name: "100% WOOL SUIT TROUSERS",
+            price: 5990,
+            productId: "TROUSER",
+            color: "GREY",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4608/789/407/2/w/439/4608789407_2_1_1.jpg?ts=1649834725099",
+            name: "100% WOOL SUIT BLAZER",
+            price: 10990,
+            productId: "BLAZER",
+            color: "BLUE",
+        }, {
+            image_url: "https://static.zara.net/photos///2022/V/0/2/p/4609/789/407/2/w/439/4609789407_1_1_1.jpg?ts=1649834728323",
+            name: "100% WOOL SUIT TROUSERS",
+            price: 5990,
+            productId: "TROUSER",
+            color: "BLUE",
+        },
+    ];
+    let product = document.getElementById("product");
+
+    function displaydata(productdata) {
+        product.innerHTML = "";
+        formalData.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.image_url);
+            box.append(pic);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(pic);
+            div.append(box, box1)
+            document.querySelector("#product").append(div);
+
+        });
+    }
+    displaydata(formalData)
+</script>
