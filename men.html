@@ -174,10 +174,13 @@
         data1.style.color = "black";
         let image = document.querySelector("#image>img");
         image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-trajes/subhome-xmedia-23//w/1028/IMAGE-landscape-86a47cfa-3fa1-451e-824a-0fc88b6f2fdd-default_0.jpg?ts=1654695356696";
-    }
+    
+    image.style.cursor="pointer";
+image.addEventListener("click", clickimage)}
 
     let data2 = document.querySelector("#main>.d3>p");
     data2.style.cursor = "pointer";
+    
 
     data2.addEventListener("click", getimage2);
 
@@ -215,5 +218,8 @@
         
         window.location.href = "women.html";
 
+    }
+    function clickimage(){
+        window.location.href="viewall.html";
     }
 </script>
