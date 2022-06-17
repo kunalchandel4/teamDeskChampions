@@ -13,8 +13,9 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         #create {
-            width: 60%;
+            width: 65%;
             margin-left: 7%;
+            margin-top: 150px;
         }
         #inside {
             display: grid;
@@ -143,9 +144,33 @@
         h3 {
             margin-bottom: 20px;
         }
+        #end > #log {
+            color: white;
+        }
     </style>
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+        <div id="gap"></div>
+        <a href="Search.html" id="search">SEARCH</a>
+        <div id="loghelp">
+            <a id="log" href="login.html">LOGIN</a>
+            <a href="">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
+    </div>
     <div id="create">
         <h2>PERSONAL DETAILS</h2>
         <form id="form">
@@ -205,8 +230,8 @@
                     </div>
                 </div>
             </div>
-            <p class="privacy"><input type="radio" name="reciv" required>I WISH TO RECIEVE ZARA NEWS ON MY E-MAIL</p>
-            <P class="privacy"><input type="radio" name="accept" required>I ACCEPT THE <a href="https://static.zara.net/static//pdfs/IN/privacy-policy/privacy-policy-en_IN-20210924.pdf" target="blank">PRIVACY STATEMENT</a></P>
+            <p class="privacy"><input type="checkbox" name="reciv" required>I WISH TO RECIEVE ZARA NEWS ON MY E-MAIL</p>
+            <P class="privacy"><input type="checkbox" name="accept" required>I ACCEPT THE <a href="https://static.zara.net/static//pdfs/IN/privacy-policy/privacy-policy-en_IN-20210924.pdf" target="blank">PRIVACY STATEMENT</a></P>
             <input id="submit" type="submit" value="CREATE ACCOUNT">
         </form>
     </div>
