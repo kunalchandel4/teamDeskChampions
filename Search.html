@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        form {
+            display: flex;
+            width: 85%;
+            height: 40px;
+            margin-left: 8%;
+            margin-top: 150px;
+            justify-content: center;
+            border-bottom: 1px solid;
+        }
+        form > input {
+            width: 97.5%;
+            border: 0;
+        }
+        form > button {
+            width: 2.1%;
+            border: 0;
+            background-color: white;
+        }
+        form img {
+            width: 100%;
+        }
+        #ingap {
+            display: flex;
+            position: absolute;
+            top: 84px;
+            right: 43%;
+            width: 13%;
+            justify-content: space-between;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        #ingap p:hover {
+            text-decoration: underline;
+        }
+        #trends {
+            width: 4%;
+            line-height: 30px;
+            margin-left: 8.3%;
+            margin-top: 50px;
+        }
+        #trends p {
+            color: gray;
+            font-size: 12px;
+        }
+        #trends h5 {
+            font-size: 12px;
+        }
+        #trends p:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+        <div id="gap">
+            <div id="ingap">
+                <p>MEN</p>
+                <p>WOMEN</p>
+                <p>KIDS</p>
+            </div>
+        </div>
+        <a href="" id="search" style="color: white;">SEARCH</a>
+        <div id="end">
+            <a is="userName" href="">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
+    </div>
+    <div id="searchbar">
+        <form>
+            <input type="search" style="font-size: 18px;" placeholder="ENTER SEARCH TERMS">
+            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/2048px-Magnifying_glass_icon.svg.png" alt=""></button>
+        </form>
+    </div>
+    <div id="trends">
+        <h5>TRENDS</h5>
+        <p>DRESS</p>
+        <p>TOP</p>
+        <p>BLAZER</p>
+        <p>JEANS</p>
+    </div>
+</body>
+</html>
+<script>
+    let cartPro=JSON.parse(localStorage.getItem("cartdata"))
+    document.querySelector("h5").innerText=cartPro.length;
+
+</script>
