@@ -36,7 +36,7 @@ data.map(function(el){
     let p = document.createElement("p")
   p.innerText=el.name
     let price = document.createElement("p")
-    price.innerText="₹ "+el.price+".00" ;
+    price.innerText=`₹ ${el.price}.00 `
     div1.append(img)
     div2.append(p,price)
     div.append(div1,div2)
