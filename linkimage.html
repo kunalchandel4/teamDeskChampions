@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: content-box;
+	}
+	#main{
+		display: grid;
+		grid-template-columns:repeat(3,1fr) ;
+		grid-template-rows: 500px;
+		gap:50px;
+		padding-top: 90px;
+		margin: auto;
+		
+		width:80%;
+		height: 500px;
+	}
+	
+	
+	
+	
+
+	img{
+		width:100%;
+		height:100%;
+	} 
+	#main>div:nth-child(1)>h1{
+		font-size:14px;
+		width:150px;
+		padding-top: 150px;
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+	}  
+	#main>div:nth-child(1)>h2{
+		font-size:13px;
+		width:150px;
+		padding-top: 25px;
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#main>div:nth-child(1)>p{
+		font-size:12px ;
+		padding-top: 20px;
+		width: 180px;
+		color:gray;
+	}#main>div:nth-child(3)>div{
+		padding-right: 30px;
+		display: flex;
+		/*justify-content: space-evenly;*/
+		grid-template-columns: repeat(2 ,1fr);
+		gap:40px;
+	}
+	#main>div:nth-child(1)>p:last-child{
+		padding-top:80px;
+		font-size: 9px;
+	}
+	
+	#main>div:nth-child(3)>div>:first-child>h1{
+		font-size: 17px;
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+		width:200px;
+	}
+	#main>div:nth-child(3)>div>div:last-child>img{
+		width:17%;
+		height: 100%;
+		
+	}
+	
+	
+	#main>div:nth-child(3)>p{
+		font-size:14px ;
+		height: 25px;
+		padding-top: 15px;
+		width: 240px;
+		color:rgb(141, 139, 139);
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#main>div:nth-child(3)>h6{
+		font-size: 13px;
+		color:gray;
+		padding-top: 70px;
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#main>div:nth-child(3)>h5{
+		color:rgb(189, 186, 186);
+		font-size: 11px;
+		padding-top: 7px;
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#main>div:nth-child(3)>#select{
+		width:250px;
+		height: 40px;
+		margin-top: 40px;
+		border: none;
+		border-top: 1px solid rgb(22, 22, 22);
+		border-bottom: 1px solid rgb(22, 22, 22);
+	
+		
+	}
+	H4{
+		color:gray;
+		font-size: 12px;
+		font-stretch: condensed;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: lighter;
+		margin-top:10px;
+	} 
+	#main>div:last-child>div:last-child{
+		display: flex;
+		width: 250px;
+		justify-content:space-between;  
+	}
+	button{
+		margin-top: 50px;
+		width: 250px;
+		height: 40px;
+		color: white;
+		background-color: black;}
+	
+</style>
+
+	<div id="main">
+	<div><h1>MATERIALS, CARE AND ORIGIN</h1><h2>
+		MATERIALS
+	</h2><p>We work with monitoring programmes to ensure compliance with safety, health and quality standards for our products. </p>
+<p>The Green to Wear 2.0 standard aims to minimise the environmental impact of textile manufacturing. To that end, we have developed Inditex’s The List programme, which helps </p>
+<p><U>VIEW MORE</U></p></div>
+	<div><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907"></div>
+	<div><div><div><h1>TEXTURED SUIT BLAZER</h1></div><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRUkvuCuyXpkYNbfqfldB-WutA0YDgFy2uw&usqp=CAU"></div>
+</div><p>Blazer with a notched lapel collar. Long sleeves with buttoned cuffs. Hip and chest welt pockets and an inside pocket. Central back vent at the hem. Front button fastening.
+</p>
+<h6>₹ 6,990.00</h6>
+<h5>MRP incl. of all taxes</h5>
+<select id = "select">
+	<option> </option>
+        <option> XS </option>
+        <option value>S </option>
+        <option>M </option>
+        <option> L </option>
+        <option> XL </option>
+        <option> XXL </option>
+    </select>
+<div>
+<div><H4>FIND YOUR SIZE</H4></div>
+<div><H4>SIZE GUIDE</H4></div></div>
+<button>ADD TO CART</button>
+<p>CHECK IN-STORE AVAILABILITY</p>
+<p>DELIVERY, EXCHANGES AND RETURNS</p></div></div>
+</body>
+</html>
