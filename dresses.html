@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #pro {
+            width: 85%;
+            margin: 200px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #pro>div>div>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #pro>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 40%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="pro">
+
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    womendata = [{
+            img: "https://static.zara.net/photos///2022/I/0/1/p/5107/302/250/2/w/432/5107302250_1_1_1.jpg?ts=1654701531144",
+            name: "DRESS WITH CUTWORK EMBROIDERY",
+            price: "2990",
+            productID: "short",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/9878/077/044/3/w/321/9878077044_1_1_1.jpg?ts=1654848262892",
+
+            name: "PRINTED JUMPSUIT WITH FRILLS",
+            price: "2990",
+            productID: "jumpsuit",
+            color: "royal blue",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/1822/053/712/2/w/321/1822053712_1_1_1.jpg?ts=1647952299629",
+
+            name: "OPEN KNIT DRESS",
+            price: "2590",
+            productID: "short",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/1822/053/712/2/w/321/1822053712_2_1_1.jpg?ts=1647952300386",
+
+            name: "OPEN KNIT DRESS",
+            price: "2590",
+            productID: "short",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/2298/164/250/2/w/321/2298164250_1_1_1.jpg?ts=1654766804467",
+
+            name: "CHAIN SATIN CORSETRY-INSPIRED DRESS",
+
+            price: "3990",
+            productID: "Satin",
+            color: "white",
+        },
+
+        {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/3859/103/330/2/w/432/3859103330_2_1_1.jpg?ts=1654863924606",
+
+            name: "KNIT LONG STRIPED TUNIC",
+            price: "5990",
+            productID: "maxi",
+            color: "black",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/0021/100/500/17/w/432/0021100500_1_1_1.jpg?ts=1654864223284",
+            name: "FLORAL CROCHET KNIT DRESS - LIMITED EDITION",
+            price: "5990",
+            productID: "short",
+            color: "green",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/3859/100/330/17/w/321/3859100330_1_1_1.jpg?ts=1654865997124",
+            name: "LINEN-BLEND KNIT MINI DRESS",
+            price: "2990",
+            productID: "mini",
+            color: "multicolored",
+        },
+
+        {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7744/431/403/2/w/522/7744431403_15_1_1.jpg?ts=1654769784225",
+
+            name: "SATIN MIDI DRESS",
+            price: "5990",
+            productID: "midi",
+            color: "sky blue",
+        },
+
+        {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/1165/152/251/2/w/432/1165152251_1_1_1.jpg?ts=1654511022026",
+            name: "CORSETRY-INSPIRED MIDI DRESS WITH RHINESTONES",
+            price: "4990",
+            productID: "midi",
+            color: "white",
+        },
+
+        {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/2298/169/251/2/w/432/2298169251_1_1_1.jpg?ts=1654511024641",
+            name: "SATIN SHIRT DRESS",
+            price: "2990",
+            productID: "satin",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7682/845/412/3/w/432/7682845412_2_1_1.jpg?ts=1654850347492",
+            name: "SATIN EFFECT WRAP DRESS",
+            price: "2990",
+            productID: "satin",
+            color: "blue",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7484/152/330/2/w/321/7484152330_2_1_1.jpg?ts=1654766802570",
+            name: "PRINTED TUNIC MIDI DRESS",
+            price: "4990",
+            productID: "midi",
+            color: "multicolored",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7980/939/506/2/w/432/7980939506_1_1_1.jpg?ts=1654788478236",
+            name: "DRESS",
+            price: "2990",
+            productID: "linen",
+            color: "light khaki",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7882/650/640/2/w/209/7882650640_2_1_1.jpg?ts=1654083901755",
+
+            name: "SHORT SATIN DRESS",
+
+            price: "2990",
+            productID: "satin",
+            color: "neon pink",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/4786/066/800/2/w/432/4786066800_2_3_1.jpg?ts=1646817142821",
+            name: "MIDI EMBROIDERED DRESS",
+            price: "6990",
+            productID: "midi",
+            color: "black",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/2157/049/412/2/w/321/2157049412_2_1_1.jpg?ts=1650290319741",
+            name: "EMBROIDERED DRESS WITH BELT",
+            price: "4990",
+            productID: "short",
+            color: "blue marl",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/6895/281/605/2/w/321/6895281605_2_9_1.jpg?ts=1643372897170",
+
+            name: "EMBROIDERED BIB FRONT DRESS",
+            price: "5990",
+            productID: "short",
+            color: "maroon",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7881/650/643/17/w/321/7881650643_1_1_1.jpg?ts=1655294307375",
+            name: "SATIN DRESS WITH CUT-OUT DETAIL",
+            price: "2890",
+            productID: "satin",
+            color: "light lime green",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/9129/331/427/2/w/452/9129331427_2_1_1.jpg?ts=1643193483185",
+            name: "CORSETRY-INSPIRED MIDI DRESS WITH RHINESTONES",
+            price: "4990",
+            productID: "midi",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/3564/166/520/2/w/882/3564166520_9_1_1.jpg?ts=1654511025324",
+            name: "SATIN SHIRT DRESS",
+            price: "4990",
+            productID: "satin",
+            color: "lime",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/2702/451/251/2/w/882/2702451251_15_1_1.jpg?ts=1654769814094",
+            name: "DRAPED SATIN BLAZER DRESS",
+            price: "7990",
+            productID: "satin",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/4043/282/712/3/w/882/4043282712_15_2_1.jpg?ts=1654790401405",
+            name: "LONG WRAP JUMPSUIT",
+
+            price: "5990",
+            productID: "jumpsuit",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7771/451/520/2/w/882/7771451520_9_1_1.jpg?ts=1655117576553",
+            name: "ASYMMETRIC SATIN DRESS",
+            price: "6990",
+            productID: "satin",
+            color: "lime",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7385/212/400/2/w/882/7385212400_15_2_1.jpg?ts=1654867899794",
+            name: "CUT-OUT DRESS",
+            price: "2990",
+            productID: "going out",
+            color: "black",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/8342/204/446/2/w/882/8342204446_15_1_1.jpg?ts=1654867915725",
+            name: "LINEN BLEND PLAYSUIT DRESS",
+            price: "2890",
+            productID: "going out",
+            color: "teal",
+        },
+    ]
+    let wpro = document.getElementById("pro");
+
+    function displayw(womendata) {
+        wpro.innerHTML = "";
+        womendata.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let phot = document.createElement("img");
+            phot.setAttribute("src", elem.img);
+            box.append(phot);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(phot);
+            div.append(box, box1)
+            document.querySelector("#pro").append(div);
+
+        });
+    }
+    displayw(womendata)
+</script>

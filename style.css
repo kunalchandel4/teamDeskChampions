@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body>img {
+    width: 80%;
+    margin: 150px;
+}
+
+#join {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 330px);
+    grid-template-rows: 500px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+#join::-webkit-scrollbar {
+    width: 0px;
+}
+
+#join>div>div>img {
+    width: auto;
+    height: 400px;
+}
+
+#join>div>div:last-child {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+
+/*#product>div>div:last-child>p {
+	padding-right: 41px;
+}*/
+
+#join1 {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 280px);
+    grid-template-rows: 500px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+#join1::-webkit-scrollbar {
+    width: 0px;
+}
+
+#join1>div>div>img {
+    width: auto;
+    height: 400px;
+}
+
+#join1>div>div:last-child {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+#option {
+    width: 75%;
+    margin: 300px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(9, 50px);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+#second {
+    width: 75%;
+    margin: -400px auto 90px;
+    display: flex;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+#second>p:nth-child(1) {
+    margin-right: 950px;
+}
+
+#second>p:nth-child(2) {
+    margin-right: 20px;
+}
+
+#second>p:nth-child(3) {
+    color: #e8ddd6;
+}
+
+#end {
+    width: 75%;
+    margin: auto;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+ul {
+    list-style: none;
+    line-height: 8px;
+    font-size: 9px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav>ul {
+    width: 40%;
+    padding-top: 120px;
+    margin: auto;
+    display: flex;
+    padding-left: 400px
+}
+
+.nav>ul>a>li {
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+}
+
+#street {
+    width: 75%;
+    margin: auto 115px;
+}
+
+a:hover {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    width: 100%;
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+}

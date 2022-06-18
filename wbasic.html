@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #pro {
+            width: 85%;
+            margin: 200px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #pro>div>div>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #pro>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 40%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="pro">
+
+    </div>
+    <div id="LETTER">
+        <p>JOIN OUR NEWSLETTER</p>
+        <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
+        <div>
+            <a href="https://www.instagram.com/zara/" target="_blank">
+			 INSTAGRAM
+			</a>
+            <a href="https://www.facebook.com/Zara" target="_blank">
+			 FACEBOOK
+			</a>
+            <a href="https://twitter.com/ZARA" target="_blank">TWITTER</a>
+            <a href="https://www.pinterest.es/zaraofficial/" target="_blank">PINTEREST</a>
+            <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
+            <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
+        </div>
+        <section id="option">
+            <div>
+                <h3>HELP</h3>
+                <ul>
+                    <li>SHOP AT ZARA.COM</li><br>
+                    <li>PRODUCT</li><br>
+                    <li>PAYMENT</li><br>
+                    <li>SHIPPING</li><br>
+                    <li>EXCHANGES AND RETURNS</li><br>
+                    <li>SHOPS AND COMPANY </li><br>
+                    <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                    <li>MY ACCOUNT </li>
+                </ul>
+
+            </div>
+            <div>
+                <h3> FOLLOW US</h3>
+                <ul>
+                    <li>NEWSLETTER</li><br>
+                    <li>INSTAGRAM</li><br>
+                    <li>FACEBOOK</li><br>
+                    <li>TWITTER</li><br>
+                    <li>PINTEREST</li><br>
+                    <li>YOUTUBE</li>
+                </ul>
+            </div>
+            <div>
+                <h3>COMPANY</h3>
+                <ul>
+                    <li>ABOUT US</li><br>
+                    <li>JOIN LIFE</li><br>
+                    <li>OFFICES</li><br>
+                    <li>STORES</li><br>
+                    <li>WORK WITH US</li>
+                </ul>
+            </div>
+            <div>
+                <h3>POLICIES</h3>
+                <ul>
+                    <li>PRIVACY POLICY</li><br>
+                    <li>PURCHASE CONDITIONS</li><br>
+                    <li>COOKIES SETTINGS</li>
+                </ul>
+            </div>
+        </section>
+        <section id="second">
+            <p>INDIA</p>
+            <p>ENGLISH</p>
+            <p>@ALL RIGHTS RESERVED</p>
+        </section>
+        <div id="end">
+
+            <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+        </div>
+</body>
+
+</html>
+<script>
+    let womenbasics = [{
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2143/047/251/2/w/429/2143047251_2_1_1.jpg?ts=1655283432698",
+        name: "LOOSE-FITTING SHIRT WITH POCKETS",
+        price: "299-",
+        productID: "shirt",
+        color: "white"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2731/058/800/17/w/314/2731058800_2_1_1.jpg?ts=1654864852972",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "black"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2731/058/251/17/w/314/2731058251_1_1_1.jpg?ts=1654864884265",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "white"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2731/058/916/2/w/206/2731058916_6_1_1.jpg?ts=1647426269868",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "grey green"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2731/058/615/2/w/206/2731058615_6_1_1.jpg?ts=1648142632189",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "orange"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2731/058/251/2/w/206/2731058251_6_1_1.jpg?ts=1644570143755",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "white"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2731/258/300/2/w/206/2731258300_6_1_1.jpg?ts=1654154327668",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "yellow"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/0484/041/800/2/w/206/0484041800_6_1_1.jpg?ts=1652096781681",
+        name: "OVERSIZE LINEN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "black"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2417/324/800/24/w/429/2417324800_2_1_1.jpg?ts=1655306558471",
+        name: "HIGH WAISTED SHORTS",
+        price: "2890",
+        productID: "shorts",
+        color: "black"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2731/098/712/13/w/314/2731098712_1_1_1.jpg?ts=1655287568631",
+        name: "HIGH WAISTED SHORTS",
+        price: "2890",
+        productID: "shorts",
+        color: "white"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2417/324/800/2/w/317/2417324800_6_1_1.jpg?ts=1649404004328",
+        name: "HIGH WAISTED SHORTS",
+        price: "2890",
+        productID: "shorts",
+        color: "black"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2417/324/712/2/w/317/2417324712_6_1_1.jpg?ts=1649404058187",
+        name: "HIGH WAISTED SHORTS",
+        price: "2890",
+        productID: "shorts",
+        color: "white"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2417/771/620/2/w/317/2417771620_6_1_1.jpg?ts=1649845049991",
+        name: "HIGH WAISTED SHORTS",
+        price: "2890",
+        productID: "shorts",
+        color: "pink"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/2143/050/630/2/w/429/2143050630_2_1_1.jpg?ts=1655283468432",
+        name: "SATIN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "pink"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/4437/048/615/2/w/206/4437048615_6_1_1.jpg?ts=1640690091814",
+        name: "SATIN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "orange"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/2143/050/630/2/w/206/2143050630_6_1_1.jpg?ts=1648569424833",
+        name: "SATIN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "pink"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/4437/043/712/2/w/206/4437043712_6_1_1.jpg?ts=1644333460028",
+        name: "SATIN SHIRT",
+        price: "2990",
+        productID: "shirt",
+        color: "white"
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/4886/045/630/2/w/429/4886045630_1_1_1.jpg?ts=1655289812997",
+        name: "SATIN SPLIT HEM TROUSERS",
+        price: "2990",
+        productID: "trouserss",
+        color: "pink"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/4886/045/800/2/w/317/4886045800_6_1_1.jpg?ts=1643964196879",
+        name: "SATIN SPLIT HEM TROUSERS",
+        price: "2990",
+        productID: "trouserss",
+        color: "black"
+    }, {
+        img: "https://static.zara.net/photos///2022/V/0/1/p/4886/045/630/2/w/317/4886045630_6_1_1.jpg?ts=1648569843743",
+        name: "SATIN SPLIT HEM TROUSERS",
+        price: "2990",
+        productID: "trouserss",
+        color: "pink"
+    }, , ]
+    let basicdata = document.getElementById("pro");
+
+    function displaybasic(womenbasics) {
+        basicdata.innerHTML = "";
+        womenbasics.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let phot = document.createElement("img");
+            phot.setAttribute("src", elem.img);
+            box.append(phot);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(phot);
+            div.append(box, box1)
+            document.querySelector("#pro").append(div);
+
+        });
+    }
+    displaybasic(womenbasics)
+</script>
