@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body>img {
+    width: 80%;
+    margin: 150px;
+}
+
+#join {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 330px);
+    grid-template-rows: 500px;
+    gap: 20px;
+    overflow-x: auto;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#logo {
+    width: 16%;
+}
+#logo > img {
+    width: 100%;
+}
+#gap {
+    width: 40%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+#cart {
+    display: flex;
+    width: 5%;
+    height: 35%;
+    background-color: transparent;
+    margin-right: 2%;
+}
+#search {
+    margin-top: 0.7%;
+}
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+}
+#cart >img {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+#join::-webkit-scrollbar {
+    width: 0px;
+}
+
+#join>div>div>img {
+    width: auto;
+    height: 400px;
+}
+
+#join>div>div:last-child {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+
+/*#product>div>div:last-child>p {
+	padding-right: 41px;
+}*/
+
+#join1 {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 280px);
+    grid-template-rows: 500px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+#join1::-webkit-scrollbar {
+    width: 0px;
+}
+
+#join1>div>div>img {
+    width: auto;
+    height: 400px;
+}
+
+#join1>div>div:last-child {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+#option {
+    width: 75%;
+    margin: 300px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(9, 50px);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+#second {
+    width: 75%;
+    margin: -400px auto 90px;
+    display: flex;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+#second>p:nth-child(1) {
+    margin-right: 950px;
+}
+
+#second>p:nth-child(2) {
+    margin-right: 20px;
+}
+
+#second>p:nth-child(3) {
+    color: #e8ddd6;
+}
+
+#end {
+    width: 75%;
+    margin: auto;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+ul {
+    list-style: none;
+    line-height: 8px;
+    font-size: 9px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav>ul {
+    width: 50%;
+    padding-top: 120px;
+    margin: auto;
+    display: flex;
+    padding-left: 400px
+}
+#LETTER{
+    margin-left: 180px;
+   
+}
+#LETTER>div{
+  
+   margin-top: 130px;
+}
+
+#LETTER>div>a{
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#LETTER>div>a:hover{
+    text-decoration: underline;
+}
+#input{
+        width: 19%;
+    border:transparent;
+    border-bottom: 1px solid black;
+}
+#input:placeholder-shown{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+}
+/* #input:hover{
+    text-overflow:inherit;
+} */
+#LETTER>p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 16px;
+}
+
+.nav>ul>a>li {
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+}
+
+#street {
+    width: 75%;
+    margin: auto 115px;
+}
+
+a:hover {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    width: 100%;
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+}

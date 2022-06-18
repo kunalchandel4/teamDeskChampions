@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,37 @@
     <title>onclick products</title>
 </head>
 <style>
-    #main{
+    #main {
         display: flex;
         width: 600px;
         justify-content: space-around;
         margin: auto;
     }
-    P{
+    
+    P {
         font-size: 11px;
         font-family: inherit;
         color: gray;
     }
-   
-    #image{
+    
+    #image {
         width: 50%;
         height: 550px;
-        margin: auto;
+        margin: 100px auto;
         display: flex;
         /* position:relative; */
         justify-content: center;
         align-items: center;
-    } 
-    #image>img{
-width:100%;
-height:67%;
-border:none;
     }
-    button{  display: flex;
+    
+    #image>img {
+        width: 100%;
+        height: 67%;
+        border: none;
+    }
+    
+    button {
+        display: flex;
         width: 60px;
         height: 60px;
         font-size: 11px;
@@ -47,8 +52,8 @@ border:none;
         border: none;
         top: 352px;
         background-color: transparent;
-    } 
-   
+    }
+    
     span {
         width: 60px;
         height: 60px;
@@ -70,90 +75,406 @@ border:none;
         cursor: pointer;
     }
     
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
     
+    #nav {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        justify-content: space-between;
+        background-color: transparent;
+        position: fixed;
+        top: 0px;
+    }
     
+    #menu {
+        display: grid;
+        width: 1.6%;
+        height: 20%;
+        margin-top: 0.7%;
+        align-content: space-around;
+        margin-left: 2%;
+        background-color: transparent;
+    }
+    
+    #menu>div {
+        height: 1px;
+        background-color: black;
+        transition: 0.4s;
+    }
+    
+    #one {
+        width: 90%;
+    }
+    
+    #two {
+        width: 60%;
+    }
+    
+    #three {
+        width: 70%;
+    }
+    
+    #menu:hover div {
+        width: 90%;
+    }
+    
+    #logo {
+        width: 16%;
+    }
+    
+    #logo>img {
+        width: 100%;
+    }
+    
+    #gap {
+        width: 40%;
+        background-color: transparent;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: none;
+        color: black;
+    }
+    
+    #cart {
+        display: flex;
+        width: 5%;
+        height: 35%;
+        background-color: transparent;
+        margin-right: 2%;
+    }
+    
+    #search {
+        margin-top: 0.7%;
+    }
+    
+    #loghelp {
+        display: flex;
+        width: 10%;
+        background-color: transparent;
+        justify-content: space-between;
+        margin-top: 0.7%;
+    }
+    
+    #cart>img {
+        width: 45%;
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    #LETTER {
+        margin-top: 150px;
+        margin-left: 180px;
+    }
+    
+    #LETTER>div {
+        margin-top: 100px;
+    }
+    
+    #LETTER>div>a {
+        margin-right: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 9px;
+        /* margin: auto; */
+        color: grey;
+        text-decoration: none;
+    }
+    
+    #LETTER>div>a:hover {
+        text-decoration: underline;
+    }
+    
+    #LETTER>#p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        color: black;
+    }
+    #option {
+            width: 75%;
+            margin: 280px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+
+            
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+      
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        ul {
+            list-style: none;
+            line-height: 9px;
+            font-size: 9px;
+        }
+        li{
+            margin-left: -1px;
+        }
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            padding-bottom: 80px;
+        }
 </style>
+
+<div id="nav">
+    <a id="menu" href="">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </a>
+    <div id="logo">
+        <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+    </div>
+    <div id="gap"></div>
+    <a href="Search.html" id="search">SEARCH</a>
+    <div id="loghelp">
+        <a href="login.html">LOGIN</a>
+        <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+    </div>
+    <a id="cart" href="">
+        <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+        <h5></h5>
+    </a>
+</div>
+<div id="image"><button>MEN</button><span>></span>
+    <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907">
+</div>
+<div id="main">
+    <div class="d1">
+        <p>NEW</p>
+    </div>
+    <div class="d2">
+        <p>BEST SELLERS</p>
+    </div>
+    <div class="d3">
+        <p>DRESSES</p>
+    </div>
+
+    <div class="d5">
+        <p>BASCIS</p>
+    </div>
+    <div class="d6">
+        <p>SHOES</p>
+    </div>
+</div>
+<div id="LETTER">
+    <p id="p">JOIN OUR NEWSLETTER</p>
+    <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
+    <div>
+        <a href="https://www.instagram.com/zara/" target="_blank">
+         INSTAGRAM
+        </a>
+        <a href="https://www.facebook.com/Zara" target="_blank">
+         FACEBOOK
+        </a>
+        <a href="https://twitter.com/ZARA" target="_blank">TWITTER</a>
+        <a href="https://www.pinterest.es/zaraofficial/" target="_blank">PINTEREST</a>
+        <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
+        <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
     
-     
-       <div id="image"><button>MEN</button><span >></span><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907"></div>
- <div id="main">
-    <div class="d1"><p>NEW</p></div>
-    <div class="d2"><p>BEST SELLERS</p></div>
-    <div class="d3"><p>DRESSES</p></div>
-    <div class="d4"><p>SWIMWEAR</p></div>
-    <div class="d5"><p>BASCIS</p></div>
-    <div class="d6"><p>SHOES</p></div>
- </div>   
-</body>
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    
+    </section>
+    <div id="end">
+    
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+    
+    
+    </div>
+    </body>
+
 </html>
 <script>
-    let data= document.querySelector("#main>.d1>p");
-    data.style.cursor="pointer";
-    
+    let data = document.querySelector("#main>.d1>p");
+    data.style.cursor = "pointer";
+
     data.addEventListener("click", getimage1);
- function getimage1()   {
-    data.style.color="black";
-let image1=document.querySelector("#image>img");
 
-image1.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907";
- 
-image1.style.borderColor="transparent";}
- let data1= document.querySelector("#main>.d2>p");
-    data1.style.cursor="pointer";
-    
+    function getimage1() {
+        data.style.color = "black";
+        let image1 = document.querySelector("#image>img");
+
+        image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907";
+        image1.style.cursor = "pointer";
+        image1.addEventListener("click", clickime)
+
+        image1.style.borderColor = "transparent";
+    }
+    let data1 = document.querySelector("#main>.d2>p");
+    data1.style.cursor = "pointer";
+
     data1.addEventListener("click", getimage);
- function getimage()   {
-    data1.style.color="black";
-let image=document.querySelector("#image>img");
-image.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-13-2-in//w/766/IMAGE-landscape-116bff2f-9a68-4dbc-9db4-88f1bb7a74e1-default_0.jpg?ts=1648724342119";
- }
- 
-let data2= document.querySelector("#main>.d3>p");
-    data2.style.cursor="pointer";
-    
-    data2.addEventListener("click", getimage2);
- function getimage2()   {
-    data2.style.color="black";
-let image3=document.querySelector("#image>img");
-image3.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-24//w/766/IMAGE-landscape-690a85fc-b349-4c01-98c5-e6286b8a7a06-default_0.jpg?ts=1655110465083";
 
+    function getimage() {
+        data1.style.color = "black";
+        let image = document.querySelector("#image>img");
+        image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-13-2-in//w/766/IMAGE-landscape-116bff2f-9a68-4dbc-9db4-88f1bb7a74e1-default_0.jpg?ts=1648724342119";
+        image.style.cursor = "pointer";
+        image.addEventListener("click", clickmi)
+    }
+
+    let data2 = document.querySelector("#main>.d3>p");
+    data2.style.cursor = "pointer";
+
+    data2.addEventListener("click", getimage2);
+
+    function getimage2() {
+        data2.style.color = "black";
+        let image3 = document.querySelector("#image>img");
+        image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-24//w/766/IMAGE-landscape-690a85fc-b349-4c01-98c5-e6286b8a7a06-default_0.jpg?ts=1655110465083";
+
+        image3.style.cursor = "pointer";
+        image3.addEventListener("click", clickim)
+    }
+
+    let data4 = document.querySelector("#main>.d5>p");
+    data4.style.cursor = "pointer";
+
+    data4.addEventListener("click", getimage4);
+
+    function getimage4() {
+        data4.style.color = "black";
+        let image5 = document.querySelector("#image>img");
+        image5.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-basics/subhome-xmedia-24//w/766/IMAGE-landscape-af85f045-6b94-43ef-b20d-8b0e1d65f176-default_0.jpg?ts=1655196296355";
+
+        image5.style.cursor = "pointer";
+        image5.addEventListener("click", clickima)
+    }
+    let data5 = document.querySelector("#main>.d6>p");
+    data5.style.cursor = "pointer";
+
+    data5.addEventListener("click", getimage5);
+
+    function getimage5() {
+        data5.style.color = "black";
+
+        let image6 = document.querySelector("#image>img");
+        image6.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-shoes-bags/subhome-xmedia-23-4//w/766/IMAGE-landscape-7d1e4562-f417-4c8d-862c-90ee2a5d2515-default_0.jpg?ts=1655111234059";
+        image6.style.cursor = "pointer";
+        image6.addEventListener("click", clickimae)
+    }
+    let button = document.querySelector("#image>button");
+    button.style.cursor = "pointer";
+    document.querySelector("button").addEventListener("click", clickme)
+
+    function clickme() {
+
+        window.location.href = "men.html";
 
     }
-    let data3= document.querySelector("#main>.d4>p");
-    data3.style.cursor="pointer";
-    
-    data3.addEventListener("click", getimage3);
- function getimage3()   {
-    data3.style.color="black";
-let image4=document.querySelector("#image>img");
-image4.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-swimwear/subhome-xmedia-24//w/766/IMAGE-landscape-4e0caa4e-083f-4389-b81d-522c3d05e217-default_0.jpg?ts=1655113253828";
-}
-let data4= document.querySelector("#main>.d5>p");
-    data4.style.cursor="pointer";
-    
-    data4.addEventListener("click", getimage4);
- function getimage4()   {
-    data4.style.color="black";
-let image5=document.querySelector("#image>img");
-image5.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-basics/subhome-xmedia-24//w/766/IMAGE-landscape-af85f045-6b94-43ef-b20d-8b0e1d65f176-default_0.jpg?ts=1655196296355";
-}
-let data5= document.querySelector("#main>.d6>p");
-    data5.style.cursor="pointer";
-    
-    data5.addEventListener("click", getimage5);
- function getimage5()   {
-    data5.style.color="black";
 
-let image6=document.querySelector("#image>img");
-image6.src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-shoes-bags/subhome-xmedia-23-4//w/766/IMAGE-landscape-7d1e4562-f417-4c8d-862c-90ee2a5d2515-default_0.jpg?ts=1655111234059";
-}
-let button= document.querySelector("#image>button");
-button.style.cursor="pointer";
-  document.querySelector("button").addEventListener("click", clickme)
-  function clickme(){
-    
-   window.location.href="men.html";
- 
-  } 
-    
+    function clickime() {
+
+        window.location.href = "newwoman.html";
+
+    }
+
+    function clickmi() {
+
+        window.location.href = "bestseller.html";
+
+    }
+
+    function clickim() {
+
+        window.location.href = "dresses.html";
+
+    }
+
+    function clickima() {
+
+        window.location.href = "wbasic.html";
+
+    }
+
+    function clickimae() {
+
+        window.location.href = "womenshoe.html";
+
+    }
 </script>
