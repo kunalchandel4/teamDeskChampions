@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>add to cart</title>
 </head>
 <style>
 	*{
@@ -127,10 +127,30 @@ a {
             text-decoration: underline;
             cursor: pointer;
         } 
-		#cart{
-			padding:180px;
-		}
+		
+        #cart{
+            margin-top: 200px;
+          
+            border: 1px solid red;
+            width: 100%;
+            height: 650px;
+            
+        }
+h4{
+  
+    margin-bottom: 20px;
+}
 
+#cart>div>div{
+    border: 1px solid red;
+    width: 100px;
+    height: 500px;
+}
+#cart>div>div:last-child{
+    border: 1px solid red;
+    width: 100px;
+    height: 500px;
+}
 
 </style>
 <body>
@@ -147,9 +167,19 @@ a {
      
        
     </div>
+    <!-- // cart data -->
 	<div id="cart">
-		<h2>CART</h2>
+		<div>
+            <h4>kunal</h4>
+            <div></div>
+            <div></div>
+        </div>
 	  </div> 
+
+
+
+
+      <!-- // bottom part -->
 	<section id="option">
         <div>
             <h3>HELP</h3>
@@ -209,15 +239,91 @@ a {
 </body>
 </html>
 <script>
-	let addct= document.querySelector("#ring")
-	let carts = JSON.parse(localStorage.getItem("cart-page")) || [];
 
+	let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
+
+    let totalPrice=0
+        function display(Data){
+        document.querySelector("#mens").innerHTML="" ;
+         totalPrice=0;
+        
+      // count=
+        Data.forEach(function(elem,index,){
+          // console.log(elem.quan)
+          // console.log(elem.cartPrices);
+          totalPrice+= elem.cartPrices;
+            let div = document.createElement("div")
+            let div1 = document.createElement("div") 
+            let div2 = document.createElement("div");
+
+            let image=document.createElement("img") ;
+            image.setAttribute("src",elem.img) ;
+            let ptag=document.querySelector("#pro")
+            ptag.innerText =elem.name
+            let p2price=document.createElement("p") ;
+            p2price.innerText = "Price: $"+elem.price ;
+       
+            let p4=document.createElement("p") ;
+            p4.innerText = "Catagory: "+elem.catagory ;
+            
+            let h4=document.createElement("h4")
+                //   h4.setAttribute("id","abc")
+              h4.innerText=elem.quantity
+              
+            let butn = document.createElement("button") ;
+            
+            butn.innerText = "Delete" ;
+            
+            // butn.addEventListener("click",function(){
+            //     Delete(elem.productID)
+               
+            //     // console.log(elem.productID)
+           
+            // })
+            let plus=document.createElement("button")
+              plus.innerText="+"
+            //   plus.addEventListener("click",function(){
+                
+            //     incr(elem,index,cartLS)
+            //   })
+            let minus=document.createElement("button")
+              minus.innerText="-"
+            //   minus.addEventListener("click",function(){
+                
+            //     dec(elem,index,cartLS)
+            //   })
+            //   document.querySelector("#tot").innerText=totalPrice
+              // console.log(totalPrice)
+            div.append(image)
+            // console.log(h4);
+            div1.append(p2price,plus,h4,minus,butn)  
+            div2.append(div,div1)
+            document.querySelector("#mens").append(image) ;
+     
+            }) 
+
+            
+            
+
+
+        }
+       
+        display(cartLS)
+
+
+
+
+
+</script>
+
+<!-- 
+let addct= document.querySelector("#ring")
 function displayproduct(ringData) {
-	addct.innerHTML = "";
+	addct.innerHtml="";
 	ringData.forEach(function(elem) {
 		let box = document.createElement("div");
 		let pic = document.createElement("img");
-		pic.setAttribute("src", elem.image_url);
+		pic.setAttribute("src", elem.img);
 		box.append(pic);
 		let inname = document.createElement("h4");
 		inname.innerText = elem.name;
@@ -227,7 +333,7 @@ function displayproduct(ringData) {
 		strikedoffprice.innerText = elem.strikedoffprice;
 		strikedoffprice.style.textDecoration = "line-through";
 		let category = document.createElement("p");
-		category.innerText = elem.category;
+		category.innerText = elem.productId;
 		let deletecart = document.createElement("button");
 		deletecart.innerText = "Delete"
 		deletecart.addEventListener("click",
@@ -251,5 +357,4 @@ function Delete(Id) {
 	carts = Deleted;
 	localStorage.setItem("cart-page", JSON.stringify(carts));
 	displayproduct(carts);
-}
-</script>
+} -->

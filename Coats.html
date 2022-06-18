@@ -192,6 +192,7 @@ a {
         }
         #LETTER{
     margin-left: 180px;
+    margin-top: 200px;
    
 }
 #LETTER>div{
@@ -380,128 +381,146 @@ a {
 
 </html>
 <script>
+    let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let formalData = [{
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5320/300/800/2/w/444/5320300800_2_1_1.jpg?ts=1636558113477",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/5320/300/800/2/w/444/5320300800_2_1_1.jpg?ts=1636558113477",
         name: "PUFFER GILET",
         price: 2590,
         productId: "JACKET",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4259/744/986/2/w/444/4259744986_2_1_1.jpg?ts=1647427427749",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/4259/744/986/2/w/444/4259744986_2_1_1.jpg?ts=1647427427749",
         name: "CHECK SUIT BLAZER",
         price: 8990,
         productId: "BLAZER",
         color: "GREY",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3918/466/800/2/w/444/3918466800_2_1_1.jpg?ts=1644569484567",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/3918/466/800/2/w/444/3918466800_2_1_1.jpg?ts=1644569484567",
         name: "TECHNICAL QUILTED JACKET",
         price: 4990,
         productId: "JACKET",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/3057/105/400/2/w/444/3057105400_2_1_1.jpg?ts=1647515274688",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/3057/105/400/2/w/444/3057105400_2_1_1.jpg?ts=1647515274688",
         name: "MATCHING CHECK OVERSHIRT",
         price: 5990,
         productId: "OVERSHIRT",
         color: "BLUE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/1538/404/500/2/w/444/1538404500_2_1_1.jpg?ts=1648032640205",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/1538/404/500/2/w/444/1538404500_2_1_1.jpg?ts=1648032640205",
         name: "BANDANNA PRINT JACKET",
         price: 4990,
         productId: "JACKET",
         color: "GREEN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/1564/410/420/2/w/444/1564410420_2_1_1.jpg?ts=1640690585636",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/1564/410/420/2/w/444/1564410420_2_1_1.jpg?ts=1640690585636",
         name: "SLIM FIT SUIT BLAZER",
         price: 5990,
         productId: "BLAZER",
         color: "BLUE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/I/0/2/p/3918/410/710/2/w/444/3918410710_2_1_1.jpg?ts=1652181673193",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/3918/410/710/2/w/444/3918410710_2_1_1.jpg?ts=1652181673193",
         name: "BOMBER JACKET WITH PATCHES",
         price: 5990,
         productId: "JACKET",
         color: "GREY",
     }, {
-        image_url: "https://static.zara.net/photos///2022/I/0/2/p/1538/329/800/2/w/444/1538329800_1_1_1.jpg?ts=1652430792374",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/1538/329/800/2/w/444/1538329800_1_1_1.jpg?ts=1652430792374",
         name: "TECHNICAL OVERSHIRT X RHUIGI",
         price: 3990,
         productId: "OVERSHIT",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/6917/444/431/2/w/444/6917444431_2_1_1.jpg?ts=1648719804182",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/6917/444/431/2/w/444/6917444431_2_1_1.jpg?ts=1648719804182",
         name: "PATCH OVERSHIRT",
         price: 3990,
         productId: "OVERSHIRT",
         color: "BLUE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0029/416/600/2/w/444/0029416600_2_1_1.jpg?ts=1648545596671",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/0029/416/600/2/w/444/0029416600_2_1_1.jpg?ts=1648545596671",
         name: "JACKET WITH POCKETS",
         price: 4990,
         productId: "JACKET",
         color: "RED",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/7505/400/606/2/w/444/7505400606_2_1_1.jpg?ts=1642585453065",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/7505/400/606/2/w/444/7505400606_2_1_1.jpg?ts=1642585453065",
         name: "CHECK JACKET",
         price: 5990,
         productId: "JACKET",
         color: "TAN, BEIGI",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/8288/652/800/2/w/444/8288652800_2_1_1.jpg?ts=1641307863929",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/8288/652/800/2/w/444/8288652800_2_1_1.jpg?ts=1641307863929",
         name: "PLEATED BLAZER",
         price: 6990,
         productId: "BLAZER",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3057/103/800/2/w/444/3057103800_2_1_1.jpg?ts=1646234927586",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/3057/103/800/2/w/444/3057103800_2_1_1.jpg?ts=1646234927586",
         name: "STRIPED TEXTURED OVERSHIRT",
         price: 5990,
         productId: "OVERSHIRT",
         color: "BROWN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/I/0/2/p/5602/494/710/2/w/444/5602494710_2_1_1.jpg?ts=1654673912698",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/5602/494/710/2/w/444/5602494710_2_1_1.jpg?ts=1654673912698",
         name: "SUIT BLAZER",
         price: 8990,
         productId: "BLAZER",
         color: "WHITE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/8574/456/052/2/w/444/8574456052_2_1_1.jpg?ts=1649161550349",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/8574/456/052/2/w/444/8574456052_2_1_1.jpg?ts=1649161550349",
         name: "100% LINEN JACKET",
         price: 5990,
         productId: "JACKET",
         color: "ECRU",
 
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/9632/348/405/2/w/444/9632348405_2_1_1.jpg?ts=1643210000322",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/9632/348/405/2/w/444/9632348405_2_1_1.jpg?ts=1643210000322",
         name: "GEOMATRIC JACQUARD BOMBER JACKET",
         price: 5990,
         productId: "JACKET",
         color: "ERCU",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0706/729/706/2/w/444/0706729706_2_1_1.jpg?ts=1641917073087",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/0706/729/706/2/w/444/0706729706_2_1_1.jpg?ts=1641917073087",
         name: "COMFORT OVERSHIRT",
         price: 2990,
         productId: "OVERSHIRT",
         color: "BROWN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/4323/062/300/2/w/444/4323062300_2_1_1.jpg?ts=1650297898007",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/4323/062/300/2/w/444/4323062300_2_1_1.jpg?ts=1650297898007",
         name: "STRIPED OVERSHIRT",
         price: 5990,
         productId: "OVERSHIRT",
         color: "ERCU,YELLOW",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3182/404/250/2/w/444/3182404250_2_1_1.jpg?ts=1646234906896",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/3182/404/250/2/w/444/3182404250_2_1_1.jpg?ts=1646234906896",
         name: "OVERSHIRT WITH HOOD",
         price: 3990,
         productId: "OVERSHIRT, HOOD",
         color: "WHITE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/5070/470/800/2/w/444/5070470800_2_1_1.jpg?ts=1640680460604",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/5070/470/800/2/w/444/5070470800_2_1_1.jpg?ts=1640680460604",
         name: "COMFORT COAT",
         price: 7990,
         productId: "COAT",
         color: "BLACK",
     }, ]
+    
+    
+    var b=321
+for(let i=0 ;i<formalData.length ; i++){
+    let x=formalData[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+console.log(formalData)
     let pro = document.getElementById("pro");
 
     function display(
@@ -512,10 +531,16 @@ a {
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
-            pic.setAttribute("src", elem.image_url);
+            pic.setAttribute("src", elem.img);
+            pic.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -526,4 +551,11 @@ a {
         });
     }
     display(formalData)
+
+    function localSet(el){
+    // console.log("kunal");
+   
+    localStorage.setItem("display",JSON.stringify(el))
+    window.location.href="linkimage.html"
+}
 </script>

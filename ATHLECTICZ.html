@@ -368,44 +368,45 @@ a {
 
 </html>
 <script>
+    let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let tshirt = [{
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/4090/490/401/2/w/383/4090490401_2_1_1.jpg?ts=1646051233392",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/4090/490/401/2/w/383/4090490401_2_1_1.jpg?ts=1646051233392",
         name: "TEXTURED SINGLET",
         price: 1790,
         productId: "SINGLET",
         color: "BLUE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/800/2/w/383/0495552800_2_1_1.jpg?ts=1646050715948",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/800/2/w/383/0495552800_2_1_1.jpg?ts=1646050715948",
         name: "SINGLET TOP",
         price: 1790,
         productId: "SINGLET",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/250/2/w/383/0495552250_2_1_1.jpg?ts=1646050804630",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/250/2/w/383/0495552250_2_1_1.jpg?ts=1646050804630",
         name: "SINGLET TOP",
         price: 1790,
         productId: "SINGHLET",
         color: "WHITE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/681/2/w/383/0495552681_2_1_1.jpg?ts=1646050689746",
+        img: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/681/2/w/383/0495552681_2_1_1.jpg?ts=1646050689746",
         name: "SINGLET TOP",
         price: 1790,
         productId: "SINGLET",
         color: "BROWN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/250/2/w/383/5584304250_2_1_1.jpg?ts=1652177985353",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/250/2/w/383/5584304250_2_1_1.jpg?ts=1652177985353",
         name: "BASKETBALL TRINING T-SHIRT",
         price: 1990,
         productId: "T-SHIRT",
         color: "WHITE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096",
         name: "BASKETBALL TRINING T-SHIRT",
         price: 1990,
         productId: "T-SHIRT",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5584/310/500/2/w/383/5584310500_2_1_1.jpg?ts=1652177986587",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/5584/310/500/2/w/383/5584310500_2_1_1.jpg?ts=1652177986587",
         name: "BASKETBALL TRINING T-SHIRT",
         price: 2590,
         productId: "T-SHIRT",
@@ -413,8 +414,21 @@ a {
     }, ]
 
 
-
-
+    var b=363
+for(let i=0 ;i<tshirt.length ; i++){
+    let x=tshirt[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+// console.log(tshirt);
     let power = document.getElementById("power");
 
     function displayt(tshirt) {
@@ -424,10 +438,16 @@ a {
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
-            pic.setAttribute("src", elem.image_url);
+            pic.setAttribute("src", elem.img);
+            pic.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -440,49 +460,49 @@ a {
     displayt(tshirt)
 
     let shoe = [{
-        image_url: "https://static.zara.net/photos///2022/I/1/2/p/2330/920/035/2/w/383/2330920035_6_1_1.jpg?ts=1652783892077",
+        img: "https://static.zara.net/photos///2022/I/1/2/p/2330/920/035/2/w/383/2330920035_6_1_1.jpg?ts=1652783892077",
         name: "SPUMEFOAM TECHNOLOGY ATHLETICZ RUNNIN",
         price: 5990,
         productId: "SHOE",
         color: "GREY",
     }, {
-        image_url: "https://static.zara.net/photos///2022/I/1/2/p/2330/920/001/2/w/383/2330920001_6_1_1.jpg?ts=1652784673766",
+        img: "https://static.zara.net/photos///2022/I/1/2/p/2330/920/001/2/w/383/2330920001_6_1_1.jpg?ts=1652784673766",
         name: "SPUMEFOAM TECHNOLOGY ATHLETICZ RUNNIN",
         price: 5990,
         productId: "SHOE",
         color: "WHITE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2380/820/040/2/w/383/2380820040_6_1_1.jpg?ts=1652787034941",
+        img: "https://static.zara.net/photos///2022/V/1/2/p/2380/820/040/2/w/383/2380820040_6_1_1.jpg?ts=1652787034941",
         name: "JOMA® RUNNING SNEAKERS ",
         price: 7990,
         productId: "SNEAKERS",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2382/820/009/82/w/383/2382820009_6_1_1.jpg?ts=1652788095738",
+        img: "https://static.zara.net/photos///2022/V/1/2/p/2382/820/009/82/w/383/2382820009_6_1_1.jpg?ts=1652788095738",
         name: " JOMA® RUNNING SNEAKERS ",
         price: 7990,
         productId: "SNEAKERS",
         color: "BROWN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2381/820/032/2/w/383/2381820032_6_1_1.jpg?ts=1652787035288",
+       img: "https://static.zara.net/photos///2022/V/1/2/p/2381/820/032/2/w/383/2381820032_6_1_1.jpg?ts=1652787035288",
         name: "JOMA® RUNNING SNEAKERS",
         price: 7990,
         productId: "SNEAKERS",
         color: "GREEN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2350/820/203/2/w/383/2350820203_6_1_1.jpg?ts=1652785424663",
+       img: "https://static.zara.net/photos///2022/V/1/2/p/2350/820/203/2/w/383/2350820203_6_1_1.jpg?ts=1652785424663",
         name: "RUNNING SPUMEFOAM TECHNOLOGY SNEAKEERS",
         price: 5990,
         productId: "SNEAKERS",
         color: "YELLOW",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2350/820/008/2/w/383/2350820008_6_1_1.jpg?ts=1652784787768",
+       img: "https://static.zara.net/photos///2022/V/1/2/p/2350/820/008/2/w/383/2350820008_6_1_1.jpg?ts=1652784787768",
         name: "RUNNING SPUMEFOAM TECHNOLOGY SNEAKERS",
         price: 5990,
         productId: "SNEAKERS",
         color: "BLUE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2730/820/040/2/w/383/2730820040_6_1_1.jpg?ts=1652787035775",
+       img: "https://static.zara.net/photos///2022/V/1/2/p/2730/820/040/2/w/383/2730820040_6_1_1.jpg?ts=1652787035775",
         name: "SPUMEFOAM SLIDE SANDALS",
         price: 2290,
         productId: "SANDALS",
@@ -490,7 +510,21 @@ a {
     }, ]
 
     let shoes = document.getElementById("shoe");
-
+    var b=370
+for(let i=0 ;i<shoe.length ; i++){
+    let x=shoe[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+// console.log(shoe)
     function displays(shoe) {
         shoes.innerHTML = "";
         shoe.forEach(function(elem) {
@@ -498,10 +532,16 @@ a {
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
-            pic.setAttribute("src", elem.image_url);
+            pic.setAttribute("src", elem.img);
+            pic.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -513,56 +553,71 @@ a {
     }
     displays(shoe)
     let accessory = [{
-        image_url: "https://static.zara.net/photos///2022/V/0/1/p/1246/306/250/2/w/383/1246306250_6_1_1.jpg?ts=1653304530042",
+       img: "https://static.zara.net/photos///2022/V/0/1/p/1246/306/250/2/w/383/1246306250_6_1_1.jpg?ts=1653304530042",
         name: "TRAINING TOWEL",
         price: 1590,
         productId: "TOWEL",
         color: "WHITE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0348/408/555/2/w/383/0348408555_6_1_1.jpg?ts=1638534477430",
+       img: "https://static.zara.net/photos///2022/V/0/2/p/0348/408/555/2/w/383/0348408555_6_1_1.jpg?ts=1638534477430",
         name: "PACK OF 2 RIBBED SOCKS",
         price: 990,
         productId: "SOCKS",
         color: "WHITE,BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/I/1/2/p/3901/020/040/2/w/383/3901020040_6_2_1.jpg?ts=1651841949223",
+       img: "https://static.zara.net/photos///2022/I/1/2/p/3901/020/040/2/w/383/3901020040_6_2_1.jpg?ts=1651841949223",
         name: "SPORTS BOTTLE HOLDER BAG",
         price: 2590,
         productId: "BAG",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2956/300/515/2/w/383/2956300515_6_2_1.jpg?ts=1643817487625",
+       img: "https://static.zara.net/photos///2022/V/0/2/p/2956/300/515/2/w/383/2956300515_6_2_1.jpg?ts=1643817487625",
         name: "1L/34 OZ NALGENE BOTTLE",
         price: 2590,
         productId: "BOTTLE",
         color: "BLUE",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3265/300/555/2/w/383/3265300555_6_1_1.jpg?ts=1649402806890",
+       img: "https://static.zara.net/photos///2022/V/0/2/p/3265/300/555/2/w/383/3265300555_6_1_1.jpg?ts=1649402806890",
         name: "2-PACK SHORT SEAMLESS SOCKS",
         price: 990,
         productId: "SOCKS",
         color: "RED",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2966/300/800/2/w/383/2966300800_6_1_1.jpg?ts=1647596669918",
+       img: "https://static.zara.net/photos///2022/V/0/2/p/2966/300/800/2/w/383/2966300800_6_1_1.jpg?ts=1647596669918",
         name: "ELASTIC HEADBAND",
         price: 890,
         productId: "HEADBAND",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/1246/310/800/2/w/383/1246310800_6_1_1.jpg?ts=1652116283836",
+       img: "https://static.zara.net/photos///2022/V/0/2/p/1246/310/800/2/w/383/1246310800_6_1_1.jpg?ts=1652116283836",
         name: "SMALL WORKOUT TOWEL",
         price: 1590,
         productId: "TOWEL",
         color: "BLACK",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3265/302/063/2/w/383/3265302063_6_1_1.jpg?ts=1654092530638",
+       img: "https://static.zara.net/photos///2022/V/0/2/p/3265/302/063/2/w/383/3265302063_6_1_1.jpg?ts=1654092530638",
         name: "PACK OF BASKETBALL TRINING SOCKS",
         price: 990,
         productId: "SOCKS",
         color: "GREEN,WHITE",
     }, ]
     let access = document.getElementById("accessery");
-
+ 
+    var b=378
+for(let i=0 ;i<accessory.length ; i++){
+    let x=accessory[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+// console.log(accessory)
     function displaya(accessory) {
         access.innerHTML = "";
         accessory.forEach(function(elem) {
@@ -570,10 +625,16 @@ a {
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
-            pic.setAttribute("src", elem.image_url);
+            pic.setAttribute("src", elem.img);
+            pic.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -584,4 +645,11 @@ a {
         });
     }
     displaya(accessory)
+
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
 </script>

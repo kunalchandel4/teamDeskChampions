@@ -357,6 +357,7 @@ a {
 
 </html>
 <script>
+        let cartData=JSON.parse(localStorage.getItem("display"))||{}
     womendata = [{
             img: "https://static.zara.net/photos///2022/I/0/1/p/5107/302/250/2/w/432/5107302250_1_1_1.jpg?ts=1654701531144",
             name: "DRESS WITH CUTWORK EMBROIDERY",
@@ -536,6 +537,20 @@ a {
     ]
     let wpro = document.getElementById("pro");
 
+    var b=386
+for(let i=0 ;i<womendata.length ; i++){
+    let x=womendata[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
     function displayw(womendata) {
         wpro.innerHTML = "";
         womendata.forEach(function(elem) {
@@ -544,9 +559,15 @@ a {
             let box1 = document.createElement("div");
             let phot = document.createElement("img");
             phot.setAttribute("src", elem.img);
+            phot.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(phot);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = `₹ ${elem.price}.00`;
             box1.append(inname, price)
@@ -556,5 +577,12 @@ a {
 
         });
     }
+    
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
     displayw(womendata)
 </script>
