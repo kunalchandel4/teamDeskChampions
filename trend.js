@@ -1,3 +1,5 @@
+let cartData=JSON.parse(localStorage.getItem("display"))||{}
+
 var trendData=[
 {img:"https://static.zara.net/photos///2022/I/0/2/p/5602/494/710/2/w/386/5602494710_2_1_1.jpg?ts=1654673912698",
 name:"SUIT BLAZER",
@@ -23,6 +25,22 @@ productID:"TROUSER",
 color:"White"},
 ]
 
+var b=184
+for(let i=0 ;i<trendData.length ; i++){
+    let x=trendData[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+// console.log(trendData)
+
 function displayFirstSec(data){
     document.querySelector("#firstSec").innerHTML="";
 data.map(function(el){
@@ -33,8 +51,14 @@ data.map(function(el){
        
     let img=document.createElement("img")
       img.src=el.img
+      img.addEventListener("click",function(){
+        localSet(el)
+      })
     let p = document.createElement("p")
   p.innerText=el.name
+  p.addEventListener("click",function(){
+    localSet(el)
+  })
     let price = document.createElement("p")
     price.innerText=`₹ ${el.price}.00 `
     div1.append(img)
@@ -44,6 +68,7 @@ data.map(function(el){
 })
 
 }
+
 displayFirstSec(trendData)
 
 
@@ -344,7 +369,20 @@ color:"Grey"},
 
 ]
 
-
+var b=188
+for(let i=0 ;i<trendData1.length ; i++){
+    let x=trendData1[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
 
 function displaySecondSec(data){
     document.querySelector("#secondSec").innerHTML="";
@@ -356,8 +394,14 @@ data.map(function(el){
        
     let img=document.createElement("img")
       img.src=el.img
+      img.addEventListener("click",function(){
+        localSet(el)
+      })
     let p = document.createElement("p")
   p.innerText=el.name
+  p.addEventListener("click",function(){
+    localSet(el)
+  })
     let price = document.createElement("p")
     price.innerText="₹ "+el.price+".00" ;
     div1.append(img)
@@ -368,3 +412,13 @@ data.map(function(el){
 
 }
 displaySecondSec(trendData1)
+
+
+
+console.log(trendData1);
+function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}

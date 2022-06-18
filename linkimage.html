@@ -137,11 +137,11 @@
 	</h2><p>We work with monitoring programmes to ensure compliance with safety, health and quality standards for our products. </p>
 <p>The Green to Wear 2.0 standard aims to minimise the environmental impact of textile manufacturing. To that end, we have developed Inditex’s The List programme, which helps </p>
 <p><U>VIEW MORE</U></p></div>
-	<div><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-24//w/766/IMAGE-landscape-a60ae12b-7986-4034-aa53-8d32ae2bd8ea-default_0.jpg?ts=1655122638907"></div>
-	<div><div><div><h1>TEXTURED SUIT BLAZER</h1></div><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRUkvuCuyXpkYNbfqfldB-WutA0YDgFy2uw&usqp=CAU"></div>
+	<div id="image"></div>
+	<div><div><div><h1 id="name">TEXTURED SUIT BLAZER</h1></div><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRUkvuCuyXpkYNbfqfldB-WutA0YDgFy2uw&usqp=CAU"></div>
 </div><p>Blazer with a notched lapel collar. Long sleeves with buttoned cuffs. Hip and chest welt pockets and an inside pocket. Central back vent at the hem. Front button fastening.
 </p>
-<h6>₹ 6,990.00</h6>
+<h6 id="price">₹ 6,990.00</h6>
 <h5>MRP incl. of all taxes</h5>
 <select id = "select">
 	<option> </option>
@@ -155,8 +155,34 @@
 <div>
 <div><H4>FIND YOUR SIZE</H4></div>
 <div><H4>SIZE GUIDE</H4></div></div>
-<button>ADD TO CART</button>
+<button id="on">ADD TO CART</button>
 <p>CHECK IN-STORE AVAILABILITY</p>
 <p>DELIVERY, EXCHANGES AND RETURNS</p></div></div>
+<div id="dep">
+
+</div>
 </body>
 </html>
+<script>
+let data = JSON.parse( localStorage.getItem("display"))||{}
+let cartData=JSON.parse(localStorage.getItem("cartData"))||[]
+
+console.log(data)
+console.log(typeof data)
+document.querySelector("#name").innerText = data.name
+document.querySelector("#price").innerText="₹ "+data.price+".00"
+
+let body =document.querySelector("#image") ;
+let img = document.createElement("img")
+img.src=data.img
+body.append(img)
+
+document.querySelector("#on").addEventListener("click",function(){
+	setup(data)
+})
+function setup(el){
+cardData.push(el)
+localStorage.setItem("cartData",JSON.stringify(cardData));
+}
+
+</script>
