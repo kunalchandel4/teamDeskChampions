@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        h1 {
+            margin: 100px 650px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        #power {
+            width: 85%;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #power>div>div>img {
+            width: 100%;
+        }
+        
+        #power>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #shoe {
+            width: 85%;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #shoe>div>div>img {
+            width: 100%;
+        }
+        
+        #shoe>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #accessery {
+            width: 85%;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #accessery>div>div>img {
+            width: 100%;
+        }
+        
+        #accessery>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 40%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>T-SHIRT</h1>
+
+    <div id="power">
+
+    </div>
+    <h1>SHOES</h1>
+    <div id="shoe"></div>
+    <h1>ACCESSORIES</h1>
+    <div id="accessery">
+        </divid>
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    let tshirt = [{
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/4090/490/401/2/w/383/4090490401_2_1_1.jpg?ts=1646051233392",
+        name: "TEXTURED SINGLET",
+        price: 1790,
+        productId: "SINGLET",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/800/2/w/383/0495552800_2_1_1.jpg?ts=1646050715948",
+        name: "SINGLET TOP",
+        price: 1790,
+        productId: "SINGLET",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/250/2/w/383/0495552250_2_1_1.jpg?ts=1646050804630",
+        name: "SINGLET TOP",
+        price: 1790,
+        productId: "SINGHLET",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/681/2/w/383/0495552681_2_1_1.jpg?ts=1646050689746",
+        name: "SINGLET TOP",
+        price: 1790,
+        productId: "SINGLET",
+        color: "BROWN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/250/2/w/383/5584304250_2_1_1.jpg?ts=1652177985353",
+        name: "BASKETBALL TRINING T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096",
+        name: "BASKETBALL TRINING T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5584/310/500/2/w/383/5584310500_2_1_1.jpg?ts=1652177986587",
+        name: "BASKETBALL TRINING T-SHIRT",
+        price: 2590,
+        productId: "T-SHIRT",
+        color: "GREEN",
+    }, ]
+
+
+
+
+    let power = document.getElementById("power");
+
+    function displayt(tshirt) {
+        power.innerHTML = "";
+        tshirt.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.image_url);
+            box.append(pic);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(pic);
+            div.append(box, box1)
+            document.querySelector("#power").append(div);
+
+        });
+    }
+    displayt(tshirt)
+
+    let shoe = [{
+        image_url: "https://static.zara.net/photos///2022/I/1/2/p/2330/920/035/2/w/383/2330920035_6_1_1.jpg?ts=1652783892077",
+        name: "SPUMEFOAM TECHNOLOGY ATHLETICZ RUNNIN",
+        price: 5990,
+        productId: "SHOE",
+        color: "GREY",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/1/2/p/2330/920/001/2/w/383/2330920001_6_1_1.jpg?ts=1652784673766",
+        name: "SPUMEFOAM TECHNOLOGY ATHLETICZ RUNNIN",
+        price: 5990,
+        productId: "SHOE",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2380/820/040/2/w/383/2380820040_6_1_1.jpg?ts=1652787034941",
+        name: "JOMA® RUNNING SNEAKERS ",
+        price: 7990,
+        productId: "SNEAKERS",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2382/820/009/82/w/383/2382820009_6_1_1.jpg?ts=1652788095738",
+        name: " JOMA® RUNNING SNEAKERS ",
+        price: 7990,
+        productId: "SNEAKERS",
+        color: "BROWN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2381/820/032/2/w/383/2381820032_6_1_1.jpg?ts=1652787035288",
+        name: "JOMA® RUNNING SNEAKERS",
+        price: 7990,
+        productId: "SNEAKERS",
+        color: "GREEN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2350/820/203/2/w/383/2350820203_6_1_1.jpg?ts=1652785424663",
+        name: "RUNNING SPUMEFOAM TECHNOLOGY SNEAKEERS",
+        price: 5990,
+        productId: "SNEAKERS",
+        color: "YELLOW",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2350/820/008/2/w/383/2350820008_6_1_1.jpg?ts=1652784787768",
+        name: "RUNNING SPUMEFOAM TECHNOLOGY SNEAKERS",
+        price: 5990,
+        productId: "SNEAKERS",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/1/2/p/2730/820/040/2/w/383/2730820040_6_1_1.jpg?ts=1652787035775",
+        name: "SPUMEFOAM SLIDE SANDALS",
+        price: 2290,
+        productId: "SANDALS",
+        color: "BLACK",
+    }, ]
+
+    let shoes = document.getElementById("shoe");
+
+    function displays(shoe) {
+        shoes.innerHTML = "";
+        shoe.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.image_url);
+            box.append(pic);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(pic);
+            div.append(box, box1)
+            document.querySelector("#shoe").append(div);
+
+        });
+    }
+    displays(shoe)
+    let accessory = [{
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/1246/306/250/2/w/383/1246306250_6_1_1.jpg?ts=1653304530042",
+        name: "TRAINING TOWEL",
+        price: 1590,
+        productId: "TOWEL",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0348/408/555/2/w/383/0348408555_6_1_1.jpg?ts=1638534477430",
+        name: "PACK OF 2 RIBBED SOCKS",
+        price: 990,
+        productId: "SOCKS",
+        color: "WHITE,BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/1/2/p/3901/020/040/2/w/383/3901020040_6_2_1.jpg?ts=1651841949223",
+        name: "SPORTS BOTTLE HOLDER BAG",
+        price: 2590,
+        productId: "BAG",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2956/300/515/2/w/383/2956300515_6_2_1.jpg?ts=1643817487625",
+        name: "1L/34 OZ NALGENE BOTTLE",
+        price: 2590,
+        productId: "BOTTLE",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3265/300/555/2/w/383/3265300555_6_1_1.jpg?ts=1649402806890",
+        name: "2-PACK SHORT SEAMLESS SOCKS",
+        price: 990,
+        productId: "SOCKS",
+        color: "RED",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2966/300/800/2/w/383/2966300800_6_1_1.jpg?ts=1647596669918",
+        name: "ELASTIC HEADBAND",
+        price: 890,
+        productId: "HEADBAND",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/1246/310/800/2/w/383/1246310800_6_1_1.jpg?ts=1652116283836",
+        name: "SMALL WORKOUT TOWEL",
+        price: 1590,
+        productId: "TOWEL",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3265/302/063/2/w/383/3265302063_6_1_1.jpg?ts=1654092530638",
+        name: "PACK OF BASKETBALL TRINING SOCKS",
+        price: 990,
+        productId: "SOCKS",
+        color: "GREEN,WHITE",
+    }, ]
+    let access = document.getElementById("accessery");
+
+    function displaya(accessory) {
+        access.innerHTML = "";
+        accessory.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.image_url);
+            box.append(pic);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(pic);
+            div.append(box, box1)
+            document.querySelector("#accessery").append(div);
+
+        });
+    }
+    displaya(accessory)
+</script>

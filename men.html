@@ -43,7 +43,7 @@
         border-color: none;
     }
     
-    #button1{
+    #button1 {
         display: flex;
         width: 60px;
         height: 60px;
@@ -52,7 +52,7 @@
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1220px;
+        margin-left: 1440px;
         position: absolute;
         padding-top: 21px;
         border: none;
@@ -68,7 +68,7 @@
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1270px;
+        margin-left: 1490px;
         position: absolute;
         padding-top: 15px;
         border: none;
@@ -88,7 +88,8 @@
     /* a {
         color: black;
     } */
-    #button2{
+    
+    #button2 {
         display: flex;
         width: 60px;
         height: 60px;
@@ -104,7 +105,8 @@
         top: 352px;
         background-color: transparent;
     }
-    #span2{
+    
+    #span2 {
         width: 60px;
         height: 60px;
         font-size: 65px;
@@ -119,12 +121,11 @@
         top: 320px;
         background-color: transparent;
     }
-    
 </style>
 <div id="image1"><span id="span2"><</span> <button id="button2">WOMEN</button></div>
 <div id="image">
-    <button id="button1">KIDS</button><span id="span1">></span>
-  
+    <button id="button1">KIDS</button><span id="span1">></span> \
+
 
 
     <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644">
@@ -164,6 +165,8 @@
         image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644";
 
         image1.style.border = "none";
+        image1.style.cursor = "pointer";
+        image1.addEventListener("click", clickimge)
     }
     let data1 = document.querySelector("#main>.d2>p");
     data1.style.cursor = "pointer";
@@ -174,13 +177,14 @@
         data1.style.color = "black";
         let image = document.querySelector("#image>img");
         image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-trajes/subhome-xmedia-23//w/1028/IMAGE-landscape-86a47cfa-3fa1-451e-824a-0fc88b6f2fdd-default_0.jpg?ts=1654695356696";
-    
-    image.style.cursor="pointer";
-image.addEventListener("click", clickimage)}
+
+        image.style.cursor = "pointer";
+        image.addEventListener("click", clickimage)
+    }
 
     let data2 = document.querySelector("#main>.d3>p");
     data2.style.cursor = "pointer";
-    
+
 
     data2.addEventListener("click", getimage2);
 
@@ -189,7 +193,8 @@ image.addEventListener("click", clickimage)}
         let image3 = document.querySelector("#image>img");
         image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-joinlife/subhome-xmedia-23//w/1028/IMAGE-landscape-4f6213e5-cf88-4d5b-9295-4a18c7450972-default_0.jpg?ts=1654696832147";
 
-
+        image3.style.cursor = "pointer";
+        image3.addEventListener("click", clickimag)
     }
     let data3 = document.querySelector("#main>.d4>p");
     data3.style.cursor = "pointer";
@@ -200,13 +205,15 @@ image.addEventListener("click", clickimage)}
         data3.style.color = "black";
         let image4 = document.querySelector("#image>img");
         image4.src = "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096";
+        image4.style.cursor = "pointer";
+        image4.addEventListener("click", clickimg)
     };
     let button = document.querySelector("#button1");
     button.style.cursor = "pointer";
     document.querySelector("#button1").addEventListener("click", clickme)
 
     function clickme() {
-        
+
         window.location.href = "kids.html";
 
     }
@@ -215,11 +222,24 @@ image.addEventListener("click", clickimage)}
     document.querySelector("#button2").addEventListener("click", clickhere)
 
     function clickhere() {
-        
+
         window.location.href = "women.html";
 
     }
-    function clickimage(){
-        window.location.href="viewall.html";
+
+    function clickimage() {
+        window.location.href = "viewall.html";
+    }
+
+    function clickimag() {
+        window.location.href = "join.html";
+    }
+
+    function clickimg() {
+        window.location.href = "ATHLECTICZ.html";
+    }
+
+    function clickimge() {
+        window.location.href = "new.html";
     }
 </script>

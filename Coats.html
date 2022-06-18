@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #pro {
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #pro>div>div>img {
+            width: 100%;
+        }
+        
+        #pro>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 40%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="join.html">
+                <li>NEW</li>
+            </a>
+            <a href="Coats.html">
+                <li>COATS | JACKETS</li>
+            </a>
+            <a href="knit.html">
+                <li>KNITWAR</li>
+            </a>
+        </ul>
+    </div>
+    <div id="pro">
+
+    </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    let formalData = [{
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5320/300/800/2/w/444/5320300800_2_1_1.jpg?ts=1636558113477",
+        name: "PUFFER GILET",
+        price: 2590,
+        productId: "JACKET",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4259/744/986/2/w/444/4259744986_2_1_1.jpg?ts=1647427427749",
+        name: "CHECK SUIT BLAZER",
+        price: 8990,
+        productId: "BLAZER",
+        color: "GREY",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3918/466/800/2/w/444/3918466800_2_1_1.jpg?ts=1644569484567",
+        name: "TECHNICAL QUILTED JACKET",
+        price: 4990,
+        productId: "JACKET",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/3057/105/400/2/w/444/3057105400_2_1_1.jpg?ts=1647515274688",
+        name: "MATCHING CHECK OVERSHIRT",
+        price: 5990,
+        productId: "OVERSHIRT",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/1538/404/500/2/w/444/1538404500_2_1_1.jpg?ts=1648032640205",
+        name: "BANDANNA PRINT JACKET",
+        price: 4990,
+        productId: "JACKET",
+        color: "GREEN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/1564/410/420/2/w/444/1564410420_2_1_1.jpg?ts=1640690585636",
+        name: "SLIM FIT SUIT BLAZER",
+        price: 5990,
+        productId: "BLAZER",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/3918/410/710/2/w/444/3918410710_2_1_1.jpg?ts=1652181673193",
+        name: "BOMBER JACKET WITH PATCHES",
+        price: 5990,
+        productId: "JACKET",
+        color: "GREY",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/1538/329/800/2/w/444/1538329800_1_1_1.jpg?ts=1652430792374",
+        name: "TECHNICAL OVERSHIRT X RHUIGI",
+        price: 3990,
+        productId: "OVERSHIT",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/6917/444/431/2/w/444/6917444431_2_1_1.jpg?ts=1648719804182",
+        name: "PATCH OVERSHIRT",
+        price: 3990,
+        productId: "OVERSHIRT",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0029/416/600/2/w/444/0029416600_2_1_1.jpg?ts=1648545596671",
+        name: "JACKET WITH POCKETS",
+        price: 4990,
+        productId: "JACKET",
+        color: "RED",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/7505/400/606/2/w/444/7505400606_2_1_1.jpg?ts=1642585453065",
+        name: "CHECK JACKET",
+        price: 5990,
+        productId: "JACKET",
+        color: "TAN, BEIGI",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/8288/652/800/2/w/444/8288652800_2_1_1.jpg?ts=1641307863929",
+        name: "PLEATED BLAZER",
+        price: 6990,
+        productId: "BLAZER",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3057/103/800/2/w/444/3057103800_2_1_1.jpg?ts=1646234927586",
+        name: "STRIPED TEXTURED OVERSHIRT",
+        price: 5990,
+        productId: "OVERSHIRT",
+        color: "BROWN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/5602/494/710/2/w/444/5602494710_2_1_1.jpg?ts=1654673912698",
+        name: "SUIT BLAZER",
+        price: 8990,
+        productId: "BLAZER",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/8574/456/052/2/w/444/8574456052_2_1_1.jpg?ts=1649161550349",
+        name: "100% LINEN JACKET",
+        price: 5990,
+        productId: "JACKET",
+        color: "ECRU",
+
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/9632/348/405/2/w/444/9632348405_2_1_1.jpg?ts=1643210000322",
+        name: "GEOMATRIC JACQUARD BOMBER JACKET",
+        price: 5990,
+        productId: "JACKET",
+        color: "ERCU",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0706/729/706/2/w/444/0706729706_2_1_1.jpg?ts=1641917073087",
+        name: "COMFORT OVERSHIRT",
+        price: 2990,
+        productId: "OVERSHIRT",
+        color: "BROWN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/4323/062/300/2/w/444/4323062300_2_1_1.jpg?ts=1650297898007",
+        name: "STRIPED OVERSHIRT",
+        price: 5990,
+        productId: "OVERSHIRT",
+        color: "ERCU,YELLOW",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3182/404/250/2/w/444/3182404250_2_1_1.jpg?ts=1646234906896",
+        name: "OVERSHIRT WITH HOOD",
+        price: 3990,
+        productId: "OVERSHIRT, HOOD",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/1/p/5070/470/800/2/w/444/5070470800_2_1_1.jpg?ts=1640680460604",
+        name: "COMFORT COAT",
+        price: 7990,
+        productId: "COAT",
+        color: "BLACK",
+    }, ]
+    let pro = document.getElementById("pro");
+
+    function display(
+        formalData) {
+        pro.innerHTML = "";
+        formalData.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.image_url);
+            box.append(pic);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(pic);
+            div.append(box, box1)
+            document.querySelector("#pro").append(div);
+
+        });
+    }
+    display(formalData)
+</script>
