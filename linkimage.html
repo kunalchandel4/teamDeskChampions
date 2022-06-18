@@ -265,7 +265,7 @@ a {
 </html>
 <script>
 let data = JSON.parse( localStorage.getItem("display"))||{}
-let cartData=JSON.parse(localStorage.getItem("cartData"))||[]
+let cartData=JSON.parse(localStorage.getItem("cart-page"))||[]
 
 console.log(data)
 console.log(typeof data)
@@ -278,11 +278,26 @@ img.src=data.img
 body.append(img)
 
 document.querySelector("#on").addEventListener("click",function(){
-	setup(data)
+	if(setup(data.category)===true){
+          alert("Product added sucessfully")
+          cartData.push(data)
+          // console.log(elem.quan)
+          localStorage.setItem("cart-page",JSON.stringify(cartData))
+		  window.location.href="cartpage.html"
+        }else{
+          alert("product already in the cart")
+		  window.location.href="cartpage.html"
+        }
 })
-function setup(el){
-cardData.push(el)
-localStorage.setItem("cartData",JSON.stringify(cardData));
+function setup(id){
+	for(let i=0 ;i<cartData.length ; i++){
+          if(cartData[i].category == id) {
+        
+            // cartLS[i].cartPrices=cartLS[i].price
+            return false ;
+          } 
+        }
+        return true ;
 }
 
 </script>

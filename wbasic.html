@@ -356,6 +356,7 @@ p{
 
 </html>
 <script>
+      let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let womenbasics = [{
         img: "https://static.zara.net/photos///2022/I/0/1/p/2143/047/251/2/w/429/2143047251_2_1_1.jpg?ts=1655283432698",
         name: "LOOSE-FITTING SHIRT WITH POCKETS",
@@ -476,8 +477,24 @@ p{
         price: "2990",
         productID: "trouserss",
         color: "pink"
-    }, , ]
+    }, ]
     let basicdata = document.getElementById("pro");
+    var b=540
+for(let i=0 ;i<womenbasics.length ; i++){
+    let x=womenbasics[i]
+    // console.log(x)
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+
 
     function displaybasic(womenbasics) {
         basicdata.innerHTML = "";
@@ -487,9 +504,15 @@ p{
             let box1 = document.createElement("div");
             let phot = document.createElement("img");
             phot.setAttribute("src", elem.img);
+            phot.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(phot);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -500,4 +523,12 @@ p{
         });
     }
     displaybasic(womenbasics)
+
+    console.log(womenbasics);
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
 </script>

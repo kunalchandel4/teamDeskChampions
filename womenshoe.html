@@ -507,7 +507,20 @@ p{
         },
     ]
     let shoedata = document.getElementById("pro");
-
+    var b=560
+for(let i=0 ;i<shoes.length ; i++){
+    let x=shoes[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
     function displayshoe(shoes) {
         shoedata.innerHTML = "";
         shoes.forEach(function(elem) {
@@ -516,9 +529,15 @@ p{
             let box1 = document.createElement("div");
             let phot = document.createElement("img");
             phot.setAttribute("src", elem.img);
+            phot.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(phot);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = `₹${elem.price}.00`;
             box1.append(inname, price)
@@ -529,4 +548,12 @@ p{
         });
     }
     displayshoe(shoes)
+
+    
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
 </script>

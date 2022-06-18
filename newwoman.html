@@ -375,6 +375,7 @@ a {
 
 </html>
 <script>
+    let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let imageData = [{
             image_url: "https://static.zara.net/photos///2022/I/0/1/p/7885/138/330/2/w/1239/7885138330_9_1_1.jpg?ts=1654672971928",
         },
@@ -480,6 +481,20 @@ a {
         color: "red/white",
     }, ]
 
+    var b=500
+for(let i=0 ;i<second.length ; i++){
+    let x=second[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
     let part = document.getElementById("product");
 
     function displaysec(second) {
@@ -490,10 +505,17 @@ a {
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
             pic.setAttribute("src", elem.img);
+            pic.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(pic);
+
             let inname = document.createElement("p");
             inname.innerText = elem.name;
             inname.style.fontSize = "11px"
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             price.style.fontSize = "11px"
@@ -510,6 +532,9 @@ a {
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
+            addcart.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(pic);
             div.append(box, box1, p, addcart)
             document.querySelector("#product").append(div);
@@ -517,35 +542,52 @@ a {
         });
     }
     displaysec(second);
-
+//  console.log(second);
 
 
     let fatherData = [{
 
-        image_url: "https://static.zara.net/photos///2022/I/0/2/p/6224/344/712/2/w/337/6224344712_6_1_1.jpg?ts=1654071435092",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/6224/344/712/2/w/337/6224344712_6_1_1.jpg?ts=1654071435092",
         name: "EMBROIDERED PRINT SHIRT",
         price: 2990,
         productId: "SHIRT",
         color: "BEIGI",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0706/475/825/2/w/337/0706475825_6_1_1.jpg?ts=1648114314224",
+        img: "https://static.zara.net/photos///2022/V/0/2/p/0706/475/825/2/w/337/0706475825_6_1_1.jpg?ts=1648114314224",
         name: "COTTON-LINEN TROUSERS",
         price: 3990,
         productId: "TROUSER",
         color: "BROEN",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/3/p/3402/139/912/2/w/337/3402139912_6_1_1.jpg?ts=1649676820346",
+        img: "https://static.zara.net/photos///2022/V/0/3/p/3402/139/912/2/w/337/3402139912_6_1_1.jpg?ts=1649676820346",
         name: "NEW RIBBED T-SHIRT WITH EMBROIDERY",
         price: 790,
         productId: "T-SHIRT",
         color: "BEIGI",
     }, {
-        image_url: "https://static.zara.net/photos///2022/V/0/3/p/1374/070/733/2/w/337/1374070733_6_1_1.jpg?ts=1649417198219",
+        img: "https://static.zara.net/photos///2022/V/0/3/p/1374/070/733/2/w/337/1374070733_6_1_1.jpg?ts=1649417198219",
         name: "LINEN CARGO TROUSERS",
         price: 1990,
         productId: "TROUSERS",
         color: "BEIGI",
     }, ];
+   
+   
+    var b=513
+for(let i=0 ;i<fatherData.length ; i++){
+    let x=fatherData[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+   
     let dta = document.querySelector("#father");
 
     function displaydta(fatherdata) {
@@ -554,11 +596,18 @@ a {
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let photo = document.createElement("img");
-            photo.setAttribute("src", el.image_url);
+            photo.setAttribute("src", el.img);
+            photo.addEventListener("click",function(){
+             localSet(el)
+        })
             box.append(photo);
+
             let inname = document.createElement("p");
             inname.innerText = el.name;
             inname.style.fontSize = "11px"
+            inname.addEventListener("click",function(){
+             localSet(el)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + el.price + ".00";
             price.style.fontSize = "11px"
@@ -575,6 +624,9 @@ a {
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
+            addcart.addEventListener("click",function(){
+             localSet(el)
+        })
 
             box.append(photo, inname, price, p, addcart);
             box1.append(box);
@@ -584,7 +636,7 @@ a {
     }
     displaydta(fatherData)
 
-
+console.log(fatherData);
     womennew = [{
             img: "https://static.zara.net/photos///2022/I/0/1/p/7792/239/131/2/w/429/7792239131_2_1_1.jpg?ts=1655194093364",
             name: "FLORAL SATIN BLOUS",
@@ -656,7 +708,21 @@ a {
         },
     ]
     let newd = document.querySelector("#ring");
-
+    var b=517
+for(let i=0 ;i<womennew.length ; i++){
+    let x=womennew[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+   
     function displaynew(womennew) {
         newd.innerHTML = "";
         womennew.forEach(function(el) {
@@ -664,10 +730,16 @@ a {
             let box1 = document.createElement("div");
             let photo = document.createElement("img");
             photo.setAttribute("src", el.img);
+            photo.addEventListener("click",function(){
+             localSet(el)
+        })
             box.append(photo);
             let inname = document.createElement("p");
             inname.innerText = el.name;
             inname.style.fontSize = "11px"
+            inname.addEventListener("click",function(){
+             localSet(el)
+        })
             let price = document.createElement("p")
             price.innerText = "₹ " + el.price + ".00";
             price.style.fontSize = "11px"
@@ -684,6 +756,9 @@ a {
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
+            addcart.addEventListener("click",function(){
+             localSet(el)
+        })
 
             box.append(photo, inname, price, p, addcart);
             box1.append(box);
@@ -692,4 +767,11 @@ a {
         });
     }
     displaynew(womennew)
+
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
 </script>

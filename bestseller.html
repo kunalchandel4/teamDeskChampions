@@ -358,6 +358,8 @@ a {
 
 </html>
 <script>
+
+let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let seller = [{
             img: "https://static.zara.net/photos///2022/V/0/1/p/4786/135/620/2/w/432/4786135620_15_1_1.jpg?ts=1650627295424",
             name: "PRINTED MINI DRESS",
@@ -502,6 +504,23 @@ a {
             color: "multicolored"
         },
     ]
+   
+    var b=340
+for(let i=0 ;i<seller.length ; i++){
+    let x=seller[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+// console.log(seller)
+   
     let sellerdata = document.getElementById("pro");
 
     function displayseller(seller) {
@@ -512,9 +531,15 @@ a {
             let box1 = document.createElement("div");
             let phot = document.createElement("img");
             phot.setAttribute("src", elem.img);
+            phot.addEventListener("click",function(){
+             localSet(elem)
+        })
             box.append(phot);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
             let price = document.createElement("p")
             price.innerText = `₹${elem.price}.00`;
             box1.append(inname, price)
@@ -525,4 +550,11 @@ a {
         });
     }
     displayseller(seller)
+    
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
 </script>
