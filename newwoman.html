@@ -21,11 +21,10 @@
             width: 100%;
             margin: 80px auto;
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
+            grid-template-columns: repeat(13, 1fr);
             grid-template-rows: auto;
             gap: 20px;
             overflow-x: auto;
-         
         }
         
         #father {
@@ -126,6 +125,34 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        #LETTER {
+        margin-top: 150px;
+        margin-left: 180px;
+    }
+    
+    #LETTER>div {
+        margin-top: 100px;
+    }
+    
+    #LETTER>div>a {
+        margin-right: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 9px;
+        /* margin: auto; */
+        color: grey;
+        text-decoration: none;
+    }
+    
+    #LETTER>div>a:hover {
+        text-decoration: underline;
+    }
+    
+    #LETTER>#p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        color: black;
+    }
         
         #upper {
             width: 50%;
@@ -210,44 +237,6 @@ a {
     background-color: transparent;
     margin-right: 2%;
 }
-#LETTER{
-    margin-left: 180px;
-   
-}
-#LETTER>div{
-  
-   margin-top: 130px;
-}
-
-#LETTER>div>a{
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 9px;
-    /* margin: auto; */
-    color: grey;
-    text-decoration: none;
-}
-#LETTER>div>a:hover{
-    text-decoration: underline;
-}
-#input{
-        width: 19%;
-    border:transparent;
-    border-bottom: 1px solid black;
-}
-#input:placeholder-shown{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-}
-/* #input:hover{
-    text-overflow:inherit;
-} */
-#LETTER>p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    font-size: 16px;
-}
 #search {
     margin-top: 0.7%;
 }
@@ -296,24 +285,21 @@ a {
     <div id="product">
 
     </div>
-    <div id="id">
-        <img src="https://static.zara.net/photos///2022/V/M/2/p/0000/003/520/2/w/1239/0000003520_15_2_1.jpg?ts=1654859244695" alt="fATHERHOOD">
 
-    </div>
     <div id="father">
 
     </div>
-    <div id="id"><img src="https://static.zara.net/photos///2022/V/M/2/p/0000/003/521/2/w/1239/0000003521_15_2_1.jpg?ts=1654857936841" alt="fATHERHOOD2"></div>
+
     <div id="id"><img src="https://static.zara.net/photos///2022/V/M/1/p/0000/003/556/2/w/1239/0000003556_15_2_1.jpg?ts=1655302283238" alt=""></div>
 
     <div id="ring">
 
     </div>
     <div id="LETTER">
-        <p>JOIN OUR NEWSLETTER</p>
+        <p id="p">JOIN OUR NEWSLETTER</p>
         <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
         <div>
-         <a href="https://www.instagram.com/zara/" target="_blank">
+            <a href="https://www.instagram.com/zara/" target="_blank">
              INSTAGRAM
             </a>
             <a href="https://www.facebook.com/Zara" target="_blank">
@@ -324,8 +310,6 @@ a {
             <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
             <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
         </div>
-     
-       </div>
     <section id="option">
         <div>
             <h3>HELP</h3>
@@ -386,20 +370,12 @@ a {
 
 </html>
 <script>
-
-let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let imageData = [{
-            image_url: "https://static.zara.net/photos///2022/V/M/2/p/0000/003/528/2/w/1239/0000003528_15_2_1.jpg?ts=1655123600003",
+            image_url: "https://static.zara.net/photos///2022/I/0/1/p/7885/138/330/2/w/1239/7885138330_9_1_1.jpg?ts=1654672971928",
         },
 
         {
-            image_url: "https://static.zara.net/photos///2022/V/M/2/p/0000/003/529/2/w/1239/0000003529_15_2_1.jpg?ts=1655123599306",
-        }, {
-            image_url: "https://static.zara.net/photos///2022/I/0/1/p/6814/996/403/32/w/1239/6814996403_15_2_1.jpg?ts=1655132822844",
-        }, {
-            image_url: "https://static.zara.net/photos///2022/V/M/2/p/0000/003/530/2/w/1239/0000003530_15_2_1.jpg?ts=1655123600030",
-        }, {
-            image_url: "https://static.zara.net/photos///2022/V/M/2/p/0000/003/531/2/w/1239/0000003531_15_2_1.jpg?ts=1655123599694",
+            image_url: "https://static.zara.net/photos///2022/I/0/1/p/4978/107/250/2/w/1239/4978107250_9_1_1.jpg?ts=1654856075051",
         },
     ];
 
@@ -410,7 +386,7 @@ let cartData=JSON.parse(localStorage.getItem("display"))||{}
             let box = document.createElement("div")
             let pic = document.createElement("img")
             pic.src = elem.image_url
-            // console.log(elem.image_url)
+            console.log(elem.image_url)
             box.append(pic)
             document.querySelector("#upper").append(box)
         })
@@ -419,91 +395,100 @@ let cartData=JSON.parse(localStorage.getItem("display"))||{}
 
 
 
-
-    let imgData = [{
-        img: "https://static.zara.net/photos///2022/I/0/2/p/0706/395/800/2/w/272/0706395800_1_1_1.jpg?ts=1654791000078",
-        name: "TROUSERS WITH SATIN STRIPS",
-        price: 4990,
-        productId: "TROUSER",
-        color: "BLACK",
+    let second = [{
+        img: "https://static.zara.net/photos///2022/I/1/1/p/2336/010/040/2/w/314/2336010040_1_1_1.jpg?ts=1655194950247",
+        name: "LOW-HEEL LEATHER SANDALS WITH BUCKLE DETAIL",
+        price: "5990",
+        productID: "flat sandal",
+        color: "black",
     }, {
-        img: "https://static.zara.net/photos///2022/I/0/2/p/1608/787/250/2/w/272/1608787250_1_1_1.jpg?ts=1654248338543",
-        name: "CROCHET SHIRT",
-        price: 3990,
-        productId: "SHIRT",
-        color: "WHITE",
+        img: "https://static.zara.net/photos///2022/I/1/1/p/1635/010/091/2/w/429/1635010091_2_5_1.jpg?ts=1655277771505",
+        name: "METALLIC LEATHER LACE UP SANDALS",
+        price: "3000",
+        productID: "sandal",
+        color: "golden",
     }, {
-        img: "https://static.zara.net/photos///2022/I/0/2/p/6814/996/403/2/w/272/6814996403_2_3_1.jpg?ts=1654791075049",
-        name: "CONTRAST SHAWL COLLAR BLAZER",
-        price: 10990,
-        product: "BLAZER",
-        color: "BLUE",
+        img: "https://static.zara.net/photos///2022/I/1/1/p/3325/910/102/2/w/314/3325910102_2_5_1.jpg?ts=1655277754767",
+        name: "HIGH-HEELED SANDALS WITH RHINESTONES",
+        price: "2909",
+        productID: "sandal",
+        color: "beige",
     }, {
-        img: "https://static.zara.net/photos///2022/I/0/2/p/6224/944/712/2/w/750/6224944712_1_1_1.jpg?ts=1654859274665",
-        name: "EMBROIDERED PRINT SHIRT",
-        price: 2990,
-        product: "SHIRT",
-        color: "WHITE",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/3920/204/250/2/w/314/3920204250_15_11_1.jpg?ts=1655222781364",
+        name: "CONTRAST WOVEN HAT",
+        price: "2890",
+        productID: "hat",
+        color: "white",
     }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/6224/344/712/32/w/1920/6224344712_1_1_1.jpg?ts=1654856089988",
-        name: "EMBROIDERED PRINT SHIRT",
-        price: 2990,
-        product: "SHIRT",
-        color: "BEIGE",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/0653/213/052/2/w/314/0653213052_15_11_1.jpg?ts=1655222771108",
+        name: "WOVEN HAT",
+        price: "2890",
+        productID: "hat",
+        color: "cream",
     }, {
-        img: "https://static.zara.net/photos///2022/I/0/2/p/6224/342/251/2/w/750/6224342251_2_2_1.jpg?ts=1654859287117",
-        name: "PRINTED T-SHIRT WITH EMBROIDERY",
-        price: 1990,
-        product: "T-SHIRT",
-        color: "WHITE",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/1299/201/330/2/w/429/1299201330_15_13_1.jpg?ts=1655306868189",
+        name: "FOLDABLE PRINTED TROLLEY",
+        price: "10099",
+        productID: "trolley",
+        color: "black",
     }, {
-        img: "https://static.zara.net/photos///2022/V/0/2/p/4530/135/615/2/w/444/4530135615_1_1_1.jpg?ts=1654859289774",
-        name: "TEXTURED SHIRT",
-        price: 3990,
-        product: "SHIRT",
-        color: "ORANGE",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/1299/201/330/2/w/209/1299201330_15_12_1.jpg?ts=1655306523088",
+        name: "FOLDABLE PRINTED TROLLEY",
+        price: "10990",
+        productID: "trolley",
+        color: "black",
     }, {
-        img: "https://static.zara.net/photos///2022/I/0/2/p/6224/906/707/2/w/383/6224906707_1_1_1.jpg?ts=1654859286490",
-        name: "EMBROIDERED PRINT SWEATSHIRT",
-        price: 2990,
-        product: "SWEATSHIRT",
-        color: "BEIGE",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/0653/054/500/2/w/209/0653054500_15_12_1.jpg?ts=1655306522201",
+        name: "FOLDABLE PRINTED BACKREST",
+        price: "5990",
+        productID: "backrest",
+        color: "green",
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/0653/015/330/2/w/209/0653015330_15_12_1.jpg?ts=1655306522716",
+        name: "PRINTED SUN AWNING",
+        price: "2880",
+        productID: "sun awning",
+        color: "multicolored",
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/3752/270/330/2/w/321/3752270330_1_1_1.jpg?ts=1655110990091",
+        name: "RUFFLED PRINTED DRESS",
+        price: "3990",
+        productID: "dress",
+        color: "sky blue",
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/7931/717/250/2/w/432/7931717250_1_1_1.jpg?ts=1655110991720",
+        name: "POPLIN SHIRT WITH PINTUCKS",
+        price: "2990",
+        productID: "shirt",
+        color: "white",
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/0387/157/250/2/w/432/0387157250_2_1_1.jpg?ts=1655110990903",
+        name: "RUSTIC PLAYSUIT WITH LACE TRIM",
+        price: "4500",
+        productID: "midi",
+        color: "white",
+    }, {
+        img: "https://static.zara.net/photos///2022/I/0/1/p/7587/669/046/2/w/321/7587669046_1_1_1.jpg?ts=1655110987572",
+        name: "STRIPED LINEN BLEND TOP WITH KNOT",
+        price: "2990",
+        productID: "linen",
+        color: "red/white",
     }, ]
-    var b=155
-for(let i=0 ;i<imgData.length ; i++){
-    let x=imgData[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
-    }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
-    console.log(imgData);
-    let product = document.getElementById("product");
 
-    function displayd(imgdata) {
-        product.innerHTML = "";
-        imgData.forEach(function(elem) {
+    let part = document.getElementById("product");
+
+    function displaysec(second) {
+        part.innerHTML = "";
+        second.forEach(function(elem) {
             let div = document.createElement("div");
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
             pic.setAttribute("src", elem.img);
-            pic.addEventListener("click",function(){
-          localSet(elem)
-        })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
             inname.style.fontSize = "11px"
-            inname.addEventListener("click",function(){
-          localSet(elem)
-        })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             price.style.fontSize = "11px"
@@ -520,62 +505,42 @@ for(let i=0 ;i<imgData.length ; i++){
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
-            addcart.addEventListener("click",function(){
-          localSet(elem)
-        })
             box.append(pic);
             div.append(box, box1, p, addcart)
             document.querySelector("#product").append(div);
 
         });
     }
-    displayd(imgData);
+    displaysec(second);
 
 
 
     let fatherData = [{
 
-        img: "https://static.zara.net/photos///2022/I/0/2/p/6224/344/712/2/w/337/6224344712_6_1_1.jpg?ts=1654071435092",
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/6224/344/712/2/w/337/6224344712_6_1_1.jpg?ts=1654071435092",
         name: "EMBROIDERED PRINT SHIRT",
         price: 2990,
         productId: "SHIRT",
         color: "BEIGI",
     }, {
-        img: "https://static.zara.net/photos///2022/V/0/2/p/0706/475/825/2/w/337/0706475825_6_1_1.jpg?ts=1648114314224",
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0706/475/825/2/w/337/0706475825_6_1_1.jpg?ts=1648114314224",
         name: "COTTON-LINEN TROUSERS",
         price: 3990,
         productId: "TROUSER",
         color: "BROEN",
     }, {
-        img: "https://static.zara.net/photos///2022/V/0/3/p/3402/139/912/2/w/337/3402139912_6_1_1.jpg?ts=1649676820346",
+        image_url: "https://static.zara.net/photos///2022/V/0/3/p/3402/139/912/2/w/337/3402139912_6_1_1.jpg?ts=1649676820346",
         name: "NEW RIBBED T-SHIRT WITH EMBROIDERY",
         price: 790,
         productId: "T-SHIRT",
         color: "BEIGI",
     }, {
-        img: "https://static.zara.net/photos///2022/V/0/3/p/1374/070/733/2/w/337/1374070733_6_1_1.jpg?ts=1649417198219",
+        image_url: "https://static.zara.net/photos///2022/V/0/3/p/1374/070/733/2/w/337/1374070733_6_1_1.jpg?ts=1649417198219",
         name: "LINEN CARGO TROUSERS",
         price: 1990,
         productId: "TROUSERS",
         color: "BEIGI",
     }, ];
-   
-    var b=163
-for(let i=0 ;i<fatherData.length ; i++){
-    let x=fatherData[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
-    }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
- }
-// console.log(fatherData)
-   
     let dta = document.querySelector("#father");
 
     function displaydta(fatherdata) {
@@ -584,16 +549,10 @@ for(let i=0 ;i<fatherData.length ; i++){
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let photo = document.createElement("img");
-            photo.setAttribute("src",el.img);
-            photo.addEventListener("click",function(){
-          localSet(el)
-        })
+            photo.setAttribute("src", el.image_url);
             box.append(photo);
             let inname = document.createElement("p");
             inname.innerText = el.name;
-            inname.addEventListener("click",function(){
-          localSet(el)
-        })
             inname.style.fontSize = "11px"
             let price = document.createElement("p")
             price.innerText = "₹ " + el.price + ".00";
@@ -611,9 +570,6 @@ for(let i=0 ;i<fatherData.length ; i++){
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
-            addcart.addEventListener("click",function(){
-          localSet(el)
-        })
 
             box.append(photo, inname, price, p, addcart);
             box1.append(box);
@@ -624,119 +580,81 @@ for(let i=0 ;i<fatherData.length ; i++){
     displaydta(fatherData)
 
 
-    let ringData = [{
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/303/555/82/w/528/8435303555_15_3_1.jpg?ts=1655285807844",
-        name: "PACK OF CONTRAST NECKLACES",
-        price: 1890,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/303/555/2/w/528/8435303555_15_1_1.jpg?ts=1655280859802",
-        name: "PACK OF CONTRAST NECKLACES",
-        price: 1890,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/305/400/2/w/292/8435305400_15_1_1.jpg?ts=1655280589763",
-        name: "COLOURED RUBBERISED RING",
-        price: 1590,
-        productId: "RING",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/303/808/2/w/292/1012303808_15_1_1.jpg?ts=1655280316005",
-        name: "EMBOSSED RING",
-        price: 1590,
-        productId: "RING",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/304/808/2/w/292/1012304808_15_1_1.jpg?ts=1655280342080",
-        name: "CONTRAST SINGET RING",
-        price: 1590,
-        productId: "RING",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/307/555/82/w/528/8435307555_15_2_1.jpg?ts=1655280698865",
-        name: "BEADED GLASSES CHAIN NECKLACES",
-        price: 1790,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/307/555/2/w/528/8435307555_15_1_1.jpg?ts=1655280648237",
-        name: "BEADED GLASSES CHAIN NECKLACE",
-        price: 1790,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/302/808/2/w/292/1012302808_15_1_1.jpg?ts=1655280280320",
-        name: "ROPE CHAIN",
-        price: 1790,
-        productId: "CHAIN",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/300/806/2/w/292/8435300806_15_1_1.jpg?ts=1655280376015",
-        name: "PACK OF BEAD NECKLACES",
-        price: 1890,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/308/800/2/w/292/8435308800_15_1_1.jpg?ts=1655280944240",
-        name: "ASSORTED BEND NECKLACE",
-        price: 1790,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/302/555/2/w/292/8435302555_15_1_1.jpg?ts=1655280403708",
-        name: "NECKLACES WITH CONTRAST BEADS",
-        price: 1790,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/301/808/82/w/528/1012301808_15_2_1.jpg?ts=1655280211144",
-        name: "CHAIN PENDENT",
-        price: 1790,
-        productId: "PENDENT",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/301/808/2/w/528/1012301808_15_1_1.jpg?ts=1655280061617",
-        name: "CHAIN PENDENT",
-        price: 1790,
-        productId: "PENDENT",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/306/555/2/w/292/8435306555_15_1_1.jpg?ts=1655280619761",
-        name: "BEADED GLASSES CHAIN NECKLACE",
-        price: 1790,
-        productId: "NECKLACE",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/8435/309/800/2/w/292/8435309800_15_1_1.jpg?ts=1655280746653",
-        name: "PACK OF ASSORTED BRACELETS",
-        price: 1590,
-        productId: "BRACELETS",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/300/808/2/w/528/1012300808_15_1_1.jpg?ts=1655280037121",
-        name: "PACK OF ASSORTED EARRINGS",
-        price: 1590,
-        productId: "EARRINGS",
-    }, {
-        img: "https://static.zara.net/photos///2022/I/0/1/p/1012/300/808/82/w/528/1012300808_15_1_1.jpg?ts=1655285996137",
-        name: "PACK OF ASSORTED EARRINGS",
-        price: 1590,
-        productId: "EARRINGS",
-    }, ]
-   
-      
-    var b=167
-for(let i=0 ;i<ringData.length ; i++){
-    let x=ringData[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
-    }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
- }
-   
-    let delta = document.querySelector("#ring");
-    let Cart;
-    if (JSON.parse(localStorage.getItem("cart-page")) === null) {
-        Cart = [];
-    } else {
-        Cart = JSON.parse(localStorage.getItem("cart-page"))
-    }
-    function displaydelta(ringdata) {
-        delta.innerHTML = "";
-        ringData.forEach(function(el) {
+    womennew = [{
+            img: "https://static.zara.net/photos///2022/I/0/1/p/7792/239/131/2/w/429/7792239131_2_1_1.jpg?ts=1655194093364",
+            name: "FLORAL SATIN BLOUS",
+            price: "2890",
+            productID: "satin",
+            color: "green",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/8073/222/520/2/w/429/8073222520_1_1_1.jpg?ts=1655135756178",
+            name: "CROPPED LACE TROUSERS",
+            price: "3390",
+            productID: "trousers",
+            color: "green",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/1/1/p/6479/910/111/2/w/607/6479910111_1_1_1.jpg?ts=1655121474121",
+            name: "LINEN BLEND HIGH-WAIST TROUSERS",
+            price: "4990",
+            productID: "trousers",
+            color: "lemon",
+        },
+
+        {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/2157/243/800/2/w/607/2157243800_1_1_1.jpg?ts=1655110988189",
+            name: "CHOKER NECK TOP WITH SQUARE NECKLINE",
+            price: "3500",
+            productID: "neckline",
+            color: "4500",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/0858/036/800/2/w/204/0858036800_6_1_1.jpg?ts=1650282120924",
+            name: "T-SHIRT WITH KNOTTED HEM",
+            price: "3300",
+            productID: "t-shirt",
+            color: "green",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/0858/019/420/2/w/429/0858019420_1_1_1.jpg?ts=1650383882673",
+            name: "OVERSIZE COTTON T-SHIRT",
+            price: "2504",
+            productID: "t-shirt",
+            color: "blue",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/M/1/p/0000/003/567/2/w/314/0000003567_1_1_1.jpg?ts=1655293834564",
+            name: "SATIN DRESS WITH CUT-OUT DETAIL",
+            price: "2500",
+            productID: "satin",
+            color: "skin",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/0/1/p/6929/015/251/20/w/314/6929015251_1_1_1.jpg?ts=1655368872195",
+            name: "CORSETRY-INSPIRED TOP WITH TOPSTITCHING",
+            price: "1990",
+            productID: "top",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/V/0/1/p/2281/636/250/18/w/314/2281636250_1_1_1.jpg?ts=1655294011126",
+            name: "CROPPED CORSETRY-INSPIRED TOP",
+            price: "1990",
+            productID: "top",
+            color: "white",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/1/1/p/3325/910/102/2/w/429/3325910102_1_1_1.jpg?ts=1655121474118",
+            name: "HIGH-HEELED SANDALS WITH RHINESTONES",
+            price: "2990",
+            productID: "high heel",
+            color: "cream",
+        }, {
+            img: "https://static.zara.net/photos///2022/I/1/1/p/3325/910/040/2/w/314/3325910040_2_2_1.jpg?ts=1655194392488",
+            name: "HIGH-HEELED SANDALS WITH RHINESTONES",
+            price: "2800",
+            productID: "high heel",
+            color: "black",
+        },
+    ]
+    let newd = document.querySelector("#ring");
+
+    function displaynew(womennew) {
+        newd.innerHTML = "";
+        womennew.forEach(function(el) {
             let box = document.createElement("div");
             let box1 = document.createElement("div");
             let photo = document.createElement("img");
@@ -755,27 +673,12 @@ for(let i=0 ;i<ringData.length ; i++){
             let addcart = document.createElement("button");
 
             addcart.innerText = "Add to Cart"
-            addcart.style.cursor="pointer";
-            addcart.addEventListener("click",
-                function() {
-                    if (addtocart(el.name) === true) {
-                        alert("Product added to cart");
-                        Cart.push(el);
-                        localStorage.setItem("cart-page", JSON.stringify(Cart))
-
-                    } else {
-                        alert("Alredy in Cart");
-                    }
-                })
             addcart.style.fontSize = "10px"
             addcart.style.padding = "8px 12px"
             addcart.style.marginTop = "8px"
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
-            addcart.addEventListener("click",function(){
-          localSet(el)
-        })
 
             box.append(photo, inname, price, p, addcart);
             box1.append(box);
@@ -783,26 +686,5 @@ for(let i=0 ;i<ringData.length ; i++){
 
         });
     }
-<<<<<<< HEAD
-    displaydelta(ringData)
-    // console.log(ringData);
-    function localSet(el){
-    // console.log("kunal");
-   
-    localStorage.setItem("display",JSON.stringify(el))
-    window.location.href="linkimage.html"
-}
-=======
-  displaydelta(ringData)
-    
-    function addtocart(name) {
-        for (let i = 0; i < Cart.length; i++) {
-            if (Cart[i].name === name) {
-                return false;
-            }
-        }
-        return true;
-
-    }
->>>>>>> 23090456a9213174893e91b748255380b23c089d
+    displaynew(womennew)
 </script>

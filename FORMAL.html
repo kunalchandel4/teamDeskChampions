@@ -87,7 +87,7 @@
         }
         
         .nav>ul {
-            width: 40%;
+            width: 50%;
             padding-top: 120px;
             margin: auto;
             display: flex;
@@ -117,7 +117,125 @@
             top: 0px;
             margin-bottom: 100px;
         }
-        
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#logo {
+    width: 16%;
+}
+#logo > img {
+    width: 100%;
+}
+#gap {
+    width: 40%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+#LETTER{
+    margin-left: 180px;
+   margin-top:50px;
+}
+#LETTER>div{
+  
+   margin-top: 130px;
+}
+
+#LETTER>div>a{
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#LETTER>div>a:hover{
+    text-decoration: underline;
+}
+#input{
+        width: 19%;
+    border:transparent;
+    border-bottom: 1px solid black;
+}
+#input:placeholder-shown{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+}
+/* #input:hover{
+    text-overflow:inherit;
+} */
+#LETTER>p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 16px;
+}
+#cart {
+    display: flex;
+    width: 5%;
+    height: 35%;
+    background-color: transparent;
+    margin-right: 2%;
+}
+#search {
+    margin-top: 0.7%;
+}
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+}
+#cart >img {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}
+
         @media screen and (min-width:321px) and (max-width:479px) {
             #product {
                 width: 96%;
@@ -147,7 +265,27 @@
     </style>
 </head>
 
-<body>
+<body><div id="nav">
+    <a id="menu" href="">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </a>
+    <div id="logo">
+        <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+    </div>
+    <div id="gap"></div>
+    <a href="Search.html" id="search">SEARCH</a>
+    <div id="loghelp">
+        <a href="login.html">LOGIN</a>
+        <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+    </div>
+    <a id="cart" href="">
+        <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+        <h5></h5>
+    </a>
+</div>
+    
     <div class="nav">
         <ul>
             <a href="viewall.html">
@@ -164,6 +302,23 @@
     <div id="product">
 
     </div>
+    <div id="LETTER">
+        <p>JOIN OUR NEWSLETTER</p>
+        <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
+        <div>
+         <a href="https://www.instagram.com/zara/" target="_blank">
+             INSTAGRAM
+            </a>
+            <a href="https://www.facebook.com/Zara" target="_blank">
+             FACEBOOK
+            </a>
+            <a href="https://twitter.com/ZARA" target="_blank">TWITTER</a>
+            <a href="https://www.pinterest.es/zaraofficial/" target="_blank">PINTEREST</a>
+            <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
+            <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
+        </div>
+     
+       </div>
     <section id="option">
         <div>
             <h3>HELP</h3>

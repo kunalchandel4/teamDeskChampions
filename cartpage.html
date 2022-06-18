@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#logo {
+    width: 16%;
+	margin-left: 180px;
+}
+#logo > img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+
+
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+	margin-right: 30px;
+}
+#option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 7px;
+            font-size: 8px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        } 
+		#cart{
+			padding:180px;
+		}
+
+
+</style>
+<body>
+	<div id="nav">
+      
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+      
+        <div id="loghelp">
+            <a href="login.html">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+     
+       
+    </div>
+	<div id="cart">
+		<h2>CART</h2>
+	  </div> 
+	<section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+</html>
+<script>
+	let addct= document.querySelector("#ring")
+	let carts = JSON.parse(localStorage.getItem("cart-page")) || [];
+
+function displayproduct(ringData) {
+	addct.innerHTML = "";
+	ringData.forEach(function(elem) {
+		let box = document.createElement("div");
+		let pic = document.createElement("img");
+		pic.setAttribute("src", elem.image_url);
+		box.append(pic);
+		let inname = document.createElement("h4");
+		inname.innerText = elem.name;
+		let price = document.createElement("p");
+		price.innerText = elem.price;
+		let strikedoffprice = document.createElement("p");
+		strikedoffprice.innerText = elem.strikedoffprice;
+		strikedoffprice.style.textDecoration = "line-through";
+		let category = document.createElement("p");
+		category.innerText = elem.category;
+		let deletecart = document.createElement("button");
+		deletecart.innerText = "Delete"
+		deletecart.addEventListener("click",
+			function() {
+				Delete(elem.productid);
+			})
+
+		box.append(pic, inname, category, price, strikedoffprice, deletecart);
+		document.querySelector("#ring").append(box)
+		
+	})
+}
+
+displayproduct(carts);
+
+function Delete(Id) {
+	let Deleted = carts.filter(function(elem) {
+			return elem.productId != Id;
+		})
+		                                   
+	carts = Deleted;
+	localStorage.setItem("cart-page", JSON.stringify(carts));
+	displayproduct(carts);
+}
+</script>

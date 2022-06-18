@@ -13,6 +13,7 @@
         width: 600px;
         justify-content: space-around;
         margin: auto;
+        margin-top: 100px;
     }
     
     P {
@@ -43,7 +44,7 @@
         border-color: none;
     }
     
-    #button1{
+    #button1 {
         display: flex;
         width: 60px;
         height: 60px;
@@ -52,7 +53,7 @@
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1220px;
+        margin-left: 1440px;
         position: absolute;
         padding-top: 21px;
         border: none;
@@ -68,7 +69,7 @@
         font-stretch: extra-condensed;
         justify-content: center;
         align-content: center;
-        margin-left: 1270px;
+        margin-left: 1490px;
         position: absolute;
         padding-top: 15px;
         border: none;
@@ -88,7 +89,8 @@
     /* a {
         color: black;
     } */
-    #button2{
+    
+    #button2 {
         display: flex;
         width: 60px;
         height: 60px;
@@ -104,7 +106,8 @@
         top: 352px;
         background-color: transparent;
     }
-    #span2{
+    
+    #span2 {
         width: 60px;
         height: 60px;
         font-size: 65px;
@@ -119,12 +122,205 @@
         top: 320px;
         background-color: transparent;
     }
+ 
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#logo {
+    width: 16%;
+}
+#logo > img {
+    width: 100%;
+}
+#gap {
+    width: 40%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+#cart {
+    display: flex;
+    width: 5%;
+    height: 35%;
+    background-color: transparent;
+    margin-right: 2%;
+}
+#search {
+    margin-top: 0.7%;
+}
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+}
+#cart >img {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}#LETTER>p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
+    font-size: 16px;
+}
+#option {
+            width: 75%;
+            margin: 280px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+
+            
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+      
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        ul {
+            list-style: none;
+            line-height: 9px;
+            font-size: 9px;
+        }
+        li{
+            margin-left: -1px;
+        }
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            padding-bottom: 80px;
+        }
+        
+        #LETTER{
+    margin-left: 180px;
+   
+}
+#LETTER{
+    margin-top: 150px;
+}
+#LETTER>div{
+  
+   margin-top: 100px;
+}
+
+#LETTER>div>a{
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#LETTER>div>a:hover{
+    text-decoration: underline;
+}
+#input{
+        width: 19%;
+    border:transparent;
+    border-bottom: 1px solid black;
+}
+#input:placeholder-shown{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+}
+
 </style>
+<body>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+        <div id="gap"></div>
+        <a href="Search.html" id="search">SEARCH</a>
+        <div id="loghelp">
+            <a href="login.html">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
+    </div>
+
 <div id="image1"><span id="span2"><</span> <button id="button2">WOMEN</button></div>
 <div id="image">
-    <button id="button1">KIDS</button><span id="span1">></span>
-  
+    <button id="button1">KIDS</button><span id="span1">></span> 
+
 
 
     <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644">
@@ -148,6 +344,82 @@
 
 
 </div>
+<div id="LETTER">
+    <h2>JOIN OUR NEWSLETTER</h2>
+    <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
+    <div>
+     <a href="https://www.instagram.com/zara/" target="_blank">
+         INSTAGRAM
+        </a>
+        <a href="https://www.facebook.com/Zara" target="_blank">
+         FACEBOOK
+        </a>
+        <a href="https://twitter.com/ZARA" target="_blank">TWITTER</a>
+        <a href="https://www.pinterest.es/zaraofficial/" target="_blank">PINTEREST</a>
+        <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
+        <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
+    </div>
+ 
+   </div>
+ 
+ 
+   <section id="option">
+     <div>
+         <h3>HELP</h3>
+         <ul>
+             <li>SHOP AT ZARA.COM</li><br>
+             <li>PRODUCT</li><br>
+             <li>PAYMENT</li><br>
+             <li>SHIPPING</li><br>
+             <li>EXCHANGES AND RETURNS</li><br>
+             <li>SHOPS AND COMPANY </li><br>
+             <li>CLOTHES COLLECTION PROGRAMME</li><br>
+             <li>MY ACCOUNT </li>
+         </ul>
+ 
+     </div>
+     <div>
+         <h3> FOLLOW US</h3>
+         <ul>
+             <li>NEWSLETTER</li><br>
+             <li>INSTAGRAM</li><br>
+             <li>FACEBOOK</li><br>
+             <li>TWITTER</li><br>
+             <li>PINTEREST</li><br>
+             <li>YOUTUBE</li>
+         </ul>
+     </div>
+     <div>
+         <h3>COMPANY</h3>
+         <ul>
+             <li>ABOUT US</li><br>
+             <li>JOIN LIFE</li><br>
+             <li>OFFICES</li><br>
+             <li>STORES</li><br>
+             <li>WORK WITH US</li>
+         </ul>
+     </div>
+     <div>
+         <h3>POLICIES</h3>
+         <ul>
+             <li>PRIVACY POLICY</li><br>
+             <li>PURCHASE CONDITIONS</li><br>
+             <li>COOKIES SETTINGS</li>
+         </ul>
+     </div>
+ </section>
+ <section id="second">
+     <p>INDIA</p>
+     <p>ENGLISH</p>
+     <p>@ALL RIGHTS RESERVED</p>
+ 
+ </section>
+ <div id="end">
+ 
+     <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+ 
+ 
+ </div>
 </body>
 
 </html>
@@ -164,6 +436,8 @@
         image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-24//w/1028/IMAGE-landscape-6b53085c-82e6-4c71-a2ba-b77d33b33db9-default_0.jpg?ts=1655135331644";
 
         image1.style.border = "none";
+        image1.style.cursor = "pointer";
+        image1.addEventListener("click", clickimge)
     }
     let data1 = document.querySelector("#main>.d2>p");
     data1.style.cursor = "pointer";
@@ -174,13 +448,14 @@
         data1.style.color = "black";
         let image = document.querySelector("#image>img");
         image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-trajes/subhome-xmedia-23//w/1028/IMAGE-landscape-86a47cfa-3fa1-451e-824a-0fc88b6f2fdd-default_0.jpg?ts=1654695356696";
-    
-    image.style.cursor="pointer";
-image.addEventListener("click", clickimage)}
+
+        image.style.cursor = "pointer";
+        image.addEventListener("click", clickimage)
+    }
 
     let data2 = document.querySelector("#main>.d3>p");
     data2.style.cursor = "pointer";
-    
+
 
     data2.addEventListener("click", getimage2);
 
@@ -189,7 +464,8 @@ image.addEventListener("click", clickimage)}
         let image3 = document.querySelector("#image>img");
         image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-joinlife/subhome-xmedia-23//w/1028/IMAGE-landscape-4f6213e5-cf88-4d5b-9295-4a18c7450972-default_0.jpg?ts=1654696832147";
 
-
+        image3.style.cursor = "pointer";
+        image3.addEventListener("click", clickimag)
     }
     let data3 = document.querySelector("#main>.d4>p");
     data3.style.cursor = "pointer";
@@ -200,13 +476,15 @@ image.addEventListener("click", clickimage)}
         data3.style.color = "black";
         let image4 = document.querySelector("#image>img");
         image4.src = "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096";
+        image4.style.cursor = "pointer";
+        image4.addEventListener("click", clickimg)
     };
     let button = document.querySelector("#button1");
     button.style.cursor = "pointer";
     document.querySelector("#button1").addEventListener("click", clickme)
 
     function clickme() {
-        
+
         window.location.href = "kids.html";
 
     }
@@ -215,11 +493,24 @@ image.addEventListener("click", clickimage)}
     document.querySelector("#button2").addEventListener("click", clickhere)
 
     function clickhere() {
-        
+
         window.location.href = "women.html";
 
     }
-    function clickimage(){
-        window.location.href="viewall.html";
+
+    function clickimage() {
+        window.location.href = "viewall.html";
+    }
+
+    function clickimag() {
+        window.location.href = "join.html";
+    }
+
+    function clickimg() {
+        window.location.href = "ATHLECTICZ.html";
+    }
+
+    function clickimge() {
+        window.location.href = "new.html";
     }
 </script>

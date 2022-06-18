@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #prod {
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #prod>div>div>img {
+            width: 100%;
+        }
+        
+        #prod>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        #LETTER{
+    margin-left: 180px;
+   
+}
+#LETTER>div{
+  
+   margin-top: 130px;
+}
+
+#LETTER>div>a{
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#LETTER>div>a:hover{
+    text-decoration: underline;
+}
+#input{
+        width: 19%;
+    border:transparent;
+    border-bottom: 1px solid black;
+}
+#input:placeholder-shown{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+}
+/* #input:hover{
+    text-overflow:inherit;
+} */
+#LETTER>p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 16px;
+}
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 50%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#LETTER{
+    margin-left: 180px;
+   
+}
+#LETTER>div{
+  
+   margin-top: 130px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#logo {
+    width: 16%;
+}
+#logo > img {
+    width: 100%;
+}
+#gap {
+    width: 40%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+#cart {
+    display: flex;
+    width: 5%;
+    height: 35%;
+    background-color: transparent;
+    margin-right: 2%;
+}
+#search {
+    margin-top: 0.7%;
+}
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+}
+#cart >img {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#LETTER>div>a{
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#LETTER>div>a:hover{
+    text-decoration: underline;
+}
+#input{
+        width: 19%;
+    border:transparent;
+    border-bottom: 1px solid black;
+}
+#input:placeholder-shown{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+}
+/* #input:hover{
+    text-overflow:inherit;
+} */
+#LETTER>p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 16px;
+}
+#logo {
+    width: 16%;
+}
+#logo > img {
+    width: 100%;
+}
+#gap {
+    width: 40%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+#cart {
+    display: flex;
+    width: 5%;
+    height: 35%;
+    background-color: transparent;
+    margin-right: 2%;
+}
+#search {
+    margin-top: 0.7%;
+}
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+}
+#cart >img {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}
+
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+        <div id="gap"></div>
+        <a href="Search.html" id="search">SEARCH</a>
+        <div id="loghelp">
+            <a href="login.html">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
+    </div>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+        <div id="gap"></div>
+        <a href="Search.html" id="search">SEARCH</a>
+        <div id="loghelp">
+            <a href="login.html">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
+    </div>
+    <div class="nav">
+        <ul>
+            <a href="join.html">
+                <li>NEW</li>
+            </a>
+            <a href="Coats.html">
+                <li>COATS | JACKETS</li>
+            </a>
+            <a href="knit.html">
+                <li>KNITWAR</li>
+            </a>
+        </ul>
+    </div>
+    <div id="prod">
+
+    </div>
+    <div id="LETTER">
+        <p>JOIN OUR NEWSLETTER</p>
+        <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
+        <div>
+         <a href="https://www.instagram.com/zara/" target="_blank">
+             INSTAGRAM
+            </a>
+            <a href="https://www.facebook.com/Zara" target="_blank">
+             FACEBOOK
+            </a>
+            <a href="https://twitter.com/ZARA" target="_blank">TWITTER</a>
+            <a href="https://www.pinterest.es/zaraofficial/" target="_blank">PINTEREST</a>
+            <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
+            <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
+        </div>
+     
+       </div>
+    
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    let fatchData = [{
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/0693/426/800/2/w/444/0693426800_2_1_1.jpg?ts=1642620979562",
+        name: "KNIT HIGH NECK T-SHIRT",
+        price: 2590,
+        productId: "T-SHIRT",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/6674/412/518/2/w/444/6674412518_2_1_1.jpg?ts=1643972075516",
+        name: "COLOR BLOCK CARDIGAN",
+        price: 3990,
+        productId: "CARDIGAN",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/6771/313/707/2/w/444/6771313707_2_1_1.jpg?ts=1652871338680",
+        name: "KNIT POLO SHIRT WITH ZIP",
+        price: 2890,
+        productId: "SHIRT",
+        color: "ERCU",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2621/400/300/2/w/444/2621400300_2_1_1.jpg?ts=1644569510287",
+        name: "TEXTURED KNIT T-SHIRT",
+        price: 2890,
+        productId: "T-SHIRT",
+        color: "YELLOW",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2621/411/710/2/w/444/2621411710_2_1_1.jpg?ts=1643972075010",
+        name: "STRIPED KNIT POLO SHIRT",
+        price: 2890,
+        productId: "SHIRT",
+        color: " BEIGE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3284/436/628/2/w/444/3284436628_2_1_1.jpg?ts=1652949287122",
+        name: "TIE-DYE PRINTED KNIT T-SHIRT",
+        price: 2890,
+        productId: "T-SHIRT",
+        color: "RED,YELLOW,BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4331/402/712/2/w/444/4331402712_2_1_1.jpg?ts=1647339871795",
+        name: "STRIPED CROCHET KNIT T-SHIRT",
+        price: 2890,
+        productId: "T-SHIRT",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/2281/405/436/2/w/444/2281405436_2_1_1.jpg?ts=1649152311911",
+        name: "STRIPED EMBROIDERED T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "ERCU",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4374/418/712/2/w/444/4374418712_2_1_1.jpg?ts=1653468390020",
+        name: "PRINTED KNIT T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "WHITE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4805/407/485/2/w/444/4805407485_2_1_1.jpg?ts=1650452322942",
+        name: "KIT T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "GREY",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/5755/412/802/2/w/444/5755412802_2_1_1.jpg?ts=1652969026737",
+        name: "TEXTURED WEAVE KNIT SHIRT",
+        price: 2990,
+        productId: "SHIRT",
+        color: "GREY, BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4090/440/800/2/w/444/4090440800_2_1_1.jpg?ts=1652269340271",
+        name: "PRINTED KNIT T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4374/414/800/2/w/444/4374414800_2_1_1.jpg?ts=1652370154794",
+        name: "CONTRAST PRINT KNIT T-SHIRT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "BLACK",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/3991/405/401/2/w/444/3991405401_2_1_1.jpg?ts=1649836931245",
+        name: "PAISLEY JACQUARD KNIT OVERSHIRT",
+        price: 4990,
+        productId: "OVERSHIRT",
+        color: "BLUE",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4374/405/615/2/w/444/4374405615_2_1_1.jpg?ts=1647532818787",
+        name: "KNIT T-SHIRT WITH CONTRAST PRINT",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "RED",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4374/412/300/2/w/444/4374412300_2_1_1.jpg?ts=1650452327733",
+        name: "KNIT T-SHIRT WITH KIWI EMBROIDERY",
+        price: 1990,
+        productId: "T-SHIRT",
+        color: "YELLOW",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/9598/412/425/2/w/444/9598412425_2_1_1.jpg?ts=1651840544289",
+        name: "TEXTURED KNIT POLO SHIRT",
+        price: 2990,
+        productId: "SHIRT",
+        color: "ERCU",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/5536/307/722/2/w/444/5536307722_2_1_1.jpg?ts=1642508265934",
+        name: "MATCHING J=KNIT HOODIE",
+        price: 1790,
+        productId: "HOODIE",
+        color: "BROWN",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/I/0/2/p/5755/440/802/2/w/444/5755440802_1_1_1.jpg?ts=1652430723044",
+        name: "JACQUARD KNIT POLO SHIRT X RHUIGI",
+        price: 6990,
+        productId: "SHIRT",
+        color: "YELLOW,RED",
+    }, {
+        image_url: "https://static.zara.net/photos///2022/V/0/2/p/4231/403/712/2/w/444/4231403712_2_1_1.jpg?ts=1643196141893",
+        name: "TEXTUREED KNIT POLO SHIRT",
+        price: 2990,
+        productId: "SHIRT",
+        color: "ERCU",
+    }, {
+        image_url: "https://static.zara.net/photos///2021/I/0/2/p/3332/325/401/2/w/444/3332325401_2_1_1.jpg?ts=1628095207243",
+        name: "TEXTURED SWEATER",
+        price: 2990,
+        productId: "SWEATER",
+        color: "BLUE",
+    }, ]
+    let prod = document.getElementById("prod");
+
+    function displayf(fatchData) {
+        prod.innerHTML = "";
+        fatchData.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.image_url);
+            box.append(pic);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = "₹ " + elem.price + ".00";
+            box1.append(inname, price)
+            box.append(pic);
+            div.append(box, box1)
+            document.querySelector("#prod").append(div);
+
+        });
+    }
+    displayf(fatchData)
+</script>
