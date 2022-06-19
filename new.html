@@ -81,8 +81,14 @@
             font-size: 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-stretch: extra-condensed;
+            gap:80px;
+            
         }
-        
+        #option>div>ul>li{
+            width:900px;
+           
+            
+           } 
         h3 {
             margin-bottom: 10px;
         }
@@ -385,7 +391,7 @@ a {
 </body>
 
 </html>
-<script>
+<scrip>
 
 let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let imageData = [{
@@ -781,8 +787,11 @@ for(let i=0 ;i<ringData.length ; i++){
             box1.append(box);
             document.querySelector("#ring").append(box1);
 
+<<<<<<< HEAD
         });
     }
+=======
+>>>>>>> 43cdb112eb26575aa407f2f0360b216e6c09bb9a
     displaydelta(ringData)
     // console.log(ringData);
     function localSet(el){
@@ -790,7 +799,10 @@ for(let i=0 ;i<ringData.length ; i++){
    
     localStorage.setItem("display",JSON.stringify(el))
     window.location.href="linkimage.html"
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 43cdb112eb26575aa407f2f0360b216e6c09bb9a
 
   displaydelta(ringData)
     
