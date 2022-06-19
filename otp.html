@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP.land</title>
+    <style>
+      
+        form{
+         
+            height: 100px;
+            width: 40%;
+            margin: auto;
+            margin-top: 15%;
+        
+        }
+        form>input{
+        display: block;
+        margin-bottom: 40px;
+        margin-left: 20%;
+        width: 30%;
+        height: 30px;
+        }
+        input::placeholder{
+            color: black;
+        }
+        #sub:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        /* nav css */
+
+
+        #nav {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        justify-content: space-between;
+        background-color: transparent;
+        position: fixed;
+        top: 0px;
+    }
+        #logo {
+        width: 16%;
+        margin-left: 180px;
+    }
+    
+
+    #logo>img {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: none;
+        color: black;
+    }
+    
+    #loghelp {
+        display: flex;
+        width: 10%;
+        background-color: transparent;
+        justify-content: space-between;
+        margin-top: 0.7%;
+        margin-right: 30px;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- //nav sec -->
+
+    <div id="nav">
+
+        <div id="logo">
+            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+        </div>
+
+        <div id="loghelp">
+            <a href="login.html" id="lg">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+
+</div>
+    <!-- end  -->
+    
+    <form>
+        <input type="password" name="" id="OTP" placeholder="Enter you OTP">
+        <input type="submit" name="" id="sub">
+    </form>
+</body>
+</html>
+
+
+<script>
+
+    let arr=[{no:"12345"}]
+
+document.querySelector("form").addEventListener("submit",otp)
+
+function otp(event){
+    event.preventDefault()
+
+    let code=document.querySelector("#OTP").value
+    
+    for(let i=0 ; i<arr.length ; i++){
+        let x=arr[i]
+        if(x.no===code){
+             alert("Payment Sucessfull") ;
+           window.location.href="index.html"
+           
+        } else{
+         alert("Please Enter Correct OTP")
+           
+        }
+    
+    }
+    
+       
+  
+    
+    
+}
+let logdata=JSON.parse(localStorage.getItem("Userdata"))
+
+
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})
+
+</script>
