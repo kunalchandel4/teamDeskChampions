@@ -352,7 +352,7 @@
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
         <div id="loghelp">
-            <a href="login.html">LOGIN</a>
+            <a href="login.html" id="lg"></a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
         <a id="cart" href="">
@@ -730,6 +730,21 @@
     }
     displaya(accessory)
 
+
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
+
+let logdata=JSON.parse(localStorage.getItem("Userdata"))
+
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})
+</script>
+
     function localSet(el) {
         // console.log("kunal");
 
@@ -738,3 +753,4 @@
     }
 </script>
 <script src="navbar.js"></script>
+

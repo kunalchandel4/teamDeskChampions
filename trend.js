@@ -422,3 +422,10 @@ function localSet(el){
   localStorage.setItem("display",JSON.stringify(el))
   window.location.href="linkimage.html"
 }
+
+
+let logdata=JSON.parse(localStorage.getItem("Userdata"))
+
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})

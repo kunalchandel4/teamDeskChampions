@@ -312,7 +312,7 @@ a {
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
         <div id="loghelp">
-            <a href="login.html">LOGIN</a>
+            <a href="login.html" id="lg"></a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
         <a id="cart" href="">
@@ -427,7 +427,7 @@ a {
 </body>
 
 </html>
-<script>
+<scrip>
     let data = document.querySelector("#main>.d1>p");
     data.style.cursor = "pointer";
 
@@ -516,6 +516,15 @@ a {
 
     function clickimge() {
         window.location.href = "new.html";
-    }
-</script>
+
+
 <script src="navbar.js"></script>
+
+
+    let logdata=JSON.parse(localStorage.getItem("Userdata"));
+
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})
+
+
