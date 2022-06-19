@@ -63,7 +63,7 @@ body>img {
 #logo {
     width: 16%;
 }
-#logo > img {
+#logo > a>img {
     width: 100%;
 }
 #gap {
@@ -258,6 +258,7 @@ li:hover {
 #street {
     width: 75%;
     margin: auto 115px;
+    
 }
 
 a:hover {
@@ -272,6 +273,7 @@ a {
 
 .nav {
     width: 100%;
+    
     background-color: transparent;
     position: sticky;
     top: 0px;

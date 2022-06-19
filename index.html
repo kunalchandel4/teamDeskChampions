@@ -130,7 +130,7 @@
         width: 16%;
     }
     
-    #logo>img {
+    #logo> a>img {
         width: 100%;
     }
     
@@ -266,8 +266,8 @@
         <div id="three"></div>
     </a>
     <div id="logo">
-        <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
-    </div>
+      <a href="index.html">  <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+      </a>  </div>
     <div id="gap"></div>
     <a href="Search.html" id="search">SEARCH</a>
     <div id="loghelp">
@@ -483,9 +483,14 @@
         window.location.href = "womenshoe.html";
 
     }
+
+</script>
+<script src="navbar.js"></script>
+
     let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
 logdata.forEach(function(elem){
 	document.querySelector("#lg").innerText=elem.name;
 })
 </script>
+>>>>>>> d0d9b615c3591da878d6e5fabd62c969295a1176

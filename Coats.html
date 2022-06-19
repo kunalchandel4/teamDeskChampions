@@ -66,7 +66,7 @@
 #logo {
     width: 16%;
 }
-#logo > img {
+#logo>a>img {
     width: 100%;
 }
 #gap {
@@ -278,8 +278,10 @@ a {
             <div id="two"></div>
             <div id="three"></div>
         </a>
-        <div id="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+       <div id="logo">
+    <a href="index.html">  
+    <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+</a> 
         </div>
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
@@ -561,11 +563,15 @@ console.log(formalData)
    
     localStorage.setItem("display",JSON.stringify(el))
     window.location.href="linkimage.html"
-}
-
-let logdata=JSON.parse(localStorage.getItem("Userdata"))
+}let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
 logdata.forEach(function(elem){
 	document.querySelector("#lg").innerText=elem.name;
 })
 </script>
+
+</script>
+<script src="navbar.js"></script>
+
+
+

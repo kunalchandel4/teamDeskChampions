@@ -44,7 +44,7 @@
 #logo {
     width: 16%;
 }
-#logo > img {
+#logo >a> img {
     width: 100%;
 }
 #gap {
