@@ -127,31 +127,193 @@ a {
             text-decoration: underline;
             cursor: pointer;
         } 
-		
-        #cart{
+		#mens{
+     
+            margin-left: 180px;
             margin-top: 200px;
-          
-            border: 1px solid red;
-            width: 100%;
-            height: 650px;
-            
+        display: grid;
+        grid-template-columns: repeat(4,550px);
+        grid-template-rows:  405px;
+        width: 80%;
+        height: 420px;
+        overflow-x: auto;
+        gap: 10px;
         }
-h4{
+        #mens::-webkit-scrollbar{
+    width: 0px;
+}
+        #mens>div{  
+   display: flex;
+/* flex: wrap; */
+      gap: 20px;
+    }
+   
+    #mens>div>div>img{
   
-    margin-bottom: 20px;
+     
+      width: 100%;
+        height: 400px;
+   
+    }
+  
+   #mens>div>div> h4{
+/* margin-bottom: 10px; */
+    display: inline;
+    margin-right: 10px;
+   }
+   #mens>div>div>p{
+
+  font-size: 13px;
+ font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 15px;
+ color:grey;
+ width: 80%;
+ margin-top: 10px;
+
+    
+   }
+  #plus{
+    
+    width: 30px;
+    font-size: 20px;
+    border: transparent;
+    height: 40px;
+color: grey;
+background-color: white;
+margin-left: 5px;
+  }
+   #minus{
+    
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: transparent;
+color: grey;
+background-color: white;
+   }
+   #minus:hover{
+    cursor: pointer;
+   }
+   #plus:hover{
+    cursor: pointer;
+   }
+   #mens>div>div>button:last-child{
+/* margin-bottom: 10px; */
+display: block;
+border: transparent;
+color: grey;
+    margin-top: 200px;
+    background-color: white;
+   }
+   #mens>div>div>button:last-child:hover{
+cursor: pointer;
+text-decoration: underline;
+   }
+   h4{
+    font-size: 18px;
+    color: grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+
+   #box{
+
+      height: 100px;
+      width: 83%;
+      margin: auto;
+  display: flex;
+  justify-content: space-between;
+      position:sticky;
+      
+      /* top:1200px;   */
+      }
+form{
+    margin-left: 50px;
+}
+      form>p{margin: 20px 0px 0px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+   
+    font-size: 11px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+    font-weight: bolder;
+
+      }
+      form>p:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      form>input{
+        margin-top: 10px;
+        height: 30px;
+        border: transparent;
+     border-bottom: 1px solid black;
+      }
+     
+form>input:last-child{
+   
+   margin-left: 20px;
+   width: 100px;
+   color: white;
+   background-color: black;
+   cursor: pointer;
 }
 
-#cart>div>div{
-    border: 1px solid red;
-    width: 100px;
-    height: 500px;
+form>input:last-child:hover{
+    background-color: green;
 }
-#cart>div>div:last-child{
-    border: 1px solid red;
-    width: 100px;
-    height: 500px;
+#box2{
+    width: 30%;
+  
 }
+#box>div{
+    display: flex;
+    gap: 10px
+     
+}
+#box2>div>p{
 
+    margin-top: 20px;
+    width: 100%;
+   
+    word-spacing: 10px;
+}
+#box2>div>p:first-child{
+    font-weight: bolder;
+}
+#box2>div>div:nth-child(2)>p{
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#box2>div>div:last-child>p{
+  font-weight: bold;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#butn{
+    width: 50%;
+    margin-left: 25px;
+    margin-top: 38px;
+        height: 35px;
+        border: transparent;
+     background-color: black;
+     color: white;
+}
+#butn:hover{
+    cursor:pointer;
+}
 </style>
 <body>
 	<div id="nav">
@@ -168,19 +330,34 @@ h4{
        
     </div>
     <!-- // cart data -->
-	<div id="cart">
-		<div>
-            <h4>kunal</h4>
-            <div></div>
-            <div></div>
+	<div id="mens"></div>
+
+
+
+     <div id="box">
+        <form><p>ENTER YOUR PROMO CODE YOU WILL GET 30%OFF </p>
+        <input type="text" name="" id="promo">
+        <input type="submit" value="ENTER">
+        </form>
+     <div id="box2">
+             
+        <div>
+            <p id="tot"></p>
+            
+            <div>
+                <p>INCLUDING GST</p>
+
+            </div>
+            <div>
+                <p> * EXCL SHIPPING COST</p>
+            </div>
         </div>
-	  </div> 
+                <button id="butn">CONTINUE</button>
+     </div>
 
-
-
-
+     </div>
       <!-- // bottom part -->
-	<section id="option">
+	<!-- <section id="option">
         <div>
             <h3>HELP</h3>
             <ul>
@@ -235,36 +412,38 @@ h4{
         <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
 
 
-    </div>
+    </div> -->
 </body>
 </html>
 <script>
 
 	let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
 
-    let totalPrice=0
+    // document.querySelector("#Qts").innerText=cartLS.length
+
+let totalPrice=0
         function display(Data){
         document.querySelector("#mens").innerHTML="" ;
          totalPrice=0;
         
       // count=
-        Data.forEach(function(elem,index,){
+        Data.forEach(function(elem,index){
           // console.log(elem.quan)
           // console.log(elem.cartPrices);
-          totalPrice+= elem.cartPrices;
+          totalPrice+= elem.cartePrice;
             let div = document.createElement("div")
             let div1 = document.createElement("div") 
             let div2 = document.createElement("div");
 
             let image=document.createElement("img") ;
             image.setAttribute("src",elem.img) ;
-            let ptag=document.querySelector("#pro")
-            ptag.innerText =elem.name
+            let ptag=document.createElement("p")
+            ptag.innerText ="Product Name: "+ elem.name
             let p2price=document.createElement("p") ;
-            p2price.innerText = "Price: $"+elem.price ;
+            p2price.innerText = "Price: ₹ "+elem.price ;
        
             let p4=document.createElement("p") ;
-            p4.innerText = "Catagory: "+elem.catagory ;
+            p4.innerText = "Catagory: "+elem.productID ;
             
             let h4=document.createElement("h4")
                 //   h4.setAttribute("id","abc")
@@ -274,31 +453,33 @@ h4{
             
             butn.innerText = "Delete" ;
             
-            // butn.addEventListener("click",function(){
-            //     Delete(elem.productID)
+            butn.addEventListener("click",function(){
+                Delete(elem.category)
                
-            //     // console.log(elem.productID)
+                // console.log(elem.productID)
            
-            // })
+            })
             let plus=document.createElement("button")
-              plus.innerText="+"
-            //   plus.addEventListener("click",function(){
-                
-            //     incr(elem,index,cartLS)
-            //   })
+            plus.setAttribute("id","minus")
+              plus.innerText="-"
+              plus.addEventListener("click",function(){
+                dec(elem,index,cartLS)
+            
+              })
             let minus=document.createElement("button")
-              minus.innerText="-"
-            //   minus.addEventListener("click",function(){
-                
-            //     dec(elem,index,cartLS)
-            //   })
-            //   document.querySelector("#tot").innerText=totalPrice
+            minus.setAttribute("id","plus")
+              minus.innerText="+"
+              minus.addEventListener("click",function(){
+                incr(elem,index,cartLS)
+            
+              })
+              document.querySelector("#tot").innerText="TOTAL  ₹" +Number(totalPrice)+".00"
               // console.log(totalPrice)
             div.append(image)
             // console.log(h4);
-            div1.append(p2price,plus,h4,minus,butn)  
+            div1.append(ptag,p4,p2price,plus,h4,minus,butn)  
             div2.append(div,div1)
-            document.querySelector("#mens").append(image) ;
+            document.querySelector("#mens").append(div2) ;
      
             }) 
 
@@ -310,11 +491,80 @@ h4{
        
         display(cartLS)
 
+document.querySelector("#butn").addEventListener("click",lol)
+function lol(){
+  window.location.href="payment.html"
+}
 
+       function Delete(id){
+        // console.log(id)
+        let deleted = cartLS.filter(function(el){
+            return el.category!=id ;
+        })
+         cartLS =deleted
+           localStorage.setItem("cart-page",JSON.stringify(cartLS))
+        //   console.log(deleted)
+          display(cartLS)
+          window.location.reload()
+       }
+
+function incr(elem,i,cartLS){
+// count++ 
+cartLS[i].quantity++
+  if(cartLS[i].quantity<=1){
+    cartLS[i].quantity=1
+  } 
+ 
+ elem.cartePrice=Number(elem.price)*elem.quantity
+          // console.log(added)
+ 
+
+
+ localStorage.setItem("cart-page",JSON.stringify(cartLS))
+window.location.reload()
+}
+
+function dec(elem,i,cartLS){
+  cartLS[i].quantity--
+  if(cartLS[i].quantity<=1){
+    cartLS[i].quantity=1
+  } 
+
+ 
+  elem.cartePrice=Number(elem.price)*elem.quantity
+          // console.log(added)
+
+ localStorage.setItem("cart-page",JSON.stringify(cartLS))
+window.location.reload()
+ 
+}
+
+let k=document.querySelector("form").addEventListener("submit",discount)
+function discount(event){
+  event.preventDefault()
+  let promo="masai30"
+  
+  let b=document.querySelector("#promo").value
+  if(promo===b){
+    totalPrice=totalPrice-(totalPrice*30/100)
+    document.querySelector("#tot").innerText= "TOTAL  ₹" +(Number(Math.ceil(totalPrice))) +".00"
+    // window.location.reload()
+  }else{
+    alert("Wrong PromoCode")
+  }
+    
+
+}
 
 
 
 </script>
+
+
+
+
+
+
 
 <!-- 
 let addct= document.querySelector("#ring")
