@@ -336,8 +336,9 @@
     <div id="nav">
 
         <div id="logo">
-        <a href="index.html">    <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
-        </a> </div>
+            <a href="index.html"> <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+            </a>
+        </div>
 
         <div id="loghelp">
             <a href="login.html" id="lg"></a>
@@ -370,7 +371,9 @@
                     <p> * EXCL SHIPPING COST</p>
                 </div>
             </div>
-            <button id="butn">CONTINUE</button>
+            <div>
+                <button id="butn">CONTINUE</button>
+            </div>
         </div>
 
     </div>
@@ -433,10 +436,11 @@
     </div> -->
 </body>
 
-</html><script>
+</html>
+<script>
     let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
 
-    
+
 
     let totalPrice = 0
 
@@ -502,12 +506,12 @@
         })
 
 
-let logdata=JSON.parse(localStorage.getItem("Userdata"))
+        let logdata = JSON.parse(localStorage.getItem("Userdata"))
 
 
-logdata.forEach(function(elem){
-	document.querySelector("#lg").innerText=elem.name;
-})
+        logdata.forEach(function(elem) {
+            document.querySelector("#lg").innerText = elem.name;
+        })
 
 
 
@@ -518,7 +522,7 @@ logdata.forEach(function(elem){
     document.querySelector("#butn").addEventListener("click", lol)
 
     function lol() {
-        window.location.href = "payment.html"
+        window.location.href = "addcart.html"
     }
 
     function Delete(id) {
@@ -581,7 +585,6 @@ logdata.forEach(function(elem){
 
 
     }
-
 </script>
 
 

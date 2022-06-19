@@ -1,178 +1,337 @@
-body, html{
-  border: 0;
+body,
+html {
+    border: 0;
     font: inherit;
     font-size: 100%;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
-    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;;
-}
-.payment-container{
-  padding: 0 2rem;
-  position: relative;
-}
-.paymentTitle{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  width: 100%;
-  
-}
-.paymentTitle > h1 {
-
-  font-weight: 600;
-  text-transform:uppercase;
-  font-size: 1.5rem;
-  font-family:monospace;
-}
-.paymentHeadline{
-  border-top: 1px solid rgb(246, 239, 230);
-  border-bottom: 1px solid rgb(246, 239, 230);
-
-}
-.paymentHeadline > p{
-  font-size: .7rem;
-  font-weight:bolder;
-}
-span{
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    ;
 }
 
-.paymentMethod{
-  width: 55% !important;
-  display: grid;
-  grid-template-columns: repeat(6,130px);
-  gap: 4rem;
-  text-align: center;
-  margin: 100px 0px 0px 80px ;
-  
-}
-.paymentMethod1{
-  width: 55% !important;
-  display: grid;
-  grid-template-columns: 130px;
-  /* gap: 4rem; */
-  text-align: center;
-  margin: 10px 0px 0px 80px ;
-  
-}
-.paymentMethod2{
-  width: 55% !important;
-  display: grid;
-  grid-template-columns: 130px;
-  /* gap: 4rem; */
-  text-align: center;
-  margin: 10px 0px 0px 80px ;
-  
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
 }
 
-.paymentMethod > div{
-  
-  height: 80px;
-  padding: 1rem 0;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;}
-  
-  .paymentMethod > div>label{
+#menu {
+    display: grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+
+#menu>div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+
+#one {
+    width: 90%;
+}
+
+#two {
+    width: 60%;
+}
+
+#three {
+    width: 70%;
+}
+
+#menu:hover div {
+    width: 90%;
+}
+
+#logo {
+    width: 16%;
+    margin-left: 180px;
+}
+
+#logo>a>img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+    margin-right: 30px;
+}
+
+.payment-container {
+    padding: 0 2rem;
+    position: relative;
+}
+
+.paymentTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 150px 150px 0px;
+}
+
+.paymentTitle>h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.paymentHeadline {
+    border-top: 1px solid rgb(246, 239, 230);
+    border-bottom: 1px solid rgb(246, 239, 230);
+    margin-left: 150px;
+}
+
+.paymentHeadline>p {
+    width: 500px;
+    font-size: .7rem;
+    font-weight: bolder;
+    border: 1px solid #ff930b;
+    padding: 12px 8px 12px 12px;
+}
+
+span {
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paymentMethod {
+    width: 55% !important;
+    display: grid;
+    grid-template-columns: repeat(6, 130px);
+    gap: 4rem;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+}
+
+.paymentMethod1 {
+    width: 55% !important;
+    display: grid;
+    grid-template-columns: 130px;
+    /* gap: 4rem; */
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.paymentMethod2 {
+    width: 55% !important;
+    display: grid;
+    grid-template-columns: 130px;
+    /* gap: 4rem; */
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.paymentMethod>div {
+    height: 80px;
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.paymentMethod>div>label {
     display: flex;
     align-items: center;
     gap: 30px;
     flex-direction: column;
-  }
- .paymentMethod > div:hover{ 
-  transform: translateY(-8px);
-  border: 1px solid #e5e5e5;
-  /* padding: 16px 4px 4px; */
-cursor: pointer;
 }
-.paymentMethod>div>label>img{
-  width: 40%;
-  /* padding-bottom: 1rem; */
+
+.paymentMethod>div:hover {
+    transform: translateY(-8px);
+    border: 1px solid #e5e5e5;
+    /* padding: 16px 4px 4px; */
+    cursor: pointer;
 }
-.paymentMethod>div >label > span{
+
+.paymentMethod>div>label>img {
+    width: 40%;
+    /* padding-bottom: 1rem; */
+}
+
+.paymentMethod>div>label>span {
     font-size: 12px;
 }
-.paymentMethod1 > div{
-  
-  height: 80px;
-  padding: 1rem 0;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;}
-  
-  .paymentMethod1 > div>label{
+
+.paymentMethod1>div {
+    height: 80px;
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.paymentMethod1>div>label {
     display: flex;
     align-items: center;
     gap: 30px;
     flex-direction: column;
-  }
- .paymentMethod1 > div:hover{ 
-  transform: translateY(-8px);
-  border: 1px solid #e5e5e5;
- 
-cursor: pointer;
 }
-.paymentMethod1>div>label>img{
-  width: 40%;
-  /* padding-bottom: 1rem; */
+
+.paymentMethod1>div:hover {
+    transform: translateY(-8px);
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
 }
-.paymentMethod1>div >label > span{
+
+.paymentMethod1>div>label>img {
+    width: 40%;
+    /* padding-bottom: 1rem; */
+}
+
+.paymentMethod1>div>label>span {
     font-size: 12px;
 }
-.paymentMethod2 > div{
-  
-  height: 80px;
-  padding: 1rem 0;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;}
-  
-  .paymentMethod2 > div>label{
+
+.paymentMethod2>div {
+    height: 80px;
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.paymentMethod2>div>label {
     display: flex;
     align-items: center;
     gap: 30px;
     flex-direction: column;
-  }
- .paymentMethod2 > div:hover{ 
-  transform: translateY(-8px);
-  border: 1px solid #e5e5e5;
- 
-cursor: pointer;
 }
-.paymentMethod2>div>label>img{
-  width: 40%;
-  /* padding-bottom: 1rem; */
+
+.paymentMethod2>div:hover {
+    transform: translateY(-8px);
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
 }
-.paymentMethod2>div >label > span{
+
+.paymentMethod2>div>label>img {
+    width: 40%;
+    /* padding-bottom: 1rem; */
+}
+
+.paymentMethod2>div>label>span {
     font-size: 12px;
 }
+
+
 /* img:hover{
 
 } */
+
 button {
-  display: block;
-  background-color: black;
-  color: white;
- 
-  margin-top: 50px ;
- 
-  
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
 }
 
-
-.footerNav{
+.footerNav {
     position: fixed;
     /* border: 1px solid red; */
-    bottom:10px;
+    bottom: 10px;
     width: 100%;
     height: 60px;
-    
 }
 
-.footerNav > button{
-  position: absolute;
-  right: 62px;
-  bottom: 20px;
-  width: 206px;
-  height: 32px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-family: sans-serif;
+.footerNav>button {
+    position: absolute;
+    right: 250px;
+    bottom: 20px;
+    width: 206px;
+    height: 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+#option {
+    width: 75%;
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(8, 50px);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+    gap: 80px;
+}
+
+#option>div>ul>li {
+    width: 900px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+#second {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+#second>p:nth-child(1) {
+    margin-right: 850px;
+}
+
+#second>p:nth-child(2) {
+    margin-right: 20px;
+}
+
+#second>p:nth-child(3) {
+    color: #e8ddd6;
+}
+
+#end {
+    width: 75%;
+    margin: auto;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+ul {
+    width: 75%;
+    margin-right: 600px;
+    list-style: none;
+    line-height: 8px;
+    font-size: 9px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#lol {
+    font-weight: bolder;
+    margin-left: 880px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav>ul {
+    width: 40%;
+    padding-top: 120px;
+    margin: auto;
+    display: flex;
+    padding-right: 800px;
 }
