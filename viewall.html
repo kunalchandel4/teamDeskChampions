@@ -30,7 +30,6 @@
             width: 100%;
         }
         
-        
         #product>div>div:last-child {
             display: flex;
             font-size: 10px;
@@ -119,44 +118,48 @@
             text-decoration: none;
             color: black;
         }
-        #LETTER{
-    margin-left: 180px;
-   margin-top: 50px;
-}
-#LETTER>div{
-  
-   margin-top: 130px;
-}
-
-#LETTER>div>a{
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 9px;
-    /* margin: auto; */
-    color: grey;
-    text-decoration: none;
-}
-#LETTER>div>a:hover{
-    text-decoration: underline;
-}
-#input{
-        width: 19%;
-    border:transparent;
-    border-bottom: 1px solid black;
-}
-#input:placeholder-shown{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-}
-/* #input:hover{
+        
+        #LETTER {
+            margin-left: 180px;
+            margin-top: 50px;
+        }
+        
+        #LETTER>div {
+            margin-top: 130px;
+        }
+        
+        #LETTER>div>a {
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 9px;
+            /* margin: auto; */
+            color: grey;
+            text-decoration: none;
+        }
+        
+        #LETTER>div>a:hover {
+            text-decoration: underline;
+        }
+        
+        #input {
+            width: 19%;
+            border: transparent;
+            border-bottom: 1px solid black;
+        }
+        
+        #input:placeholder-shown {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: absolute;
+        }
+        /* #input:hover{
     text-overflow:inherit;
 } */
-#LETTER>p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    font-size: 16px;
-}
+        
+        #LETTER>p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
         
         .nav {
             width: 100%;
@@ -164,87 +167,102 @@
             position: sticky;
             top: 0px;
         }
-        *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-#nav {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    justify-content: space-between;
-    background-color: transparent;
-    position: fixed;
-    top: 0px;
-}
-#menu {
-    display:grid;
-    width: 1.6%;
-    height: 20%;
-    margin-top: 0.7%;
-    align-content: space-around;
-    margin-left: 2%;
-    background-color: transparent;
-}
-#menu > div {
-    height: 1px;
-    background-color: black;
-    transition: 0.4s;
-}
-#one {
-    width: 90%;
-}
-#two {
-    width: 60%;
-}
-#three {
-    width: 70%;
-}
-#menu:hover div {
-    width: 90%;
-}
-#logo {
-    width: 16%;
-}
-#logo > img {
-    width: 100%;
-}
-#gap {
-    width: 40%;
-    background-color: transparent;
-}
-a {
-    text-decoration: none;
-    font-weight: none;
-    color: black;
-}
-#cart {
-    display: flex;
-    width: 5%;
-    height: 35%;
-    background-color: transparent;
-    margin-right: 2%;
-}
-#search {
-    margin-top: 0.7%;
-}
-#loghelp {
-    display: flex;
-    width: 10%;
-    background-color: transparent;
-    justify-content: space-between;
-    margin-top: 0.7%;
-}
-#cart >img {
-    width: 45%;
-    height: 100%;
-    background-color: transparent;
-}
-
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        
+        #nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            justify-content: space-between;
+            background-color: transparent;
+            position: fixed;
+            top: 0px;
+        }
+        
+        #menu {
+            display: grid;
+            width: 1.6%;
+            height: 20%;
+            margin-top: 0.7%;
+            align-content: space-around;
+            margin-left: 2%;
+            background-color: transparent;
+        }
+        
+        #menu>div {
+            height: 1px;
+            background-color: black;
+            transition: 0.4s;
+        }
+        
+        #one {
+            width: 90%;
+        }
+        
+        #two {
+            width: 60%;
+        }
+        
+        #three {
+            width: 70%;
+        }
+        
+        #menu:hover div {
+            width: 90%;
+        }
+        
+        #logo {
+            width: 16%;
+        }
+        
+        #logo>a>img {
+            width: 100%;
+        }
+        
+        #gap {
+            width: 40%;
+            background-color: transparent;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: none;
+            color: black;
+        }
+        
+        #cart {
+            display: flex;
+            width: 5%;
+            height: 35%;
+            background-color: transparent;
+            margin-right: 2%;
+        }
+        
+        #search {
+            margin-top: 0.7%;
+        }
+        
+        #loghelp {
+            display: flex;
+            width: 10%;
+            background-color: transparent;
+            justify-content: space-between;
+            margin-top: 0.7%;
+        }
+        
+        #cart>img {
+            width: 45%;
+            height: 100%;
+            background-color: transparent;
+        }
         
         @media screen and (min-width:321px) and (max-width:479px) {
             #product {
@@ -292,7 +310,7 @@ a {
             <div id="three"></div>
         </a>
         <div id="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+            <a href="women.html"><img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error"></a>
         </div>
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
@@ -326,7 +344,7 @@ a {
         <p>JOIN OUR NEWSLETTER</p>
         <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
         <div>
-         <a href="https://www.instagram.com/zara/" target="_blank">
+            <a href="https://www.instagram.com/zara/" target="_blank">
              INSTAGRAM
             </a>
             <a href="https://www.facebook.com/Zara" target="_blank">
@@ -337,8 +355,8 @@ a {
             <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
             <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
         </div>
-     
-       </div>
+
+    </div>
     <section id="option">
         <div>
             <h3>HELP</h3>
@@ -399,8 +417,7 @@ a {
 
 </html>
 <script>
-
-let cartData=JSON.parse(localStorage.getItem("display"))||{}
+    let cartData = JSON.parse(localStorage.getItem("display")) || {}
     let productData = [{
         img: "https://static.zara.net/photos///2022/I/0/2/p/0340/303/420/2/w/528/0340303420_1_1_1.jpg?ts=1653910450658",
         name: "DOUBLE-BREASTED SUIT BLAZER",
@@ -938,21 +955,22 @@ let cartData=JSON.parse(localStorage.getItem("display"))||{}
     }, ];
 
     console.log(productData.length);
-    
-    var b=235
-for(let i=0 ;i<productData.length ; i++){
-    let x=productData[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+
+    var b = 235
+    for (let i = 0; i < productData.length; i++) {
+        let x = productData[i]
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
     let product = document.getElementById("product");
 
     function displaydata(productdata) {
@@ -963,15 +981,15 @@ for(let i=0 ;i<productData.length ; i++){
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
             pic.setAttribute("src", elem.img);
-            pic.addEventListener("click",function(){
-          localSet(elem)
-        })
+            pic.addEventListener("click", function() {
+                localSet(elem)
+            })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
-            inname.addEventListener("click",function(){
-          localSet(elem)
-        })
+            inname.addEventListener("click", function() {
+                localSet(elem)
+            })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -983,10 +1001,10 @@ for(let i=0 ;i<productData.length ; i++){
     }
     displaydata(productData)
 
-    function localSet(el){
-    // console.log("kunal");
-   
-    localStorage.setItem("display",JSON.stringify(el))
-    window.location.href="linkimage.html"
-}
+    function localSet(el) {
+        // console.log("kunal");
+
+        localStorage.setItem("display", JSON.stringify(el))
+        window.location.href = "linkimage.html"
+    }
 </script>

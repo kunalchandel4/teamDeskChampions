@@ -17,13 +17,15 @@ body>img {
     gap: 20px;
     overflow-x: auto;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
+
 #nav {
     display: flex;
     width: 100%;
@@ -34,8 +36,9 @@ body>img {
     position: fixed;
     top: 0px;
 }
+
 #menu {
-    display:grid;
+    display: grid;
     width: 1.6%;
     height: 20%;
     margin-top: 0.7%;
@@ -43,38 +46,48 @@ body>img {
     margin-left: 2%;
     background-color: transparent;
 }
-#menu > div {
+
+#menu>div {
     height: 1px;
     background-color: black;
     transition: 0.4s;
 }
+
 #one {
     width: 90%;
 }
+
 #two {
     width: 60%;
 }
+
 #three {
     width: 70%;
 }
+
 #menu:hover div {
     width: 90%;
 }
+
 #logo {
     width: 16%;
 }
-#logo > img {
+
+#logo>a>img {
     width: 100%;
 }
+
 #gap {
     width: 40%;
     background-color: transparent;
 }
+
 a {
     text-decoration: none;
     font-weight: none;
     color: black;
 }
+
 #cart {
     display: flex;
     width: 5%;
@@ -82,9 +95,11 @@ a {
     background-color: transparent;
     margin-right: 2%;
 }
+
 #search {
     margin-top: 0.7%;
 }
+
 #loghelp {
     display: flex;
     width: 10%;
@@ -92,12 +107,12 @@ a {
     justify-content: space-between;
     margin-top: 0.7%;
 }
-#cart >img {
+
+#cart>img {
     width: 45%;
     height: 100%;
     background-color: transparent;
 }
-
 
 #join::-webkit-scrollbar {
     width: 0px;
@@ -206,16 +221,16 @@ li:hover {
     display: flex;
     padding-left: 400px
 }
-#LETTER{
+
+#LETTER {
     margin-left: 180px;
-   
-}
-#LETTER>div{
-  
-   margin-top: 130px;
 }
 
-#LETTER>div>a{
+#LETTER>div {
+    margin-top: 130px;
+}
+
+#LETTER>div>a {
     margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
@@ -224,24 +239,29 @@ li:hover {
     color: grey;
     text-decoration: none;
 }
-#LETTER>div>a:hover{
+
+#LETTER>div>a:hover {
     text-decoration: underline;
 }
-#input{
-        width: 19%;
-    border:transparent;
+
+#input {
+    width: 19%;
+    border: transparent;
     border-bottom: 1px solid black;
 }
-#input:placeholder-shown{
+
+#input:placeholder-shown {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
 }
+
+
 /* #input:hover{
     text-overflow:inherit;
 } */
-#LETTER>p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+
+#LETTER>p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
 }
 

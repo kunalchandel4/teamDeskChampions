@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,17 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="navbar.css">
 </head>
+
 <body>
     <div id="nav">
         <a id="menu" href="">
             <div id="one"></div>
             <div id="two"></div>
-       c     <div id="three"></div>
+            c
+            <div id="three"></div>
         </a>
         <div id="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+            <a href="women.html"> <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error"></a>
         </div>
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
@@ -29,8 +32,9 @@
         </a>
     </div>
 </body>
+
 </html>
 <script>
-    let cartPro=JSON.parse(localStorage.getItem("cartdata"))
-    document.querySelector("h5").innerText=cartPro.length;
+    let cartPro = JSON.parse(localStorage.getItem("cartdata"))
+    document.querySelector("h5").innerText = cartPro.length;
 </script>

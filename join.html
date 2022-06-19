@@ -17,7 +17,7 @@
             <div id="three"></div>
         </a>
         <div id="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+            <a href="women.html"><img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error"></a>
         </div>
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
@@ -57,7 +57,7 @@
         <p>JOIN OUR NEWSLETTER</p>
         <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
         <div>
-         <a href="https://www.instagram.com/zara/" target="_blank">
+            <a href="https://www.instagram.com/zara/" target="_blank">
              INSTAGRAM
             </a>
             <a href="https://www.facebook.com/Zara" target="_blank">
@@ -68,8 +68,8 @@
             <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
             <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
         </div>
-     
-       </div>
+
+    </div>
     <section id="option">
         <div>
             <h3>HELP</h3>
@@ -130,77 +130,79 @@
 
 </html>
 <script>
-     let cartData=JSON.parse(localStorage.getItem("display"))||{}
+    let cartData = JSON.parse(localStorage.getItem("display")) || {}
     let joindata = [{
-       img: "https://static.zara.net/photos///2022/I/0/2/p/1198/410/712/32/w/528/1198410712_15_1_1.jpg?ts=1653991929816 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/1198/410/712/32/w/528/1198410712_15_1_1.jpg?ts=1653991929816 ",
         name: "STRIPED TROUSERS X JAVIER S. MEDINA ",
         price: 5990,
         productId: "TROUSER ",
         color: "GREEN ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/1/p/3400/400/069/32/w/528/3400400069_15_1_1.jpg?ts=1653993787500 ",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/3400/400/069/32/w/528/3400400069_15_1_1.jpg?ts=1653993787500 ",
         name: "STRIPED TROUSERS X JAVIER S. MEDINA ",
         price: 5990,
         productId: "TROUSER ",
         color: "GREEN ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/4327/130/300/32/w/607/4327130300_15_1_1.jpg?ts=1653991930758 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/4327/130/300/32/w/607/4327130300_15_1_1.jpg?ts=1653991930758 ",
         name: "STRIPED SHIRT BY JAVIER S. MEDINA ",
         price: 2990,
         productId: "SHIRT ",
         color: "BEIGI ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/7505/193/420/32/w/528/7505193420_15_1_1.jpg?ts=1653991932379 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/7505/193/420/32/w/528/7505193420_15_1_1.jpg?ts=1653991932379 ",
         name: "JACKET WITH PPOCKETS BY JAVIER S. MENDINA ",
         price: 6990,
         productId: "JACKET ",
         color: "BLUE ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/1/p/7505/483/420/32/w/528/7505483420_15_2_1.jpg?ts=1654083967936 ",
+        img: "https://static.zara.net/photos///2022/I/0/1/p/7505/483/420/32/w/528/7505483420_15_2_1.jpg?ts=1654083967936 ",
         name: "PLEATED TROUSERS BY JAVIER S. MEDINA ",
         price: 5990,
         productId: "TROUSER ",
         color: "BLUE ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/7505/483/710/2/w/383/7505483710_1_1_1.jpg?ts=1654008793991 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/7505/483/710/2/w/383/7505483710_1_1_1.jpg?ts=1654008793991 ",
         name: "PLEATED TROUSERS BY JAVIER S. MEDINA ",
         price: 5990,
         productId: "TROUSER ",
         color: "BEIGI ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/7505/414/069/2/w/383/7505414069_1_1_1.jpg?ts=1654008352345 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/7505/414/069/2/w/383/7505414069_1_1_1.jpg?ts=1654008352345 ",
         name: "STRIPED BERMUDA SHORTS X JAVIER S. MEDINA ",
         price: 3990,
         productId: "SHORT ",
         color: "GREEN ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/4326/130/400/2/w/383/4326130400_1_1_1.jpg?ts=1654008348701 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/4326/130/400/2/w/383/4326130400_1_1_1.jpg?ts=1654008348701 ",
         name: "STRIPED SHIRT BY C JAVIER S. MEDINA ",
         price: 2990,
         productId: "SHIRT ",
         color: "BLUE ",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/7505/483/420/2/w/383/7505483420_1_1_1.jpg?ts=1654008326382 ",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/7505/483/420/2/w/383/7505483420_1_1_1.jpg?ts=1654008326382 ",
         name: "PLEATED TROUSERS BY JAVIER S. MEDINA ",
         price: 5990,
         productId: "TROUSER ",
         color: "BLUE ",
     }, ]
     let join = document.getElementById("join");
-    var b=410
-for(let i=0 ;i<joindata.length ; i++){
-    let x=joindata[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+    var b = 410
+    for (let i = 0; i < joindata.length; i++) {
+        let x = joindata[i]
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
+
     function displayjoin(joindata) {
         join.innerHTML = " ";
         joindata.forEach(function(elem) {
@@ -209,16 +211,16 @@ for(let i=0 ;i<joindata.length ; i++){
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
             pic.setAttribute("src", elem.img);
-            pic.addEventListener("click",function(){
-             localSet(elem)
-        })
+            pic.addEventListener("click", function() {
+                localSet(elem)
+            })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
             inname.style.fontSize = "11px"
-            inname.addEventListener("click",function(){
-             localSet(elem)
-        })
+            inname.addEventListener("click", function() {
+                localSet(elem)
+            })
             let price = document.createElement("p")
             price.innerText = `₹ ${elem.price}.00 `;
             price.style.fontSize = "11px"
@@ -235,9 +237,9 @@ for(let i=0 ;i<joindata.length ; i++){
             add.style.border = "1px solid black"
             add.style.textTransform = "uppercase"
             add.style.background = "none"
-            add.addEventListener("click",function(){
-             localSet(elem)
-        })
+            add.addEventListener("click", function() {
+                localSet(elem)
+            })
 
             box1.append(inname, price)
             box.append(pic);
@@ -247,7 +249,7 @@ for(let i=0 ;i<joindata.length ; i++){
         });
     }
     displayjoin(joindata)
-    // console.log(joindata);
+        // console.log(joindata);
 
     let streetData = [{
         image_url: "https://static.zara.net/photos///2022/I/T/2/p/0646/241/251/2/w/1239/0646241251_15_2_1.jpg?ts=1654093292929",
@@ -279,43 +281,43 @@ for(let i=0 ;i<joindata.length ; i++){
     displayst(streetData)
 
     let stret = [{
-       img: "https://static.zara.net/photos///2022/I/0/2/p/1538/420/400/2/w/292/1538420400_2_3_1.jpg?ts=1654069450064",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/1538/420/400/2/w/292/1538420400_2_3_1.jpg?ts=1654069450064",
         name: "",
         price: 3990,
         productId: "SHORT",
         color: "BLUE",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/3284/435/804/2/w/292/3284435804_1_1_1.jpg?ts=1654068045929",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/3284/435/804/2/w/292/3284435804_1_1_1.jpg?ts=1654068045929",
         name: "CONTRAST PRINT KNIT T-SHIRT",
         price: 1990,
         productId: "T-SHIRT",
         color: "GREY",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/4090/406/712/2/w/292/4090406712_1_1_1.jpg?ts=1654068069338",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/4090/406/712/2/w/292/4090406712_1_1_1.jpg?ts=1654068069338",
         name: "CONTRAST PRINT KNIT T-SHIRT",
         price: 1990,
         productId: "T-SHIRT",
         color: "WHITE",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/6085/311/501/2/w/292/6085311501_1_1_1.jpg?ts=1654069451311",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/6085/311/501/2/w/292/6085311501_1_1_1.jpg?ts=1654069451311",
         name: "CONTRAST SHIRT",
         price: 2990,
         productId: "SHIRT",
         color: "GREEN",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/6085/312/501/2/w/292/6085312501_2_4_1.jpg?ts=1654069449438",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/6085/312/501/2/w/292/6085312501_2_4_1.jpg?ts=1654069449438",
         name: "CONTRAST BERMUDA SHORTS",
         price: 2990,
         productId: "SHORT",
         color: "GREEN",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/6987/300/708/2/w/292/6987300708_1_1_1.jpg?ts=1654068066593",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/6987/300/708/2/w/292/6987300708_1_1_1.jpg?ts=1654068066593",
         name: "COLORED BERMUDA SHORTS",
         price: 2890,
         productId: "SHORT",
         color: "TAN",
     }, {
-       img: "https://static.zara.net/photos///2022/I/0/2/p/6987/300/800/2/w/292/6987300800_1_1_1.jpg?ts=1654068082806",
+        img: "https://static.zara.net/photos///2022/I/0/2/p/6987/300/800/2/w/292/6987300800_1_1_1.jpg?ts=1654068082806",
         name: "COLORED BERMUDA SHORTS",
         price: 2890,
         productId: "SHORT",
@@ -325,20 +327,22 @@ for(let i=0 ;i<joindata.length ; i++){
 
 
 
-    var b=419
-for(let i=0 ;i<stret.length ; i++){
-    let x=stret[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+    var b = 419
+    for (let i = 0; i < stret.length; i++) {
+        let x = stret[i]
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
+
     function displayj(stret) {
         join1.innerHTML = " ";
         stret.forEach(function(elem) {
@@ -347,16 +351,16 @@ for(let i=0 ;i<stret.length ; i++){
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
             pic.setAttribute("src", elem.img);
-            pic.addEventListener("click",function(){
-             localSet(elem)
-        })
+            pic.addEventListener("click", function() {
+                localSet(elem)
+            })
             box.append(pic);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
             inname.style.fontSize = "11px"
-            inname.addEventListener("click",function(){
-             localSet(elem)
-        })
+            inname.addEventListener("click", function() {
+                localSet(elem)
+            })
             let price = document.createElement("p")
             price.innerText = `₹ ${elem.price}.00 `;
             price.style.fontSize = "11px"
@@ -373,9 +377,9 @@ for(let i=0 ;i<stret.length ; i++){
             add.style.border = "1px solid black"
             add.style.textTransform = "uppercase"
             add.style.background = "none"
-            add.addEventListener("click",function(){
-             localSet(elem)
-        })
+            add.addEventListener("click", function() {
+                localSet(elem)
+            })
 
             box1.append(inname, price)
             box.append(pic);
@@ -385,12 +389,12 @@ for(let i=0 ;i<stret.length ; i++){
         });
     }
     displayj(stret)
-// console.log(stret);
-    
-    function localSet(el){
-  // console.log("kunal");
- 
-  localStorage.setItem("display",JSON.stringify(el))
-  window.location.href="linkimage.html"
-}
+        // console.log(stret);
+
+    function localSet(el) {
+        // console.log("kunal");
+
+        localStorage.setItem("display", JSON.stringify(el))
+        window.location.href = "linkimage.html"
+    }
 </script>

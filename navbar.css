@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
+
 #nav {
     display: flex;
     width: 100%;
@@ -15,8 +16,9 @@
     position: fixed;
     top: 0px;
 }
+
 #menu {
-    display:grid;
+    display: grid;
     width: 1.6%;
     height: 20%;
     margin-top: 0.7%;
@@ -24,38 +26,48 @@
     margin-left: 2%;
     background-color: transparent;
 }
-#menu > div {
+
+#menu>div {
     height: 1px;
     background-color: black;
     transition: 0.4s;
 }
+
 #one {
     width: 90%;
 }
+
 #two {
     width: 60%;
 }
+
 #three {
     width: 70%;
 }
+
 #menu:hover div {
     width: 90%;
 }
+
 #logo {
     width: 16%;
 }
-#logo > img {
+
+#logo>a>img {
     width: 100%;
 }
+
 #gap {
     width: 40%;
     background-color: transparent;
 }
+
 a {
     text-decoration: none;
     font-weight: none;
     color: black;
 }
+
 #cart {
     display: flex;
     width: 5%;
@@ -63,9 +75,11 @@ a {
     background-color: transparent;
     margin-right: 2%;
 }
+
 #search {
     margin-top: 0.7%;
 }
+
 #loghelp {
     display: flex;
     width: 10%;
@@ -73,7 +87,8 @@ a {
     justify-content: space-between;
     margin-top: 0.7%;
 }
-#cart >img {
+
+#cart>img {
     width: 45%;
     height: 100%;
     background-color: transparent;

@@ -94,110 +94,129 @@
             display: flex;
             padding-left: 400px
         }
-        *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-#nav {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    justify-content: space-between;
-    background-color: transparent;
-    position: fixed;
-    top: 0px;
-}
-#menu {
-    display:grid;
-    width: 1.6%;
-    height: 20%;
-    margin-top: 0.7%;
-    align-content: space-around;
-    margin-left: 2%;
-    background-color: transparent;
-}
-#menu > div {
-    height: 1px;
-    background-color: black;
-    transition: 0.4s;
-}
-#one {
-    width: 90%;
-}
-#two {
-    width: 60%;
-}
-#three {
-    width: 70%;
-}
-#menu:hover div {
-    width: 90%;
-}
-#logo {
-    width: 16%;
-}
-#logo > img {
-    width: 100%;
-}
-#gap {
-    width: 40%;
-    background-color: transparent;
-}
-a {
-    text-decoration: none;
-    font-weight: none;
-    color: black;
-}
-#cart {
-    display: flex;
-    width: 5%;
-    height: 35%;
-    background-color: transparent;
-    margin-right: 2%;
-}#LETTER{
-    margin-left: 180px;
-   
-}
-#LETTER>div{
-  
-   margin-top: 130px;
-}
-
-#LETTER>div>a{
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 9px;
-    /* margin: auto; */
-    color: grey;
-    text-decoration: none;
-}
-#LETTER>div>a:hover{
-    text-decoration: underline;
-}
-#search {
-    margin-top: 0.7%;
-}
-p{
-    font-size: 10px;
-}
-#loghelp {
-    display: flex;
-    width: 10%;
-    background-color: transparent;
-    justify-content: space-between;
-    margin-top: 0.7%;
-}
-#cart >img {
-    width: 45%;
-    height: 100%;
-    background-color: transparent;
-}
-
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        
+        #nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            justify-content: space-between;
+            background-color: transparent;
+            position: fixed;
+            top: 0px;
+        }
+        
+        #menu {
+            display: grid;
+            width: 1.6%;
+            height: 20%;
+            margin-top: 0.7%;
+            align-content: space-around;
+            margin-left: 2%;
+            background-color: transparent;
+        }
+        
+        #menu>div {
+            height: 1px;
+            background-color: black;
+            transition: 0.4s;
+        }
+        
+        #one {
+            width: 90%;
+        }
+        
+        #two {
+            width: 60%;
+        }
+        
+        #three {
+            width: 70%;
+        }
+        
+        #menu:hover div {
+            width: 90%;
+        }
+        
+        #logo {
+            width: 16%;
+        }
+        
+        #logo>a>img {
+            width: 100%;
+        }
+        
+        #gap {
+            width: 40%;
+            background-color: transparent;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: none;
+            color: black;
+        }
+        
+        #cart {
+            display: flex;
+            width: 5%;
+            height: 35%;
+            background-color: transparent;
+            margin-right: 2%;
+        }
+        
+        #LETTER {
+            margin-left: 180px;
+        }
+        
+        #LETTER>div {
+            margin-top: 130px;
+        }
+        
+        #LETTER>div>a {
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 9px;
+            /* margin: auto; */
+            color: grey;
+            text-decoration: none;
+        }
+        
+        #LETTER>div>a:hover {
+            text-decoration: underline;
+        }
+        
+        #search {
+            margin-top: 0.7%;
+        }
+        
+        p {
+            font-size: 10px;
+        }
+        
+        #loghelp {
+            display: flex;
+            width: 10%;
+            background-color: transparent;
+            justify-content: space-between;
+            margin-top: 0.7%;
+        }
+        
+        #cart>img {
+            width: 45%;
+            height: 100%;
+            background-color: transparent;
+        }
+        
         .nav>ul>a>li {
             margin-right: 20px;
             font-size: 13px;
@@ -251,26 +270,27 @@ p{
     </style>
 </head>
 
-<body> <div id="nav">
-    <a id="menu" href="">
-        <div id="one"></div>
-        <div id="two"></div>
-        <div id="three"></div>
-    </a>
-    <div id="logo">
-        <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+<body>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+            <a href="women.html"> <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error"></a>
+        </div>
+        <div id="gap"></div>
+        <a href="Search.html" id="search">SEARCH</a>
+        <div id="loghelp">
+            <a href="login.html">LOGIN</a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
     </div>
-    <div id="gap"></div>
-    <a href="Search.html" id="search">SEARCH</a>
-    <div id="loghelp">
-        <a href="login.html">LOGIN</a>
-        <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
-    </div>
-    <a id="cart" href="">
-        <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
-        <h5></h5>
-    </a>
-</div>
 
     <div id="pro">
 
@@ -350,7 +370,7 @@ p{
 
 </html>
 <script>
-      let cartData=JSON.parse(localStorage.getItem("display"))||{}
+    let cartData = JSON.parse(localStorage.getItem("display")) || {}
     let womenbasics = [{
         img: "https://static.zara.net/photos///2022/I/0/1/p/2143/047/251/2/w/429/2143047251_2_1_1.jpg?ts=1655283432698",
         name: "LOOSE-FITTING SHIRT WITH POCKETS",
@@ -473,21 +493,22 @@ p{
         color: "pink"
     }, ]
     let basicdata = document.getElementById("pro");
-    var b=540
-for(let i=0 ;i<womenbasics.length ; i++){
-    let x=womenbasics[i]
-    // console.log(x)
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+    var b = 540
+    for (let i = 0; i < womenbasics.length; i++) {
+        let x = womenbasics[i]
+            // console.log(x)
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
 
 
     function displaybasic(womenbasics) {
@@ -498,15 +519,15 @@ for(let i=0 ;i<womenbasics.length ; i++){
             let box1 = document.createElement("div");
             let phot = document.createElement("img");
             phot.setAttribute("src", elem.img);
-            phot.addEventListener("click",function(){
-             localSet(elem)
-        })
+            phot.addEventListener("click", function() {
+                localSet(elem)
+            })
             box.append(phot);
             let inname = document.createElement("p");
             inname.innerText = elem.name;
-            inname.addEventListener("click",function(){
-             localSet(elem)
-        })
+            inname.addEventListener("click", function() {
+                localSet(elem)
+            })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             box1.append(inname, price)
@@ -519,10 +540,11 @@ for(let i=0 ;i<womenbasics.length ; i++){
     displaybasic(womenbasics)
 
     console.log(womenbasics);
-    function localSet(el){
-  // console.log("kunal");
- 
-  localStorage.setItem("display",JSON.stringify(el))
-  window.location.href="linkimage.html"
-}
+
+    function localSet(el) {
+        // console.log("kunal");
+
+        localStorage.setItem("display", JSON.stringify(el))
+        window.location.href = "linkimage.html"
+    }
 </script>

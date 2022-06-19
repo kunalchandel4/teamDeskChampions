@@ -125,34 +125,35 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        
         #LETTER {
-        margin-top: 150px;
-        margin-left: 180px;
-    }
-    
-    #LETTER>div {
-        margin-top: 100px;
-    }
-    
-    #LETTER>div>a {
-        margin-right: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;
-        font-size: 9px;
-        /* margin: auto; */
-        color: grey;
-        text-decoration: none;
-    }
-    
-    #LETTER>div>a:hover {
-        text-decoration: underline;
-    }
-    
-    #LETTER>#p {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 16px;
-        color: black;
-    }
+            margin-top: 150px;
+            margin-left: 180px;
+        }
+        
+        #LETTER>div {
+            margin-top: 100px;
+        }
+        
+        #LETTER>div>a {
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 9px;
+            /* margin: auto; */
+            color: grey;
+            text-decoration: none;
+        }
+        
+        #LETTER>div>a:hover {
+            text-decoration: underline;
+        }
+        
+        #LETTER>#p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
         
         #upper {
             width: 50%;
@@ -172,87 +173,102 @@
             width: 50%;
             margin: 40px 350px;
         }
-        *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-#nav {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    justify-content: space-between;
-    background-color: transparent;
-    position: fixed;
-    top: 0px;
-}
-#menu {
-    display:grid;
-    width: 1.6%;
-    height: 20%;
-    margin-top: 0.7%;
-    align-content: space-around;
-    margin-left: 2%;
-    background-color: transparent;
-}
-#menu > div {
-    height: 1px;
-    background-color: black;
-    transition: 0.4s;
-}
-#one {
-    width: 90%;
-}
-#two {
-    width: 60%;
-}
-#three {
-    width: 70%;
-}
-#menu:hover div {
-    width: 90%;
-}
-#logo {
-    width: 16%;
-}
-#logo > img {
-    width: 100%;
-}
-#gap {
-    width: 40%;
-    background-color: transparent;
-}
-a {
-    text-decoration: none;
-    font-weight: none;
-    color: black;
-}
-#cart {
-    display: flex;
-    width: 5%;
-    height: 35%;
-    background-color: transparent;
-    margin-right: 2%;
-}
-#search {
-    margin-top: 0.7%;
-}
-#loghelp {
-    display: flex;
-    width: 10%;
-    background-color: transparent;
-    justify-content: space-between;
-    margin-top: 0.7%;
-}
-#cart >img {
-    width: 45%;
-    height: 100%;
-    background-color: transparent;
-}
-
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        
+        #nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            justify-content: space-between;
+            background-color: transparent;
+            position: fixed;
+            top: 0px;
+        }
+        
+        #menu {
+            display: grid;
+            width: 1.6%;
+            height: 20%;
+            margin-top: 0.7%;
+            align-content: space-around;
+            margin-left: 2%;
+            background-color: transparent;
+        }
+        
+        #menu>div {
+            height: 1px;
+            background-color: black;
+            transition: 0.4s;
+        }
+        
+        #one {
+            width: 90%;
+        }
+        
+        #two {
+            width: 60%;
+        }
+        
+        #three {
+            width: 70%;
+        }
+        
+        #menu:hover div {
+            width: 90%;
+        }
+        
+        #logo {
+            width: 16%;
+        }
+        
+        #logo>a>img {
+            width: 100%;
+        }
+        
+        #gap {
+            width: 40%;
+            background-color: transparent;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: none;
+            color: black;
+        }
+        
+        #cart {
+            display: flex;
+            width: 5%;
+            height: 35%;
+            background-color: transparent;
+            margin-right: 2%;
+        }
+        
+        #search {
+            margin-top: 0.7%;
+        }
+        
+        #loghelp {
+            display: flex;
+            width: 10%;
+            background-color: transparent;
+            justify-content: space-between;
+            margin-top: 0.7%;
+        }
+        
+        #cart>img {
+            width: 45%;
+            height: 100%;
+            background-color: transparent;
+        }
     </style>
 </head>
 
@@ -264,7 +280,7 @@ a {
             <div id="three"></div>
         </a>
         <div id="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+            <a href="women.html"><img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error"></a>
         </div>
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
@@ -310,67 +326,67 @@ a {
             <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
             <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
         </div>
-    <section id="option">
-        <div>
-            <h3>HELP</h3>
-            <ul>
-                <li>SHOP AT ZARA.COM</li><br>
-                <li>PRODUCT</li><br>
-                <li>PAYMENT</li><br>
-                <li>SHIPPING</li><br>
-                <li>EXCHANGES AND RETURNS</li><br>
-                <li>SHOPS AND COMPANY </li><br>
-                <li>CLOTHES COLLECTION PROGRAMME</li><br>
-                <li>MY ACCOUNT </li>
-            </ul>
+        <section id="option">
+            <div>
+                <h3>HELP</h3>
+                <ul>
+                    <li>SHOP AT ZARA.COM</li><br>
+                    <li>PRODUCT</li><br>
+                    <li>PAYMENT</li><br>
+                    <li>SHIPPING</li><br>
+                    <li>EXCHANGES AND RETURNS</li><br>
+                    <li>SHOPS AND COMPANY </li><br>
+                    <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                    <li>MY ACCOUNT </li>
+                </ul>
+
+            </div>
+            <div>
+                <h3> FOLLOW US</h3>
+                <ul>
+                    <li>NEWSLETTER</li><br>
+                    <li>INSTAGRAM</li><br>
+                    <li>FACEBOOK</li><br>
+                    <li>TWITTER</li><br>
+                    <li>PINTEREST</li><br>
+                    <li>YOUTUBE</li>
+                </ul>
+            </div>
+            <div>
+                <h3>COMPANY</h3>
+                <ul>
+                    <li>ABOUT US</li><br>
+                    <li>JOIN LIFE</li><br>
+                    <li>OFFICES</li><br>
+                    <li>STORES</li><br>
+                    <li>WORK WITH US</li>
+                </ul>
+            </div>
+            <div>
+                <h3>POLICIES</h3>
+                <ul>
+                    <li>PRIVACY POLICY</li><br>
+                    <li>PURCHASE CONDITIONS</li><br>
+                    <li>COOKIES SETTINGS</li>
+                </ul>
+            </div>
+        </section>
+        <section id="second">
+            <p>INDIA</p>
+            <p>ENGLISH</p>
+            <p>@ALL RIGHTS RESERVED</p>
+        </section>
+        <div id="end">
+
+            <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
 
         </div>
-        <div>
-            <h3> FOLLOW US</h3>
-            <ul>
-                <li>NEWSLETTER</li><br>
-                <li>INSTAGRAM</li><br>
-                <li>FACEBOOK</li><br>
-                <li>TWITTER</li><br>
-                <li>PINTEREST</li><br>
-                <li>YOUTUBE</li>
-            </ul>
-        </div>
-        <div>
-            <h3>COMPANY</h3>
-            <ul>
-                <li>ABOUT US</li><br>
-                <li>JOIN LIFE</li><br>
-                <li>OFFICES</li><br>
-                <li>STORES</li><br>
-                <li>WORK WITH US</li>
-            </ul>
-        </div>
-        <div>
-            <h3>POLICIES</h3>
-            <ul>
-                <li>PRIVACY POLICY</li><br>
-                <li>PURCHASE CONDITIONS</li><br>
-                <li>COOKIES SETTINGS</li>
-            </ul>
-        </div>
-    </section>
-    <section id="second">
-        <p>INDIA</p>
-        <p>ENGLISH</p>
-        <p>@ALL RIGHTS RESERVED</p>
-    </section>
-    <div id="end">
-
-        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
-
-
-    </div>
 </body>
 
 </html>
 <script>
-    let cartData=JSON.parse(localStorage.getItem("display"))||{}
+    let cartData = JSON.parse(localStorage.getItem("display")) || {}
     let imageData = [{
             image_url: "https://static.zara.net/photos///2022/I/0/1/p/7885/138/330/2/w/1239/7885138330_9_1_1.jpg?ts=1654672971928",
         },
@@ -476,20 +492,21 @@ a {
         color: "red/white",
     }, ]
 
-    var b=500
-for(let i=0 ;i<second.length ; i++){
-    let x=second[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+    var b = 500
+    for (let i = 0; i < second.length; i++) {
+        let x = second[i]
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
     let part = document.getElementById("product");
 
     function displaysec(second) {
@@ -500,17 +517,17 @@ for(let i=0 ;i<second.length ; i++){
             let box1 = document.createElement("div");
             let pic = document.createElement("img");
             pic.setAttribute("src", elem.img);
-            pic.addEventListener("click",function(){
-             localSet(elem)
-        })
+            pic.addEventListener("click", function() {
+                localSet(elem)
+            })
             box.append(pic);
 
             let inname = document.createElement("p");
             inname.innerText = elem.name;
             inname.style.fontSize = "11px"
-            inname.addEventListener("click",function(){
-             localSet(elem)
-        })
+            inname.addEventListener("click", function() {
+                localSet(elem)
+            })
             let price = document.createElement("p")
             price.innerText = "₹ " + elem.price + ".00";
             price.style.fontSize = "11px"
@@ -527,9 +544,9 @@ for(let i=0 ;i<second.length ; i++){
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
-            addcart.addEventListener("click",function(){
-             localSet(elem)
-        })
+            addcart.addEventListener("click", function() {
+                localSet(elem)
+            })
             box.append(pic);
             div.append(box, box1, p, addcart)
             document.querySelector("#product").append(div);
@@ -537,7 +554,7 @@ for(let i=0 ;i<second.length ; i++){
         });
     }
     displaysec(second);
-//  console.log(second);
+    //  console.log(second);
 
 
     let fatherData = [{
@@ -566,23 +583,24 @@ for(let i=0 ;i<second.length ; i++){
         productId: "TROUSERS",
         color: "BEIGI",
     }, ];
-   
-   
-    var b=513
-for(let i=0 ;i<fatherData.length ; i++){
-    let x=fatherData[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+
+
+    var b = 513
+    for (let i = 0; i < fatherData.length; i++) {
+        let x = fatherData[i]
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
-   
+
     let dta = document.querySelector("#father");
 
     function displaydta(fatherdata) {
@@ -592,17 +610,17 @@ for(let i=0 ;i<fatherData.length ; i++){
             let box1 = document.createElement("div");
             let photo = document.createElement("img");
             photo.setAttribute("src", el.img);
-            photo.addEventListener("click",function(){
-             localSet(el)
-        })
+            photo.addEventListener("click", function() {
+                localSet(el)
+            })
             box.append(photo);
 
             let inname = document.createElement("p");
             inname.innerText = el.name;
             inname.style.fontSize = "11px"
-            inname.addEventListener("click",function(){
-             localSet(el)
-        })
+            inname.addEventListener("click", function() {
+                localSet(el)
+            })
             let price = document.createElement("p")
             price.innerText = "₹ " + el.price + ".00";
             price.style.fontSize = "11px"
@@ -619,9 +637,9 @@ for(let i=0 ;i<fatherData.length ; i++){
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
-            addcart.addEventListener("click",function(){
-             localSet(el)
-        })
+            addcart.addEventListener("click", function() {
+                localSet(el)
+            })
 
             box.append(photo, inname, price, p, addcart);
             box1.append(box);
@@ -631,7 +649,7 @@ for(let i=0 ;i<fatherData.length ; i++){
     }
     displaydta(fatherData)
 
-console.log(fatherData);
+    console.log(fatherData);
     womennew = [{
             img: "https://static.zara.net/photos///2022/I/0/1/p/7792/239/131/2/w/429/7792239131_2_1_1.jpg?ts=1655194093364",
             name: "FLORAL SATIN BLOUS",
@@ -703,21 +721,22 @@ console.log(fatherData);
         },
     ]
     let newd = document.querySelector("#ring");
-    var b=517
-for(let i=0 ;i<womennew.length ; i++){
-    let x=womennew[i]
-    if(x.quantity===undefined){
-        x.quantity=1
-    } if(x.category===undefined){
-        x.category=b
-      b++
+    var b = 517
+    for (let i = 0; i < womennew.length; i++) {
+        let x = womennew[i]
+        if (x.quantity === undefined) {
+            x.quantity = 1
+        }
+        if (x.category === undefined) {
+            x.category = b
+            b++
+        }
+        if (x.cartePrice === undefined) {
+            x.cartePrice = x.price
+        }
+
     }
-    if(x.cartePrice===undefined){
-           x.cartePrice=x.price 
-    }
-    
-}
-   
+
     function displaynew(womennew) {
         newd.innerHTML = "";
         womennew.forEach(function(el) {
@@ -725,16 +744,16 @@ for(let i=0 ;i<womennew.length ; i++){
             let box1 = document.createElement("div");
             let photo = document.createElement("img");
             photo.setAttribute("src", el.img);
-            photo.addEventListener("click",function(){
-             localSet(el)
-        })
+            photo.addEventListener("click", function() {
+                localSet(el)
+            })
             box.append(photo);
             let inname = document.createElement("p");
             inname.innerText = el.name;
             inname.style.fontSize = "11px"
-            inname.addEventListener("click",function(){
-             localSet(el)
-        })
+            inname.addEventListener("click", function() {
+                localSet(el)
+            })
             let price = document.createElement("p")
             price.innerText = "₹ " + el.price + ".00";
             price.style.fontSize = "11px"
@@ -751,9 +770,9 @@ for(let i=0 ;i<womennew.length ; i++){
             addcart.style.border = "1px solid black"
             addcart.style.textTransform = "uppercase"
             addcart.style.background = "none"
-            addcart.addEventListener("click",function(){
-             localSet(el)
-        })
+            addcart.addEventListener("click", function() {
+                localSet(el)
+            })
 
             box.append(photo, inname, price, p, addcart);
             box1.append(box);
@@ -763,10 +782,10 @@ for(let i=0 ;i<womennew.length ; i++){
     }
     displaynew(womennew)
 
-    function localSet(el){
-  // console.log("kunal");
- 
-  localStorage.setItem("display",JSON.stringify(el))
-  window.location.href="linkimage.html"
-}
+    function localSet(el) {
+        // console.log("kunal");
+
+        localStorage.setItem("display", JSON.stringify(el))
+        window.location.href = "linkimage.html"
+    }
 </script>
