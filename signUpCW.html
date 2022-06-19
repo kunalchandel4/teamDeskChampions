@@ -61,7 +61,7 @@
             padding: 6px;
             font-weight: bold;
             cursor: pointer;
-            margin-top: 40px;
+            margin-top: 10px;
         }
         #submit:hover {
             width: 45.5%;
@@ -96,7 +96,6 @@
             font-size: 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-stretch: extra-condensed;
-            gap:80px;
             
         }
                 
@@ -145,19 +144,15 @@
         h3 {
             margin-bottom: 20px;
         }
-        #end > #log {
-            color: white;
+        #er {
+            font-size: 12px;
+            padding: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        #option>div>ul>li{
-            width:900px;
-           
-            
-           } 
     </style>
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    
     <div id="nav">
         <a id="menu" href="">
             <div id="one"></div>
@@ -239,6 +234,7 @@
             </div>
             <p class="privacy"><input type="checkbox" name="reciv" required>I WISH TO RECIEVE ZARA NEWS ON MY E-MAIL</p>
             <P class="privacy"><input type="checkbox" name="accept" required>I ACCEPT THE <a href="https://static.zara.net/static//pdfs/IN/privacy-policy/privacy-policy-en_IN-20210924.pdf" target="blank">PRIVACY STATEMENT</a></P>
+            <div id="er"></div>
             <input id="submit" type="submit" value="CREATE ACCOUNT">
         </form>
     </div>
@@ -317,7 +313,9 @@
         }
         if(checkExistAcc(data.email)===true){
             if(document.querySelector("#password").value !== document.querySelector("#re-password").value){
-            alert("Confirmed Password does not match")
+            let er=document.querySelector("#er")
+            er.innerHTML="Password does not match"
+            er.style.color="red"
             }else{
                 userInfo.push(data)
             localStorage.setItem("Userdata", JSON.stringify(userInfo))
