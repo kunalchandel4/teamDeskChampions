@@ -26,7 +26,7 @@ let email1=document.querySelector("#email").value;
         password:pass}
         datalogin.push(obj);
         localStorage.setItem("logindata",JSON.stringify(datalogin));
-        window.location.href="women.html";
+        window.location.href="index.html";
     }
     else if(x==="No"){
         alert("wrong password or email");

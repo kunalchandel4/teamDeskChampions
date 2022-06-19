@@ -557,11 +557,10 @@ a {
         <p>MINI</p>
     </div>
     <div class="d5">
-        <p>SHOES & BAGS</p>
+        <p>BABY BOY</p>
     </div>
-    <div class="d6">
-        <p>JOIN LIFE</p>
-    </div>
+    
+    
 
 </div>
  
@@ -637,6 +636,7 @@ a {
         image1.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-girl/subhome-xmedia-23//w/1028/IMAGE-landscape-b3873664-dbdd-40d5-98e7-a85bf838ebdf-default_0.jpg?ts=1654783480074";
 
         image1.style.borderColor = "transparent";
+        image1.addEventListener("click",directpage);
     }
     let data1 = document.querySelector("#main>.d2>p");
     data1.style.cursor = "pointer";
@@ -647,7 +647,7 @@ a {
         data1.style.color = "black";
         let image = document.querySelector("#image>img");
         image.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-boy/subhome-xmedia-23-2//w/1028/IMAGE-landscape-76c49edc-8fb0-4f63-b76c-a6aa1f56272a-default_0.jpg?ts=1654783835064";
-    }
+        image.addEventListener("click",directpage1);  }
 
     let data2 = document.querySelector("#main>.d3>p");
     data2.style.cursor = "pointer";
@@ -658,7 +658,7 @@ a {
         data2.style.color = "black";
         let image3 = document.querySelector("#image>img");
         image3.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-babyboy/subhome-xmedia-23-2//w/1028/IMAGE-landscape-e12c37f2-e1b0-4f39-a940-a0c19863b753-default_0.jpg?ts=1654784960084";
-
+        image3.addEventListener("click",directpage2);
 
     }
     let data3 = document.querySelector("#main>.d4>p");
@@ -670,7 +670,7 @@ a {
         data3.style.color = "black";
         let image4 = document.querySelector("#image>img");
         image4.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-mini/subhome-xmedia-23-2//w/1028/IMAGE-landscape-ea45bdea-fd39-4c79-b17a-7bbeccc7c2cc-default_0.jpg?ts=1654785771485";
-    }
+        image4.addEventListener("click",directpage3);  }
     let data4 = document.querySelector("#main>.d5>p");
     data4.style.cursor = "pointer";
 
@@ -680,7 +680,7 @@ a {
         data4.style.color = "black";
         let image5 = document.querySelector("#image>img");
         image5.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-shoes-bags/subhome-xmedia-23//w/1028/landscape-831d1d1e-a8f2-4f9d-97e5-77087e38bada_0.jpg?ts=1654784560735";
-    }
+        image5.addEventListener("click",directpage4); }
     let data5 = document.querySelector("#main>.d6>p");
     data5.style.cursor = "pointer";
 
@@ -691,7 +691,7 @@ a {
 
         let image6 = document.querySelector("#image>img");
         image6.src = "https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-join-life/subhome-xmedia-23//w/1028/IMAGE-landscape-f17663c1-258d-4ca0-8c87-a8d2c6c78a28-default_0.jpg?ts=1654785431708";
-    }
+        image6.addEventListener("click",directpage5);  }
     let button = document.querySelector("button");
     button.style.cursor = "pointer";
     button.addEventListener("click", clickhere)
@@ -702,15 +702,32 @@ a {
 
     }
 
-</script>
-<script src="navbar.js"></script>
-
-
-
     let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
 logdata.forEach(function(elem){
 	document.querySelector("#lg").innerText=elem.name;
 })
+
+function directpage(){
+    window.location.href="girl.html";
+}
+function directpage1(){
+    window.location.href="boys.html";
+}
+function directpage2(){
+    window.location.href="babygirl.html";
+}
+function directpage3(){
+    window.location.href="mini.html";
+}
+function directpage4(){
+    window.location.href="babyboy.html";
+}
+function directpage5(){
+    window.location.href=""
+}
 </script>
+<script src="navbar.js"></script>
+
+
 

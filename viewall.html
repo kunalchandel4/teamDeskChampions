@@ -995,15 +995,14 @@ for(let i=0 ;i<productData.length ; i++){
     localStorage.setItem("display",JSON.stringify(el))
     window.location.href="linkimage.html"
 }
-
-</script>
-<script src="navbar.js"></script>
-
-
 let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
 logdata.forEach(function(elem){
 	document.querySelector("#lg").innerText=elem.name;
 })
 </script>
+<script src="navbar.js"></script>
+
+
+
 
