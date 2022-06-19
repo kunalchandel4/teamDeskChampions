@@ -433,11 +433,10 @@
     </div> -->
 </body>
 
-</html>
-<script src="navbar.js">
+</html><script>
     let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
 
-    // document.querySelector("#Qts").innerText=cartLS.length
+    
 
     let totalPrice = 0
 
@@ -449,7 +448,7 @@
         Data.forEach(function(elem, index) {
             // console.log(elem.quan)
             // console.log(elem.cartPrices);
-            totalPrice += elem.cartePrice;
+            totalPrice += +elem.cartePrice;
             let div = document.createElement("div")
             let div1 = document.createElement("div")
             let div2 = document.createElement("div");
