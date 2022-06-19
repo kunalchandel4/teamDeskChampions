@@ -197,7 +197,7 @@
 #logo {
     width: 16%;
 }
-#logo > img {
+#logo > a>img {
     width: 100%;
 }
 #gap {
@@ -281,8 +281,8 @@ a {
             <div id="three"></div>
         </a>
         <div id="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
-        </div>
+         <a href="index.html">   <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
+         </a>  </div>
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
         <div id="loghelp">
@@ -391,7 +391,7 @@ a {
 </body>
 
 </html>
-<scrip>
+<script>
 
 let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let imageData = [{
@@ -787,11 +787,9 @@ for(let i=0 ;i<ringData.length ; i++){
             box1.append(box);
             document.querySelector("#ring").append(box1);
 
-<<<<<<< HEAD
+
         });
     }
-=======
->>>>>>> 43cdb112eb26575aa407f2f0360b216e6c09bb9a
     displaydelta(ringData)
     // console.log(ringData);
     function localSet(el){
@@ -799,10 +797,9 @@ for(let i=0 ;i<ringData.length ; i++){
    
     localStorage.setItem("display",JSON.stringify(el))
     window.location.href="linkimage.html"
-<<<<<<< HEAD
+
 }
-=======
->>>>>>> 43cdb112eb26575aa407f2f0360b216e6c09bb9a
+
 
   displaydelta(ringData)
     
@@ -817,3 +814,4 @@ for(let i=0 ;i<ringData.length ; i++){
     }
 
 </script>
+<script src="navbar.js"></script>
