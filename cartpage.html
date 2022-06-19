@@ -323,7 +323,7 @@ form>input:last-child:hover{
         </div>
       
         <div id="loghelp">
-            <a href="login.html">LOGIN</a>
+            <a href="login.html" id="lg"></a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
      
@@ -557,7 +557,11 @@ function discount(event){
 }
 
 
+let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})
 </script>
 
 

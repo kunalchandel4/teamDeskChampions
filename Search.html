@@ -79,7 +79,7 @@
         </div>
         <a href="" id="search" style="color: white;">SEARCH</a>
         <div id="end">
-            <a is="userName" href="">LOGIN</a>
+            <a is="userName" href="" id="lg"></a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
         <a id="cart" href="">
@@ -103,7 +103,12 @@
 </body>
 </html>
 <script>
-    let cartPro=JSON.parse(localStorage.getItem("cartdata"))
+    let cartPro=JSON.parse(localStorage.getItem("cartdata")) || []
     document.querySelector("h5").innerText=cartPro.length;
 
+    let logdata=JSON.parse(localStorage.getItem("Userdata")) || []
+
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})
 </script>

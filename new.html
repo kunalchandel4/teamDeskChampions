@@ -286,7 +286,7 @@ a {
         <div id="gap"></div>
         <a href="Search.html" id="search">SEARCH</a>
         <div id="loghelp">
-            <a href="login.html">LOGIN</a>
+            <a href="login.html" id="lg"></a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
         <a id="cart" href="">
@@ -391,7 +391,7 @@ a {
 </body>
 
 </html>
-<scrip>
+<script>
 
 let cartData=JSON.parse(localStorage.getItem("display"))||{}
     let imageData = [{
@@ -787,11 +787,10 @@ for(let i=0 ;i<ringData.length ; i++){
             box1.append(box);
             document.querySelector("#ring").append(box1);
 
-<<<<<<< HEAD
+
         });
     }
-=======
->>>>>>> 43cdb112eb26575aa407f2f0360b216e6c09bb9a
+
     displaydelta(ringData)
     // console.log(ringData);
     function localSet(el){
@@ -799,10 +798,8 @@ for(let i=0 ;i<ringData.length ; i++){
    
     localStorage.setItem("display",JSON.stringify(el))
     window.location.href="linkimage.html"
-<<<<<<< HEAD
 }
-=======
->>>>>>> 43cdb112eb26575aa407f2f0360b216e6c09bb9a
+
 
   displaydelta(ringData)
     
@@ -815,5 +812,10 @@ for(let i=0 ;i<ringData.length ; i++){
         return true;
 
     }
+    
+    let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
+    logdata.forEach(function(elem){
+        document.querySelector("#lg").innerText=elem.name;
+    })
 </script>
