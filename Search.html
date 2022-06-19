@@ -78,7 +78,7 @@
             </div>
         </div>
         <a href="" id="search" style="color: white;">SEARCH</a>
-        <div id="end">
+        <div id="loghelp">
             <a is="userName" href="">LOGIN</a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
@@ -89,7 +89,7 @@
     </div>
     <div id="searchbar">
         <form>
-            <input type="search" style="font-size: 18px;" placeholder="ENTER SEARCH TERMS">
+            <input id="search" type="text" style="font-size: 18px;" placeholder="ENTER SEARCH TERMS" value="">
             <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/2048px-Magnifying_glass_icon.svg.png" alt=""></button>
         </form>
     </div>
@@ -105,5 +105,646 @@
 <script>
     let cartPro=JSON.parse(localStorage.getItem("cartdata"))
     document.querySelector("h5").innerText=cartPro.length;
+//     let productData = [{img:"https://static.zara.net/photos///2022/I/0/3/p/2582/550/706/2/w/297/2582550706_6_1_1.jpg?ts=1654763285262",
+//     name:"TEXTURED KNIT SWEATER",
+//     price:1490,
+//     productID:"SWEATER"},
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/550/706/2/w/297/2582550706_6_1_1.jpg?ts=1654763285262",
+//     name:"KNIT FOOTED LEGGINGS",
+//     price:1090,
+//     productID:"LEGGING"},
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/555/706/2/w/297/2582555706_6_1_1.jpg?ts=1654013809440",
+//     name:"TEXTURED KNIT BONNET",
+//     price:990,
+//     productID:"BONNET"},
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/567/959/2/w/297/2582567959_6_1_1.jpg?ts=1652371598300",
+//     name:"CABLE-KNIT CARDIGAN",
+//     price:1590,
+//     productID:"CARDIGAN"},
+
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/557/081/2/w/297/2582557081_6_1_1.jpg?ts=1653986370780",
+//     name:"RIB KNIT LEGGINGS",
+//     price:990,
+//     productID:"LEGGING"},
+
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/559/959/2/w/297/2582559959_6_1_1.jpg?ts=1652423951032",
+//     name:"CABLE-KNIT BONNET",
+//     price:990,
+//     productID:"BONNET"},
+
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/541/959/2/w/297/2582541959_6_1_1.jpg?ts=1653469608300",
+//     name:"TEXTURED KNIT SWEATER",
+//     price:990,
+//     productID:"BONNET"},
+
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/501/959/2/w/297/2582501959_6_1_1.jpg?ts=1653463015162",
+//     name:"LINK KNIT SWEATER",
+//     price:1490,
+//     productID:"SWEATER"},
+
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/559/982/2/w/297/2582559982_6_1_1.jpg?ts=1654013818647",
+//     name:"CABLE-KNIT BONNET",
+//     price:990,
+//     productID:"BONNET"},
+
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/567/982/2/w/297/2582567982_6_1_1.jpg?ts=1654686991679",
+//     name:"CABLE-KNIT CARDIGAN",
+//     price:1590,
+//     productID:"CARDIGAN"},
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/557/982/2/w/297/2582557982_6_1_1.jpg?ts=1653986358426",
+//     name:"RIB KNIT LEGGINGS",
+//     price:990,
+//     productID:"LEGGING"},
+//     {img:"https://static.zara.net/photos///2022/I/0/3/p/2582/554/620/2/w/297/2582554620_6_1_1.jpg?ts=1654763279063",
+//     name:"TEXTURED KNIT SWEATER",
+//     price:1490,
+//     productID:"SWEATER"},
+//     {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4090/490/401/2/w/383/4090490401_2_1_1.jpg?ts=1646051233392",
+//     name: "TEXTURED SINGLET",
+//     price: 1790,
+//     productID: "SINGLET",
+//     color: "BLUE",
+//     },
+//  {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/800/2/w/383/0495552800_2_1_1.jpg?ts=1646050715948",
+//     name: "SINGLET TOP",
+//     price: 1790,
+//     productID: "SINGLET",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/250/2/w/383/0495552250_2_1_1.jpg?ts=1646050804630",
+//     name: "SINGLET TOP",
+//     price: 1790,
+//     productID: "SINGHLET",
+//     color: "WHITE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/0495/552/681/2/w/383/0495552681_2_1_1.jpg?ts=1646050689746",
+//     name: "SINGLET TOP",
+//     price: 1790,
+//     productID: "SINGLET",
+//     color: "BROWN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/250/2/w/383/5584304250_2_1_1.jpg?ts=1652177985353",
+//     name: "BASKETBALL TRINING T-SHIRT",
+//     price: 1990,
+//     productID: "T-SHIRT",
+//     color: "WHITE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/5584/304/800/2/w/383/5584304800_2_1_1.jpg?ts=1652177985096",
+//     name: "BASKETBALL TRINING T-SHIRT",
+//     price: 1990,
+//     productID: "T-SHIRT",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/5584/310/500/2/w/383/5584310500_2_1_1.jpg?ts=1652177986587",
+//     name: "BASKETBALL TRINING T-SHIRT",
+//     price: 2590,
+//     productID: "T-SHIRT",
+//     color: "GREEN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/0340/303/420/2/w/528/0340303420_1_1_1.jpg?ts=1653910450658",
+//     name: "DOUBLE-BREASTED SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/0340/304/420/2/w/528/0340304420_2_3_1.jpg?ts=1653910542521",
+//     name: "PLEATED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4434/795/500/102/w/187/4434795500_2_3_1.jpg?ts=1649756456739",
+//     name: "STRAIGHT SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4768/795/630/2/w/464/4768795630_1_1_1.jpg?ts=1653560402337",
+//     name: "PLEATED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "PINK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4767/795/630/2/w/464/4767795630_2_3_1.jpg?ts=1653486673978",
+//     name: "SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     color: "TAN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4254/437/704/102/w/464/4254437704_2_4_1.jpg?ts=1649755999802",
+//     name: "WIDE LAPAEL SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     color: "TAN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4255/437/704/102/w/464/4255437704_1_1_1.jpg?ts=1649767532260",
+//     name: "SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4435/795/420/102/w/464/4435795420_1_1_1.jpg?ts=1649756597075",
+//     name: "STRAIGHT SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "BEIGE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/651/708/103/w/464/1564651708_1_1_1.jpg?ts=1649761637693",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BEIGE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/651/708/102/w/464/1564651708_1_1_1.jpg?ts=1649761637490",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/1/p/5951/720/401/102/w/464/5951720401_2_1_1.jpg?ts=1654181308007",
+//     name: "SLIM FIT SUIT BLAZER +2",
+//     price: 5990,
+//     productID: "BLAZER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/1564/611/401/102/w/464/1564611401_1_1_1.jpg?ts=1649766906397",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS +2",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/1564/610/420/102/w/464/1564610420_1_1_1.jpg?ts=1649771278063",
+//     name: "SLIM FIT SUIT BLAZER +2",
+//     price: 5990,
+//     productID: "BLAZER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4166/800/420/102/w/464/4166800420_2_4_1.jpg?ts=1649763772935",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4166/121/737/102/w/464/4166121737_1_1_1.jpg?ts=1649764489930",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS +1",
+//     price: 2990.,
+//     productID: "TROUSER",
+//     color: "BROWN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/1564/610/737/2/w/464/1564610737_2_1_1.jpg?ts=1649876167908",
+//     name: "SLIM FIT SUIT BLAZER +1",
+//     price: 5990,
+//     productID: "BLAZER",
+//     color: "BROWN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/1/p/5951/720/800/102/w/464/5951720800_1_1_1.jpg?ts=1654181530986",
+//     name: "SLIM FIT SUIT BLAZER +2",
+//     price: 5990,
+//     productID: "BLAZER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/1/p/5952/720/800/102/w/464/5952720800_1_1_1.jpg?ts=1654181602267",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS +2",
+//     price: 2990,
+//     productID: "BLAZER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4499/120/800/102/w/464/4499120800_2_1_1.jpg?ts=1649767264740",
+//     name: "SLIM FIT DOUBLE-BREASTED BLAZER +1",
+//     price: 7990,
+//     productID: "BLAZER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/1/p/5952/720/800/103/w/464/5952720800_1_1_1.jpg?ts=1654181809776",
+//     name: "SLIM FIT TAILORED SUIT TROUSERS +2",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4022/530/401/102/w/464/4022530401_1_1_1.jpg?ts=1649767168707",
+//     name: "TEXTURED SUIT BLAZER +2",
+//     price: 6990.,
+//     productID: "BLAZER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4023/530/401/102/w/464/4023530401_2_3_1.jpg?ts=1649864519877",
+//     name: "TEXTURED SUIT TROUSERS +2",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4023/530/800/102/w/464/4023530800_2_4_1.jpg?ts=1649767270762",
+//     name: "TEXTURED SUIT TROUSERS",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4022/530/800/102/w/464/4022530800_1_1_1.jpg?ts=1649767271289",
+//     name: "TEXTURED SUIT BLAZER +2",
+//     price: 6990,
+//     productID: "BLAZER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4023/540/704/102/w/464/4023540704_2_3_1.jpg?ts=1649767317578",
+//     name: "TEXTURED SUIT TROUSERS",
+//     price: 2990,
+//     productID: "TROUSER",
+//     color: "TAN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4545/989/401/2/w/464/4545989401_2_3_1.jpg?ts=1651075485085",
+//     name: "TEXTURED SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/5528/995/420/2/w/464/5528995420_2_3_1.jpg?ts=1652976000720",
+//     name: "TEXTURED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "GRAY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4376/466/251/2/w/464/4376466251_2_4_1.jpg?ts=1649776136715",
+//     name: "LINEN BLEND SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     color: "WHITE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4377/466/251/2/w/464/4377466251_1_1_1.jpg?ts=1649776174134",
+//     name: "LINEN BLEND SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "WHITE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4695/118/703/102/w/464/4695118703_1_1_1.jpg?ts=1654159941609",
+//     name: "LINEN BLEND BLAZER WITH POCKETS",
+//     price: 9990,
+//     productID: "BLAZER",
+//     color: "TAN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4696/118/703/102/w/464/4696118703_2_3_1.jpg?ts=1654159974977",
+//     name: "PLEATED LINEN BLEND BERMUDA SHORTS",
+//     price: 3990,
+//     productID: "SHORTS",
+//     color: "TAN",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4373/466/812/102/w/464/4373466812_2_5_1.jpg?ts=1649776493857",
+//     name: "LINEN BLEND SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4378/466/812/102/w/464/4378466812_1_1_1.jpg?ts=1649776495925",
+//     name: "LINEN BLEND SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4373/705/052/102/w/464/4373705052_1_1_1.jpg?ts=1649776335549",
+//     name: "LINEN BLEND SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     color: "WHITE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4374/705/052/102/w/464/4374705052_1_1_1.jpg?ts=1649776335742",
+//     name: "LINEN BLEND SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "WHITE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/2715/400/505/102/w/464/2715400505_1_1_1.jpg?ts=1652711477561",
+//     name: "100% LINEN SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/2715/401/505/102/w/464/2715401505_2_1_1.jpg?ts=1652711397590",
+//     name: "100% LINEN SUIT BLAZER",
+//     price: 6990,
+//     productID: "BLAZER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4375/466/625/102/w/464/4375466625_2_1_1.jpg?ts=1650471032143",
+//     name: "LINEN BLEND SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     color: "ECRU",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4374/466/625/102/w/464/4374466625_2_3_1.jpg?ts=1650471028993",
+//     name: "LINEN BLEND SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "ECRU",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/421/060/102/w/464/1564421060_2_4_1.jpg?ts=1649757489979",
+//     name: "BIRD'S-EYE SUIT TROUSERS +4",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/420/060/102/w/464/1564420060_1_1_1.jpg?ts=1649757467939",
+//     name: "BIRD'S-EYE SUIT BLAZER +4",
+//     price: 8990,
+//     productID: "BLAZER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/420/420/102/w/464/1564420420_1_1_1.jpg?ts=1649757486937",
+//     name: "BIRD'S-EYE SUIT BLAZER +4",
+//     price: 8990,
+//     productID: "BLAZER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/420/707/2/w/464/1564420707_1_1_1.jpg?ts=1650357158988",
+//     name: "BIRD'S-EYE SUIT BLAZER +4",
+//     price: 8990,
+//     productID: "BLAZER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/1564/421/707/2/w/464/1564421707_1_1_1.jpg?ts=1650355732181",
+//     name: "BIRD'S-EYE SUIT TROUSERS +4",
+//     price: 4990,
+//     productID: "TROUSER",
+//     color: "GREY",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4553/941/250/2/w/439/4553941250_15_1_1.jpg?ts=1652957816829",
+//     name: "PREMIUM TWILL SHIRT +1",
+//     price: 4990,
+//     productID: "SHIRT",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4553/941/403/2/w/439/4553941403_15_1_1.jpg?ts=1652957816518",
+//     name: "PREMIUM TWILL SHIRT +1",
+//     price: 4990,
+//     productID: "SHIRT",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4551/942/250/2/w/439/4551942250_15_1_1.jpg?ts=1652957816923",
+//     name: "PREMIUM TEXTURED SHIRT",
+//     price: 4990,
+//     productID: "SHIRT",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4552/945/400/2/w/439/4552945400_15_1_1.jpg?ts=1652957816096",
+//     name: "PREMIUM STRIPED SHIRT",
+//     price: 4990,
+//     productID: "SHIRT",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/0706/316/087/2/w/464/0706316087_2_5_1.jpg?ts=1654246736907",
+//     name: "CHECK SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/0706/317/087/2/w/464/0706317087_1_1_1.jpg?ts=1654248452257",
+//     name: "TEXTURED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/0706/496/400/2/w/464/0706496400_1_1_1.jpg?ts=1651832253642",
+//     name: "CHECK SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/0706/497/400/2/w/464/0706497400_2_4_1.jpg?ts=1652081508217",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/4545/973/066/2/w/464/4545973066_1_1_1.jpg?ts=1652443340642",
+//     name: "CHECK SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/4534/973/066/2/w/464/4534973066_2_3_1.jpg?ts=1652443443350",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4534/890/400/2/w/464/4534890400_1_1_1.jpg?ts=1651487655755",
+//     name: "HOUNDSTOOTH SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/5931/786/819/102/w/464/5931786819_1_1_1.jpg?ts=1649773969505",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4464/741/054/102/w/464/4464741054_1_1_1.jpg?ts=1649773520067",
+//     name: "CHECK SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4465/741/054/102/w/464/4465741054_2_3_1.jpg?ts=1649773519057",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4332/494/800/103/w/249/4332494800_1_1_1.jpg?ts=1649778571349",
+//     name: "DOUBLE-BREASTED SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/0706/316/087/2/w/249/0706316087_2_5_1.jpg?ts=1654246736907",
+//     name: "CHECK SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/0706/317/087/2/w/249/0706317087_1_1_1.jpg?ts=1654248452257",
+//     name: "TEXTURED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/0706/496/400/2/w/528/0706496400_1_1_1.jpg?ts=1651832253642",
+//     name: "CHECK SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/0706/497/400/2/w/528/0706497400_2_4_1.jpg?ts=1652081508217",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/4545/973/066/2/w/528/4545973066_1_1_1.jpg?ts=1652443340642",
+//     name: "CHECK SUIT BLZAER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/I/0/2/p/4534/973/066/2/w/528/4534973066_2_3_1.jpg?ts=1652443443350",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4464/741/054/102/w/249/4464741054_1_1_1.jpg?ts=1649773520067",
+//     name: "CHECK SUIT BLAZER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4465/741/054/102/w/249/4465741054_2_3_1.jpg?ts=1649773519057",
+//     name: "CHECK SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4626/076/251/2/w/249/4626076251_1_1_1.jpg?ts=1652083401201",
+//     name: "POPLIN SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4619/076/251/2/w/249/4619076251_2_3_1.jpg?ts=1651829697217",
+//     name: "WIDE FIT POPLIN SUIT TROUSERS",
+//     price: 4990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4618/076/620/2/w/249/4618076620_1_1_1.jpg?ts=1652176675385",
+//     name: "WIDE FIR POPLIN SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/4624/076/620/2/w/249/4624076620_2_1_1.jpg?ts=1652177100365",
+//     name: "POPLIN SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4620/076/707/2/w/249/4620076707_2_4_1.jpg?ts=1652083306397",
+//     name: "POPLIN SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4625/076/707/2/w/249/4625076707_1_1_1.jpg?ts=1652083306863",
+//     name: "POPLIN DOUBLE-BREASTED SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4616/076/401/2/w/249/4616076401_1_1_1.jpg?ts=1651829696102",
+//     name: "WIDE FIT POPLIN TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4627/076/401/2/w/249/4627076401_2_3_1.jpg?ts=1651829716727",
+//     name: "COTTON POPLIN JACKET",
+//     price: 7990,
+//     productID: "JACKET",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/9621/490/431/102/w/249/9621490431_2_1_1.jpg?ts=1649775985930",
+//     name: "TECHNICAL SUIT BLAZER",
+//     price: 6990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/9621/491/431/102/w/249/9621491431_2_3_1.jpg?ts=1649775987281",
+//     name: "TECHNICAL SUIT TROUSERS",
+//     price: 2990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4225/274/802/102/w/464/4225274802_1_1_1.jpg?ts=1649864529939",
+//     name: "RELAXED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4193/274/802/102/w/464/4193274802_2_3_1.jpg?ts=1649864523084",
+//     name: "RELAXED SUIT BLAZER",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/0706/480/832/102/w/464/0706480832_2_1_1.jpg?ts=1649766104886",
+//     name: "SUIT BLZAER",
+//     price: 9990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/1/p/0706/481/832/102/w/464/0706481832_2_4_1.jpg?ts=1649772393160",
+//     name: "STRAIGHT SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/6861/442/803/2/w/464/6861442803_1_1_1.jpg?ts=1650623523236",
+//     name: "SUIT BLAZER +1",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/6861/443/803/2/w/464/6861443803_1_1_1.jpg?ts=1650623526014",
+//     name: "PLEATED SUIT TROUSERS +1",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/6861/442/401/2/w/464/6861442401_1_1_1.jpg?ts=1650612185839",
+//     name: "SUIT BLAZER +1",
+//     price: 8990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/6861/443/401/2/w/464/6861443401_2_3_1.jpg?ts=1650612184416",
+//     name: "PLEATED SUIT TROUSERS",
+//     price: 4990,
+//     productID: "TROUSER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4608/723/401/2/w/464/4608723401_1_1_1.jpg?ts=1649834725204",
+//     name: "100% WOOL SUIT BLAZER",
+//     price: 10990,
+//     productID: "BLAZER",
+//     category: "",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4609/723/401/2/w/464/4609723401_2_3_1.jpg?ts=1649834725306",
+//     name: "100% WOOL SUIT TROUSRES",
+//     price: 5990,
+//     productID: "TROUSER",
+//     color: "BLACK",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4608/789/407/2/w/464/4608789407_1_1_1.jpg?ts=1649834727487",
+//     name: "100% WOOL SUIT BLAZER",
+//     price: 10990,
+//     productID: "BLAZER",
+//     color: "BLUE",
+// }, {
+//     img: "https://static.zara.net/photos///2022/V/0/2/p/4609/789/407/2/w/464/4609789407_2_3_1.jpg?ts=1649834727621",
+//     name: "100% WOOL SUIT TROUSERS",
+//     price: 5990,
+//     productID: "TROUSER",
+//     color: "BLUE",
+// },];
+
+//     document.querySelector("form").addEventListener("submit",fun)
+//     function fun(){
+//         event.preventDefault()
+//         let res=document.getElementById("search").value;
+//         console.log(res)
+//     }
+
+
 
 </script>
