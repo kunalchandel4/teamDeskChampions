@@ -1,363 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>add to cart</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to cart</title>
 </head>
 <style>
-	*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-#nav {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    justify-content: space-between;
-    background-color: transparent;
-    position: fixed;
-    top: 0px;
-}
-#menu {
-    display:grid;
-    width: 1.6%;
-    height: 20%;
-    margin-top: 0.7%;
-    align-content: space-around;
-    margin-left: 2%;
-    background-color: transparent;
-}
-#menu > div {
-    height: 1px;
-    background-color: black;
-    transition: 0.4s;
-}
-#one {
-    width: 90%;
-}
-#two {
-    width: 60%;
-}
-#three {
-    width: 70%;
-}
-#menu:hover div {
-    width: 90%;
-}
-#logo {
-    width: 16%;
-	margin-left: 180px;
-}
-#logo > img {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    font-weight: none;
-    color: black;
-}
-
-
-#loghelp {
-    display: flex;
-    width: 10%;
-    background-color: transparent;
-    justify-content: space-between;
-    margin-top: 0.7%;
-	margin-right: 30px;
-}
-#option {
-            width: 75%;
-            margin: 300px auto;
-            display: grid;
-            grid-template-columns: repeat(4, 140px);
-            grid-template-rows: repeat(9, 50px);
-            font-size: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-stretch: extra-condensed;
-        }
-        
-        h3 {
-            margin-bottom: 10px;
-        }
-        
-        #second {
-            width: 75%;
-            margin: -400px auto 90px;
-            display: flex;
-            font-size: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-stretch: extra-condensed;
-        }
-        
-        #second>p:nth-child(1) {
-            margin-right: 850px;
-        }
-        
-        #second>p:nth-child(2) {
-            margin-right: 20px;
-        }
-        
-        #second>p:nth-child(3) {
-            color: #e8ddd6;
-        }
-        
-        #end {
-            width: 75%;
-            margin: auto;
-            font-size: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-stretch: extra-condensed;
-        }
-        
-        ul {
-            list-style: none;
-            line-height: 7px;
-            font-size: 8px;
-        }
-        
-        li:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        } 
-		#mens{
-     
-            margin-left: 180px;
-            margin-top: 200px;
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    
+    #nav {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        justify-content: space-between;
+        background-color: transparent;
+        position: fixed;
+        top: 0px;
+    }
+    
+    #menu {
         display: grid;
-        grid-template-columns: repeat(4,550px);
-        grid-template-rows:  405px;
+        width: 1.6%;
+        height: 20%;
+        margin-top: 0.7%;
+        align-content: space-around;
+        margin-left: 2%;
+        background-color: transparent;
+    }
+    
+    #menu>div {
+        height: 1px;
+        background-color: black;
+        transition: 0.4s;
+    }
+    
+    #one {
+        width: 90%;
+    }
+    
+    #two {
+        width: 60%;
+    }
+    
+    #three {
+        width: 70%;
+    }
+    
+    #menu:hover div {
+        width: 90%;
+    }
+    
+    #logo {
+        width: 16%;
+        margin-left: 180px;
+    }
+    
+    #logo>img {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: none;
+        color: black;
+    }
+    
+    #loghelp {
+        display: flex;
+        width: 10%;
+        background-color: transparent;
+        justify-content: space-between;
+        margin-top: 0.7%;
+        margin-right: 30px;
+    }
+    
+    #option {
+        width: 75%;
+        margin: 300px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 140px);
+        grid-template-rows: repeat(9, 50px);
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: extra-condensed;
+    }
+    
+    h3 {
+        margin-bottom: 10px;
+    }
+    
+    #second {
+        width: 75%;
+        margin: -400px auto 90px;
+        display: flex;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: extra-condensed;
+    }
+    
+    #second>p:nth-child(1) {
+        margin-right: 850px;
+    }
+    
+    #second>p:nth-child(2) {
+        margin-right: 20px;
+    }
+    
+    #second>p:nth-child(3) {
+        color: #e8ddd6;
+    }
+    
+    #end {
+        width: 75%;
+        margin: auto;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: extra-condensed;
+    }
+    
+    ul {
+        list-style: none;
+        line-height: 7px;
+        font-size: 8px;
+    }
+    
+    li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    #mens {
+        margin-left: 180px;
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(4, 550px);
+        grid-template-rows: 405px;
         width: 80%;
         height: 420px;
         overflow-x: auto;
         gap: 10px;
-        }
-        #mens::-webkit-scrollbar{
-    width: 0px;
-}
-        #mens>div{  
-   display: flex;
-/* flex: wrap; */
-      gap: 20px;
     }
-   
-    #mens>div>div>img{
-  
-     
-      width: 100%;
+    
+    #mens::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+    #mens>div {
+        display: flex;
+        /* flex: wrap; */
+        gap: 20px;
+    }
+    
+    #mens>div>div>img {
+        width: 100%;
         height: 400px;
-   
     }
-  
-   #mens>div>div> h4{
-/* margin-bottom: 10px; */
-    display: inline;
-    margin-right: 10px;
-   }
-   #mens>div>div>p{
-
-  font-size: 13px;
- font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 15px;
- color:grey;
- width: 80%;
- margin-top: 10px;
-
     
-   }
-  #plus{
+    #mens>div>div>h4 {
+        /* margin-bottom: 10px; */
+        display: inline;
+        margin-right: 10px;
+    }
     
-    width: 30px;
-    font-size: 20px;
-    border: transparent;
-    height: 40px;
-color: grey;
-background-color: white;
-margin-left: 5px;
-  }
-   #minus{
-    
-    width: 30px;
-    height: 40px;
-    font-size: 20px;
-    margin-right: 10px;
-    border: transparent;
-color: grey;
-background-color: white;
-   }
-   #minus:hover{
-    cursor: pointer;
-   }
-   #plus:hover{
-    cursor: pointer;
-   }
-   #mens>div>div>button:last-child{
-/* margin-bottom: 10px; */
-display: block;
-border: transparent;
-color: grey;
-    margin-top: 200px;
-    background-color: white;
-   }
-   #mens>div>div>button:last-child:hover{
-cursor: pointer;
-text-decoration: underline;
-   }
-   h4{
-    font-size: 18px;
-    color: grey;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   }
-
-   #box{
-
-      height: 100px;
-      width: 83%;
-      margin: auto;
-  display: flex;
-  justify-content: space-between;
-      position:sticky;
-      
-      /* top:1200px;   */
-      }
-form{
-    margin-left: 50px;
-}
-      form>p{margin: 20px 0px 0px 0px;
+    #mens>div>div>p {
+        font-size: 13px;
         font-family: Arial, Helvetica, sans-serif;
-   
-    font-size: 11px;
-    /* margin: auto; */
-    color: grey;
-    text-decoration: none;
-    font-weight: bolder;
-
-      }
-      form>p:hover{
+        margin-bottom: 15px;
+        color: grey;
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+    #plus {
+        width: 30px;
+        font-size: 20px;
+        border: transparent;
+        height: 40px;
+        color: grey;
+        background-color: white;
+        margin-left: 5px;
+    }
+    
+    #minus {
+        width: 30px;
+        height: 40px;
+        font-size: 20px;
+        margin-right: 10px;
+        border: transparent;
+        color: grey;
+        background-color: white;
+    }
+    
+    #minus:hover {
+        cursor: pointer;
+    }
+    
+    #plus:hover {
+        cursor: pointer;
+    }
+    
+    #mens>div>div>button:last-child {
+        /* margin-bottom: 10px; */
+        display: block;
+        border: transparent;
+        color: grey;
+        margin-top: 200px;
+        background-color: white;
+    }
+    
+    #mens>div>div>button:last-child:hover {
         cursor: pointer;
         text-decoration: underline;
-      }
-      form>input{
+    }
+    
+    h4 {
+        font-size: 18px;
+        color: grey;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #box {
+        height: 100px;
+        width: 83%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        /* top:1200px;   */
+    }
+    
+    form {
+        margin-left: 50px;
+    }
+    
+    form>p {
+        margin: 20px 0px 0px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        /* margin: auto; */
+        color: grey;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    
+    form>p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    form>input {
         margin-top: 10px;
         height: 30px;
         border: transparent;
-     border-bottom: 1px solid black;
-      }
-     
-form>input:last-child{
-   
-   margin-left: 20px;
-   width: 100px;
-   color: white;
-   background-color: black;
-   cursor: pointer;
-}
-
-form>input:last-child:hover{
-    background-color: green;
-}
-#box2{
-    width: 30%;
-  
-}
-#box>div{
-    display: flex;
-    gap: 10px
-     
-}
-#box2>div>p{
-
-    margin-top: 20px;
-    width: 100%;
-   
-    word-spacing: 10px;
-}
-#box2>div>p:first-child{
-    font-weight: bolder;
-}
-#box2>div>div:nth-child(2)>p{
-    font-weight: bold;
-    text-align: right;
-    width: 100%;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    /* margin: auto; */
-    color: grey;
-    text-decoration: none;
-}
-#box2>div>div:last-child>p{
-  font-weight: bold;
-    margin-top: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    /* margin: auto; */
-    color: grey;
-    text-decoration: none;
-}
-#butn{
-    width: 50%;
-    margin-left: 25px;
-    margin-top: 38px;
+        border-bottom: 1px solid black;
+    }
+    
+    form>input:last-child {
+        margin-left: 20px;
+        width: 100px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    form>input:last-child:hover {
+        background-color: green;
+    }
+    
+    #box2 {
+        width: 30%;
+    }
+    
+    #box>div {
+        display: flex;
+        gap: 10px
+    }
+    
+    #box2>div>p {
+        margin-top: 20px;
+        width: 100%;
+        word-spacing: 10px;
+    }
+    
+    #box2>div>p:first-child {
+        font-weight: bolder;
+    }
+    
+    #box2>div>div:nth-child(2)>p {
+        font-weight: bold;
+        text-align: right;
+        width: 100%;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        /* margin: auto; */
+        color: grey;
+        text-decoration: none;
+    }
+    
+    #box2>div>div:last-child>p {
+        font-weight: bold;
+        margin-top: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        /* margin: auto; */
+        color: grey;
+        text-decoration: none;
+    }
+    
+    #butn {
+        width: 50%;
+        margin-left: 25px;
+        margin-top: 38px;
         height: 35px;
         border: transparent;
-     background-color: black;
-     color: white;
-}
-#butn:hover{
-    cursor:pointer;
-}
+        background-color: black;
+        color: white;
+    }
+    
+    #butn:hover {
+        cursor: pointer;
+    }
 </style>
+
 <body>
-	<div id="nav">
-      
+    <div id="nav">
+
         <div id="logo">
             <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="error">
         </div>
-      
+
         <div id="loghelp">
             <a href="login.html" id="lg"></a>
             <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
         </div>
-     
-       
+
+
     </div>
     <!-- // cart data -->
-	<div id="mens"></div>
+    <div id="mens"></div>
 
 
 
-     <div id="box">
-        <form><p>ENTER YOUR PROMO CODE YOU WILL GET 30%OFF </p>
-        <input type="text" name="" id="promo">
-        <input type="submit" value="ENTER">
+    <div id="box">
+        <form>
+            <p>ENTER YOUR PROMO CODE YOU WILL GET 30%OFF </p>
+            <input type="text" name="" id="promo">
+            <input type="submit" value="ENTER">
         </form>
-     <div id="box2">
-             
-        <div>
-            <p id="tot"></p>
-            
-            <div>
-                <p>INCLUDING GST</p>
+        <div id="box2">
 
-            </div>
             <div>
-                <p> * EXCL SHIPPING COST</p>
+                <p id="tot"></p>
+
+                <div>
+                    <p>INCLUDING GST</p>
+
+                </div>
+                <div>
+                    <p> * EXCL SHIPPING COST</p>
+                </div>
             </div>
+            <button id="butn">CONTINUE</button>
         </div>
-                <button id="butn">CONTINUE</button>
-     </div>
 
-     </div>
-      <!-- // bottom part -->
-	<!-- <section id="option">
+    </div>
+    <!-- // bottom part -->
+    <!-- <section id="option">
         <div>
             <h3>HELP</h3>
             <ul>
@@ -414,154 +432,156 @@ form>input:last-child:hover{
 
     </div> -->
 </body>
-</html>
-<script>
 
-	let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
+</html><script>
+    let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
 
-    // document.querySelector("#Qts").innerText=cartLS.length
-
-let totalPrice=0
-        function display(Data){
-        document.querySelector("#mens").innerHTML="" ;
-         totalPrice=0;
-        
-      // count=
-        Data.forEach(function(elem,index){
-          // console.log(elem.quan)
-          // console.log(elem.cartPrices);
-          totalPrice+= elem.cartePrice;
-            let div = document.createElement("div")
-            let div1 = document.createElement("div") 
-            let div2 = document.createElement("div");
-
-            let image=document.createElement("img") ;
-            image.setAttribute("src",elem.img) ;
-            let ptag=document.createElement("p")
-            ptag.innerText ="Product Name: "+ elem.name
-            let p2price=document.createElement("p") ;
-            p2price.innerText = "Price: ₹ "+elem.price ;
-       
-            let p4=document.createElement("p") ;
-            p4.innerText = "Catagory: "+elem.productID ;
-            
-            let h4=document.createElement("h4")
-                //   h4.setAttribute("id","abc")
-              h4.innerText=elem.quantity
-              
-            let butn = document.createElement("button") ;
-            
-            butn.innerText = "Delete" ;
-            
-            butn.addEventListener("click",function(){
-                Delete(elem.category)
-               
-                // console.log(elem.productID)
-           
-            })
-            let plus=document.createElement("button")
-            plus.setAttribute("id","minus")
-              plus.innerText="-"
-              plus.addEventListener("click",function(){
-                dec(elem,index,cartLS)
-            
-              })
-            let minus=document.createElement("button")
-            minus.setAttribute("id","plus")
-              minus.innerText="+"
-              minus.addEventListener("click",function(){
-                incr(elem,index,cartLS)
-            
-              })
-              document.querySelector("#tot").innerText="TOTAL  ₹" +Number(totalPrice)+".00"
-              // console.log(totalPrice)
-            div.append(image)
-            // console.log(h4);
-            div1.append(ptag,p4,p2price,plus,h4,minus,butn)  
-            div2.append(div,div1)
-            document.querySelector("#mens").append(div2) ;
-     
-            }) 
-
-            
-            
-
-
-        }
-       
-        display(cartLS)
-
-document.querySelector("#butn").addEventListener("click",lol)
-function lol(){
-  window.location.href="payment.html"
-}
-
-       function Delete(id){
-        // console.log(id)
-        let deleted = cartLS.filter(function(el){
-            return el.category!=id ;
-        })
-         cartLS =deleted
-           localStorage.setItem("cart-page",JSON.stringify(cartLS))
-        //   console.log(deleted)
-          display(cartLS)
-          window.location.reload()
-       }
-
-function incr(elem,i,cartLS){
-// count++ 
-cartLS[i].quantity++
-  if(cartLS[i].quantity<=1){
-    cartLS[i].quantity=1
-  } 
- 
- elem.cartePrice=Number(elem.price)*elem.quantity
-          // console.log(added)
- 
-
-
- localStorage.setItem("cart-page",JSON.stringify(cartLS))
-window.location.reload()
-}
-
-function dec(elem,i,cartLS){
-  cartLS[i].quantity--
-  if(cartLS[i].quantity<=1){
-    cartLS[i].quantity=1
-  } 
-
- 
-  elem.cartePrice=Number(elem.price)*elem.quantity
-          // console.log(added)
-
- localStorage.setItem("cart-page",JSON.stringify(cartLS))
-window.location.reload()
- 
-}
-
-let k=document.querySelector("form").addEventListener("submit",discount)
-function discount(event){
-  event.preventDefault()
-  let promo="masai30"
-  
-  let b=document.querySelector("#promo").value
-  if(promo===b){
-    totalPrice=totalPrice-(totalPrice*30/100)
-    document.querySelector("#tot").innerText= "TOTAL  ₹" +(Number(Math.ceil(totalPrice))) +".00"
-    // window.location.reload()
-  }else{
-    alert("Wrong PromoCode")
-  }
     
 
-}
+    let totalPrice = 0
+
+    function display(Data) {
+        document.querySelector("#mens").innerHTML = "";
+        totalPrice = 0;
+
+        // count=
+        Data.forEach(function(elem, index) {
+            // console.log(elem.quan)
+            // console.log(elem.cartPrices);
+            totalPrice += +elem.cartePrice;
+            let div = document.createElement("div")
+            let div1 = document.createElement("div")
+            let div2 = document.createElement("div");
+
+            let image = document.createElement("img");
+            image.setAttribute("src", elem.img);
+            let ptag = document.createElement("p")
+            ptag.innerText = "Product Name: " + elem.name
+            let p2price = document.createElement("p");
+            p2price.innerText = "Price: ₹ " + elem.price;
+
+            let p4 = document.createElement("p");
+            p4.innerText = "Catagory: " + elem.productID;
+
+            let h4 = document.createElement("h4")
+                //   h4.setAttribute("id","abc")
+            h4.innerText = elem.quantity
+
+            let butn = document.createElement("button");
+
+            butn.innerText = "Delete";
+
+            butn.addEventListener("click", function() {
+                Delete(elem.category)
+
+                // console.log(elem.productID)
+
+            })
+            let plus = document.createElement("button")
+            plus.setAttribute("id", "minus")
+            plus.innerText = "-"
+            plus.addEventListener("click", function() {
+                dec(elem, index, cartLS)
+
+            })
+            let minus = document.createElement("button")
+            minus.setAttribute("id", "plus")
+            minus.innerText = "+"
+            minus.addEventListener("click", function() {
+                incr(elem, index, cartLS)
+
+            })
+            document.querySelector("#tot").innerText = "TOTAL  ₹" + Number(totalPrice) + ".00"
+                // console.log(totalPrice)
+            div.append(image)
+                // console.log(h4);
+            div1.append(ptag, p4, p2price, plus, h4, minus, butn)
+            div2.append(div, div1)
+            document.querySelector("#mens").append(div2);
+
+        })
 
 
 let logdata=JSON.parse(localStorage.getItem("Userdata"))
 
+<<<<<<< HEAD
 logdata.forEach(function(elem){
 	document.querySelector("#lg").innerText=elem.name;
 })
+=======
+
+
+    }
+
+    display(cartLS)
+
+    document.querySelector("#butn").addEventListener("click", lol)
+
+    function lol() {
+        window.location.href = "payment.html"
+    }
+
+    function Delete(id) {
+        // console.log(id)
+        let deleted = cartLS.filter(function(el) {
+            return el.category != id;
+        })
+        cartLS = deleted
+        localStorage.setItem("cart-page", JSON.stringify(cartLS))
+            //   console.log(deleted)
+        display(cartLS)
+        window.location.reload()
+    }
+
+    function incr(elem, i, cartLS) {
+        // count++ 
+        cartLS[i].quantity++
+            if (cartLS[i].quantity <= 1) {
+                cartLS[i].quantity = 1
+            }
+
+        elem.cartePrice = Number(elem.price) * elem.quantity
+            // console.log(added)
+
+
+
+        localStorage.setItem("cart-page", JSON.stringify(cartLS))
+        window.location.reload()
+    }
+
+    function dec(elem, i, cartLS) {
+        cartLS[i].quantity--
+            if (cartLS[i].quantity <= 1) {
+                cartLS[i].quantity = 1
+            }
+
+
+        elem.cartePrice = Number(elem.price) * elem.quantity
+            // console.log(added)
+
+        localStorage.setItem("cart-page", JSON.stringify(cartLS))
+        window.location.reload()
+
+    }
+
+    let k = document.querySelector("form").addEventListener("submit", discount)
+
+    function discount(event) {
+        event.preventDefault()
+        let promo = "masai30"
+
+        let b = document.querySelector("#promo").value
+        if (promo === b) {
+            totalPrice = totalPrice - (totalPrice * 30 / 100)
+            document.querySelector("#tot").innerText = "TOTAL  ₹" + (Number(Math.ceil(totalPrice))) + ".00"
+                // window.location.reload()
+        } else {
+            alert("Wrong PromoCode")
+        }
+
+
+    }
+>>>>>>> 74816065746ef9616c26dbbd2407bf1a7e3915bf
 </script>
 
 
